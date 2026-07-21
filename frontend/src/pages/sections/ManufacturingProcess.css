@@ -1,0 +1,209 @@
+/* ManufacturingProcess.css */
+.process-section { background: var(--color-bg-dark); }
+
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+/* Horizontal connector line */
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  top: 56px;
+  left: calc(100% / 12);
+  right: calc(100% / 12);
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-accent), rgba(200,121,26,0.2));
+  z-index: 0;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.process-step-number {
+  width: 52px;
+  height: 52px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px rgba(200,121,26,0.4);
+  flex-shrink: 0;
+}
+
+.process-step-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+.process-step:hover .process-step-icon {
+  background: rgba(200,121,26,0.15);
+  border-color: rgba(200,121,26,0.4);
+  color: var(--color-accent);
+}
+
+.process-step-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 8px;
+  font-family: var(--font-heading);
+  letter-spacing: 0.5px;
+}
+
+.process-step-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+}
+
+/* Laptop / Small Desktop (992px to 1200px) - Compressed horizontal scaling */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .process-timeline::before {
+    top: 46px;
+  }
+  .process-step-number {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .process-step-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .process-step-title {
+    font-size: 14px;
+  }
+  .process-step-desc {
+    font-size: 12.5px;
+    padding: 0 4px;
+  }
+}
+
+/* Tablet Layout (Max-width: 992px) - Shift down into 3 grid blocks */
+@media (max-width: 992px) {
+  .process-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 20px;
+  }
+  .process-timeline::before {
+    display: none; /* Safely removes grid line background track */
+  }
+  .process-step {
+    padding: 0;
+  }
+}
+
+/* Medium Mobile Devices (433px to 733px) - Shift down to 2 columns */
+@media (max-width: 733px) {
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 16px;
+    margin-bottom: 12px;
+  }
+  .process-step-number {
+    width: 46px;
+    height: 46px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .process-step-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .process-step-title {
+    font-size: 14.5px;
+  }
+  .process-step-desc {
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+}
+
+/* Ultra Small Mobile Viewports (317px to 433px) */
+@media (max-width: 433px) {
+  .process-timeline {
+    grid-template-columns: 1fr !important; /* Stack vertically into a list */
+    gap: 24px !important;
+  }
+
+  .process-step {
+    flex-direction: row !important; /* Shifts flow into side-by-side row rows */
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 16px !important;
+    padding: 0 4px !important;
+  }
+
+  /* Renders a localized vertical connector chain timeline on mobile side margins */
+  .process-connector {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    bottom: -28px;
+    width: 2px;
+    background: rgba(200, 121, 26, 0.25);
+    z-index: -1;
+  }
+
+  .process-step-number {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 14.5px !important;
+    margin-bottom: 0 !important; /* Eliminate base alignment bottom margin */
+    box-shadow: 0 3px 10px rgba(200,121,26,0.3) !important;
+  }
+
+  /* Completely clear display layer for custom mobile layout clarity */
+  .process-step-icon {
+    display: none !important;
+  }
+
+  .process-step-content {
+    flex: 1;
+    padding-top: 4px; /* Perfectly aligns content wrapper baseline to small node numbers */
+  }
+
+  .process-step-title {
+    font-size: 15px !important;
+    margin-bottom: 4px !important;
+    line-height: 1.3 !important;
+  }
+
+  .process-step-desc {
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+    padding-right: 4px;
+  }
+}

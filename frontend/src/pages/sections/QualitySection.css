@@ -1,0 +1,254 @@
+/* QualitySection.css */
+.quality-section { background: var(--color-white); }
+
+.quality-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.quality-title {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 12px 0 0;
+}
+
+.quality-desc {
+  font-size: 16px;
+  color: var(--color-text-mid);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.quality-desc strong { color: var(--color-primary); font-weight: 600; }
+
+.quality-cert-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0 36px;
+}
+
+.quality-cert-badge {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--cert-color, var(--color-accent));
+  background: color-mix(in srgb, var(--cert-color, var(--color-accent)) 8%, transparent);
+  min-width: 110px;
+  transition: var(--transition);
+}
+.quality-cert-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.quality-cert-badge-label {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--cert-color, var(--color-accent));
+  text-transform: uppercase;
+}
+.quality-cert-badge-sub {
+  font-size: 11px;
+  color: var(--color-text-light);
+  margin-top: 2px;
+}
+
+.quality-image-wrap {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.quality-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.quality-img-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 32px;
+  background: linear-gradient(transparent, rgba(7,18,42,0.85));
+}
+
+.quality-stat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.quality-stat-number {
+  font-family: var(--font-heading);
+  font-size: 56px;
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1;
+}
+.quality-stat-label {
+  font-size: 15px;
+  color: rgba(255,255,255,0.8);
+  font-weight: 500;
+  max-width: 160px;
+  line-height: 1.4;
+}
+
+/* Laptop / Small Desktop (992px to 1200px) - Tighten wide panel gutters */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .quality-grid {
+    gap: 40px;
+  }
+  .quality-img {
+    height: 420px;
+  }
+  .quality-cert-badge {
+    padding: 12px 16px;
+  }
+  .quality-desc {
+    text-align: justify;
+  }
+  .quality-cert-badge-label {
+    font-size: 15px;
+  }
+}
+
+/* Tablet Layout (Max-width: 992px) - Switch down to single vertical grid stream */
+@media (max-width: 992px) {
+  .quality-grid { 
+    grid-template-columns: 1fr; 
+    gap: 48px; 
+  }
+  .quality-text {
+    text-align: center;
+  }
+  .quality-text .accent-divider {
+    margin: 12px auto 16px; /* Center dynamic custom structural divider lines */
+  }
+  .quality-cert-badges {
+    justify-content: center;
+  }
+  .quality-cert-badge {
+    max-width: 220px; /* Allow cards to breath naturally when layout shifts to centered text blocks */
+  }
+  .quality-desc {
+    text-align: justify;
+  }
+  .quality-img { 
+    height: 360px; 
+  }
+  .quality-text .btn {
+    margin: 0 auto;
+    display: inline-flex;
+  }
+}
+
+/* Medium Mobile Devices (433px to 733px) */
+@media (max-width: 733px) {
+  .quality-grid {
+    gap: 36px;
+  }
+  .quality-img {
+    height: 300px;
+  }
+  .quality-img-overlay {
+    padding: 24px;
+  }
+  .quality-stat-number {
+    font-size: 44px;
+  }
+  .quality-stat-label {
+    font-size: 13.5px;
+  }
+  .quality-desc {
+    font-size: 15px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+  .quality-cert-badge {
+    padding: 10px 14px;
+    min-width: 100px;
+  }
+  .quality-cert-badge-label {
+    font-size: 14px;
+  }
+}
+
+/* Ultra Small Mobile Viewports (317px to 433px) */
+@media (max-width: 433px) {
+  .quality-grid {
+    gap: 28px !important;
+  }
+
+  .quality-title {
+    font-size: 26px !important;
+  }
+
+  .quality-desc {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+    padding: 0 4px;
+    text-align: justify;
+    margin-bottom: 12px !important;
+  }
+
+  .quality-cert-badges {
+    margin: 20px 0 28px !important;
+    gap: 8px !important;
+  }
+
+  .quality-cert-badge {
+    flex: 1 1 calc(50% - 8px) !important;
+    max-width: calc(50% - 4px) !important;
+    padding: 10px 8px !important;
+    min-width: 0 !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .quality-cert-badge-label {
+    font-size: 13px !important;
+  }
+
+  .quality-cert-badge-sub {
+    font-size: 10px !important;
+    margin-top: 1px !important;
+  }
+
+  .quality-img {
+    height: 240px !important;
+    border-radius: var(--radius-lg) !important;
+  }
+
+  .quality-img-overlay {
+    padding: 16px !important;
+  }
+
+  .quality-stat {
+    gap: 12px !important;
+  }
+
+  .quality-stat-number {
+    font-size: 36px !important;
+  }
+
+  .quality-stat-label {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+    max-width: 130px !important;
+  }
+
+  .quality-text .btn {
+    width: 100% !important; /* Scale to fill safe interactive bounding boxes on touch surfaces */
+    max-width: 280px;
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+    justify-content: center;
+  }
+}

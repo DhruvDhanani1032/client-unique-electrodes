@@ -1,0 +1,150 @@
+/* WhyChooseUs.css */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.why-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.why-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--color-accent);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: var(--transition);
+}
+.why-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  border-color: transparent;
+}
+.why-card:hover::before { transform: scaleY(1); }
+
+.why-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.why-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.why-card-desc {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.65;
+}
+
+/* Laptop / Small Desktop (992px to 1200px) - Grid layout tightening */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .why-grid {
+    gap: 16px;
+  }
+  .why-card {
+    padding: 22px 18px;
+    gap: 14px;
+  }
+  .why-card-title {
+    font-size: 16.5px;
+  }
+  .why-card-desc {
+    font-size: 13.5px;
+  }
+}
+
+/* Tablet Layout (Max-width: 992px) - Shift down to 2 columns */
+@media (max-width: 992px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .why-card:hover {
+    transform: translateY(-2px); /* Tame hover shift state for touchscreens */
+  }
+}
+
+/* Medium Mobile Devices (433px to 733px) */
+@media (max-width: 733px) {
+  .why-grid {
+    gap: 16px;
+  }
+  .why-card {
+    padding: 20px 16px;
+    gap: 12px;
+  }
+  .why-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  .why-card-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .why-card-desc {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+}
+
+/* Ultra Small Mobile Viewports (317px to 433px) */
+@media (max-width: 433px) {
+  .why-grid {
+    grid-template-columns: 1fr !important; /* Single stacked list alignment */
+    gap: 14px !important;
+  }
+
+  .why-card {
+    padding: 16px !important;
+    gap: 14px !important;
+    border-radius: var(--radius-md) !important;
+    align-items: center !important; /* Center icon cleanly alongside mobile text */
+  }
+
+  /* Adjust entry edge strip accent location to stay clean */
+  .why-card::before {
+    width: 4px !important;
+  }
+
+  .why-card-icon {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+  }
+
+  .why-card-title {
+    font-size: 15.5px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .why-card-desc {
+    font-size: 12.5px !important;
+    line-height: 1.5 !important;
+    padding-right: 4px;
+  }
+}

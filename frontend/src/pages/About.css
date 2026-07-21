@@ -1,0 +1,271 @@
+/* About.css */
+.about-story-section { background: var(--color-white); }
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+.about-story-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+.about-story-title { margin: 12px 0 0; font-size: clamp(32px, 3.5vw, 44px); }
+.about-story-text p {
+  font-size: 16px;
+  color: var(--color-text-mid);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.about-story-text strong { color: var(--color-primary); font-weight: 600; }
+.about-story-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 20px;
+  background: var(--color-bg-light);
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  color: var(--color-text-mid);
+}
+.about-story-details strong { color: var(--color-primary); }
+
+/* MVV */
+.about-mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.about-mvv-card {
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  transition: var(--transition);
+}
+.about-mvv-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
+.about-mvv-card.primary { background: var(--color-primary); color: white; }
+.about-mvv-card.accent { background: var(--color-accent); color: white; }
+.about-mvv-card.dark { background: var(--color-bg-dark); color: white; }
+
+.about-mvv-icon {
+  font-size: 32px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 16px;
+}
+.about-mvv-card h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.about-mvv-card p, .about-mvv-card li {
+  font-size: 15px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.65;
+}
+.about-mvv-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Stats */
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.about-stat-item { text-align: center; padding: 20px; border-right: 1px solid rgba(255,255,255,0.1); }
+.about-stat-item:last-child { border-right: none; }
+.about-stat-counter .counter-value { font-size: 52px; }
+
+/* Registrations */
+.about-reg-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.about-reg-card {
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  border-top: 3px solid var(--color-accent);
+}
+.about-reg-label { font-size: 11px; font-weight: 600; color: var(--color-accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.about-reg-value { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--color-primary); margin-bottom: 6px; }
+.about-reg-desc { font-size: 13px; color: var(--color-text-light); }
+
+/* Laptop / Small Desktop (992px to 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .about-story-grid {
+    gap: 48px;
+  }
+  .about-story-img {
+    height: 440px;
+  }
+  .about-story-text p {
+    text-align: justify;
+  }
+  .about-mvv-card p, 
+  .about-mvv-card li {
+    text-align: justify;
+  }
+  .about-reg-grid {
+    gap: 16px;
+  }
+}
+
+/* Tablet Layout (Max-width: 992px) */
+@media (max-width: 992px) {
+  .about-story-grid { 
+    grid-template-columns: 1fr; 
+    gap: 40px; 
+  }
+  .about-story-img { 
+    height: 360px; 
+  }
+  .about-mvv-grid { 
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+  .about-story-text p {
+    text-align: justify;
+  }
+  .about-reg-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px;
+  }
+  .about-stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .about-stat-item {
+        border-top: none;
+    }
+}
+
+/* Medium Mobile Devices (433px to 733px) */
+@media (max-width: 733px) {
+  .about-story-img { 
+    height: 280px; 
+  }
+  .about-story-text p {
+    font-size: 15px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+  .about-story-details {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px;
+  }
+  .about-mvv-card {
+    padding: 28px 20px;
+  }
+  .about-mvv-card h3 {
+    font-size: 20px;
+  }
+  .about-reg-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .about-stat-counter .counter-value { 
+    font-size: 40px; 
+  }
+}
+
+/* Ultra Small Mobile Viewports (317px to 433px) */
+@media (max-width: 433px) {
+  .about-story-grid {
+    gap: 28px !important;
+  }
+
+  .about-story-img {
+    height: 220px !important;
+    border-radius: var(--radius-lg) !important;
+  }
+
+  .about-story-text p {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 12px !important;
+    text-align: justify;
+  }
+
+  .about-story-details {
+    padding: 12px !important;
+    font-size: 12px !important;
+    border-radius: var(--radius-sm) !important;
+  }
+
+  .about-mvv-card {
+    padding: 20px 16px !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  .about-mvv-icon {
+    font-size: 26px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .about-mvv-card h3 {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .about-mvv-card p, 
+  .about-mvv-card li {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    text-align: justify;
+  }
+
+  .about-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 0;
+}
+
+.about-stat-item {
+    padding: 14px 6px !important;
+    border-right: 1px solid rgba(255,255,255,0.1) !important;
+    border-bottom: none !important;
+}
+
+.about-stat-item:last-child {
+    border-right: none !important;
+}
+
+.about-stat-counter .counter-value {
+    font-size: 28px !important;
+}
+
+.about-stat-counter .counter-label {
+    font-size: 10px !important;
+    line-height: 1.3;
+}
+
+  .about-stat-counter .counter-value {
+    font-size: 34px !important;
+  }
+
+  .about-reg-card {
+    padding: 16px 14px !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  .about-reg-value {
+    font-size: 16px !important;
+  }
+
+  .about-reg-desc {
+    font-size: 12px !important;
+  }
+}

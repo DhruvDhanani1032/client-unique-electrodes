@@ -1,0 +1,146 @@
+/* StatsBar.css */
+.stats-bar {
+  background: var(--color-primary);
+  padding: 48px 0;
+  position: relative;
+  overflow: hidden;
+}
+.stats-bar::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+.stats-bar::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+
+.stats-bar-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.stats-bar-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.stats-bar-sep {
+  width: 1px;
+  height: 56px;
+  background: rgba(255,255,255,0.15);
+  flex-shrink: 0;
+}
+
+.stats-bar-counter {
+  text-align: center;
+  padding: 8px 32px;
+}
+
+.counter-value {
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.counter-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Tablet (733px–1024px) */
+@media (min-width: 733px) and (max-width: 1024px) {
+  .stats-bar {
+    padding: 36px 0;
+  }
+  .stats-bar-grid {
+    flex-wrap: nowrap !important; /* Force horizontal row */
+  }
+  .stats-bar-counter {
+    padding: 4px 16px;
+  }
+  .counter-value {
+    font-size: 36px;
+  }
+  .counter-label {
+    font-size: 11px;
+  }
+}
+
+/* Medium Mobile & Small Tablet (433px–770px) */
+@media (min-width: 433px) and (max-width: 770px) {
+  .stats-bar {
+    padding: 28px 0;
+  }
+  .stats-bar-grid {
+    flex-wrap: nowrap !important; /* Force horizontal row */
+    justify-content: space-between;
+  }
+  .stats-bar-item {
+    flex: 1 1 auto;
+  }
+  .stats-bar-sep {
+    height: 40px; /* Shorter dividers */
+  }
+  .stats-bar-counter {
+    padding: 4px 8px;
+  }
+  .counter-value {
+    font-size: 28px;
+  }
+  .counter-label {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Small Mobile Viewports (317px–433px) */
+@media (min-width: 317px) and (max-width: 433px) {
+  .stats-bar {
+    padding: 22px 0;
+  }
+  .stats-bar-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important; /* Locks content strictly onto one single horizontal line */
+    justify-content: space-evenly !important; 
+    align-items: center !important;
+    width: 100% !important;
+    gap: 4px !important;
+  }
+  .stats-bar-item {
+    flex: 1 1 0% !important; /* Evenly distributes the remaining space across items */
+    width: auto !important;
+  }
+  .stats-bar-sep {
+    display: none !important; /* Drops vertical bars to save horizontal space */
+  }
+  .stats-bar-counter {
+    padding: 2px 4px !important;
+  }
+  .counter-value {
+    font-size: 22px !important; /* Perfectly scaled down to stay compact */
+    margin-bottom: 4px;
+  }
+  .counter-label {
+    font-size: 8px !important; /* Micro text sizing to fit width without word wrapping */
+    letter-spacing: 0px !important;
+    white-space: normal !important;
+    line-height: 1.2;
+  }
+}

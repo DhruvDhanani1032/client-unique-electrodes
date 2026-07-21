@@ -1,0 +1,516 @@
+/* HeroSection.css */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 110px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 18, 42, 0.72);
+}
+
+.hero-overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(11, 29, 58, 0.85) 0%,
+    rgba(200, 121, 26, 0.08) 60%,
+    rgba(11, 29, 58, 0.6) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.hero-inner {
+  max-width: 780px;
+}
+
+/* Tag */
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(200, 121, 26, 0.18);
+  border: 1px solid rgba(200, 121, 26, 0.4);
+  color: var(--color-accent-light);
+  padding: 8px 18px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+/* Headline */
+.hero-headline {
+  font-size: clamp(52px, 7vw, 88px);
+  font-weight: 800;
+  color: var(--color-white);
+  text-transform: uppercase;
+  line-height: 1.0;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+.hero-headline-accent {
+  color: var(--color-accent);
+  -webkit-text-stroke: 1px var(--color-accent);
+}
+
+/* Subtext */
+.hero-subtext {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 620px;
+}
+.hero-subtext strong { color: rgba(255,255,255,0.95); font-weight: 600; }
+
+/* CTAs */
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+/* Trust Badges */
+.hero-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  transition: var(--transition);
+}
+.hero-badge:hover {
+  background: rgba(200, 121, 26, 0.15);
+  border-color: rgba(200, 121, 26, 0.4);
+  color: var(--color-accent-light);
+}
+
+.hero-badge-icon {
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+}
+
+/* Scroll indicator */
+.hero-scroll {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-scroll-dot {
+  width: 24px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  position: relative;
+}
+.hero-scroll-dot::after {
+  content: '';
+  width: 4px;
+  height: 8px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 733px) and (max-width: 1024px) {
+
+  .hero {
+    min-height: 88vh;
+    padding-top: 90px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center; /* Horizontally centers the inner wrapper */
+    align-items: center;    /* Vertically centers the inner wrapper */
+  }
+
+  .hero-content {
+    padding-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-inner {
+    max-width: 620px;
+    margin: 0 auto;        /* Forces the entire box to sit in the exact center */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centers flex elements like buttons/badges */
+    text-align: center;     /* Centers actual text content inside elements */
+  }
+
+  .hero-tag {
+    margin-bottom: 18px;
+    font-size: 10px;
+    padding: 7px 14px;
+    display: inline-flex;  /* Keeps the badge sized to its content */
+  }
+
+  .hero-headline {
+    font-size: 48px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+    width: 100%;
+  }
+
+  .hero-subtext {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    max-width: 520px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    justify-content: center; /* Centers the button row */
+    gap: 12px;
+    margin-bottom: 26px;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .hero-badges {
+    display: flex;
+    justify-content: center; /* Centers the badges row */
+    gap: 8px;
+    width: 100%;
+  }
+
+  .hero-badge {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 433px) and (max-width: 733px) {
+
+  .hero {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-inner {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-tag {
+    margin-bottom: 16px;
+    font-size: 9px;
+    padding: 6px 12px;
+    display: inline-flex;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-headline {
+    font-size: 34px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    width: 100%;
+    word-break: break-word;
+  }
+
+  .hero-subtext {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 28px;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    padding: 10px 18px;
+    font-size: 13px;
+    flex: 1 1 auto;      
+    justify-content: center;
+    max-width: 240px;    
+  }
+
+  /* Fixed Bottom Bar Badges Alignment */
+  .hero-badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Forces them to stay in a single line like 733px-1024px */
+    gap: 6px;          /* Tighter gap to ensure they fit horizontal space */
+    width: 100%;
+    overflow-x: auto;  /* Fail-safe preventing layout breaks on narrow screens */
+  }
+
+  .hero-badge {
+    padding: 6px 10px;
+    font-size: 10px;
+    flex: 0 0 auto;    /* Prevents badges from shrinking or compressing unevenly */
+    white-space: nowrap; /* Keeps badge text on one line */
+  }
+}
+
+@media (min-width: 380px) and (max-width: 433px) {
+  .hero {
+    min-height: auto;
+    padding-top: 145px;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero-inner {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-tag {
+    margin-bottom: 14px;
+    font-size: 8.5px;
+    padding: 5px 10px;
+    display: inline-flex;
+    letter-spacing: 0.2px;
+  }
+
+  .hero-headline {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    width: 100%;
+    word-break: break-word;
+  }
+
+  .hero-subtext {
+    font-size: 13px;
+    line-height: 1.45;
+    margin-bottom: 20px;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    padding: 12px 16px;
+    font-size: 13px;
+    width: 100%;         
+    max-width: 280px;    
+    justify-content: center;
+  }
+
+  .hero-badges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;      
+    justify-content: center; 
+    align-items: center;
+    gap: 8px;             
+    width: 100%;
+    overflow-x: hidden;   
+    padding-bottom: 0;
+  }
+
+  .hero-badge {
+    padding: 8px 10px;
+    font-size: 10px;
+    flex: 0 0 calc(50% - 4px); 
+    max-width: calc(50% - 4px);
+    box-sizing: border-box;
+    white-space: nowrap;  
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center;
+  }
+}
+
+/* --- ADDED: Extra Small Mobile Devices (317px–380px) --- */
+@media (min-width: 317px) and (max-width: 380px) {
+  .hero {
+    min-height: auto;
+    padding-top: 60px;
+    padding-bottom: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* --- FIX: Centering Layout Wrappers --- */
+  .hero-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-inner {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Centers flex objects like buttons/badges */
+    text-align: center;       /* Centers all typography elements */
+  }
+
+  /* --- TYPOGRAPHY AND CONTENT --- */
+  .hero-headline {
+    font-size: 24px; /* Scaled down headline text */
+    line-height: 1.25;
+    margin-bottom: 12px;
+    text-align: center;       /* Explicitly forces headline text alignment */
+  }
+
+  .hero-tag {
+    font-size: 8px;
+    padding: 5px 10px !important;
+    display: inline-flex !important;
+    letter-spacing: 0.2px;
+    margin: 0 auto 14px auto !important; /* Centers the tag capsule box */
+  }
+
+  .hero-subtext {
+    font-size: 12px; /* Denser rendering text */
+    line-height: 1.4;
+    margin-bottom: 18px;
+    text-align: center;       /* Explicitly forces paragraph text alignment */
+  }
+
+  .hero-ctas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 8px;
+  }
+
+  .hero-ctas .btn {
+    padding: 10px 14px;
+    font-size: 12px;
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;  /* Centers text and icon inside button */
+  }
+
+  /* Micro adjustment to keep 2x2 grid perfectly square without clipping */
+  .hero-badges {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 6px !important; /* Smaller row gap for tight widths */
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .hero-badge {
+    padding: 6px 6px !important; /* Tighter padding borders */
+    font-size: 9px !important;    /* Slightly micro-sized text to fit perfectly */
+    flex: 0 0 calc(50% - 3px) !important;
+    max-width: calc(50% - 3px) !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}

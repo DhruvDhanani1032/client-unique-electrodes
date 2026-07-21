@@ -1,0 +1,232 @@
+/* AboutSnippet.css */
+.about-snippet { background: var(--color-white); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.about-image-wrap {
+  position: relative;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  object-fit: cover;
+  height: 500px;
+}
+
+.about-img-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--color-accent);
+  color: white;
+  border-radius: var(--radius-lg);
+  padding: 20px 28px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+.about-img-badge-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+}
+.about-img-badge-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+.about-text { padding-left: 16px; }
+
+.about-text .section-header { margin-bottom: 24px; }
+
+.about-text-body {
+  font-size: 16px;
+  color: var(--color-text-mid);
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+.about-text-body strong { color: var(--color-primary); font-weight: 600; }
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 28px 0 36px;
+}
+
+.about-highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  color: var(--color-text-mid);
+}
+
+.about-check {
+  color: var(--color-success);
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Laptop / Small Desktop (992px to 1200px) - Shrink space padding */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .about-grid {
+    gap: 40px;
+  }
+  .about-img {
+    height: 440px;
+  }
+  .about-img-badge {
+    padding: 16px 22px;
+    right: -10px;
+    bottom: -10px;
+  }
+  .about-img-badge-number {
+    font-size: 32px;
+  }
+}
+
+/* Tablet Layout (Max-width: 992px) - Stack grid vertically */
+@media (max-width: 992px) {
+  .about-grid { 
+    grid-template-columns: 1fr; 
+    gap: 48px; 
+  }
+  .about-img { 
+    height: 380px; 
+  }
+  .about-text { 
+    padding-left: 0; 
+    text-align: center; /* Center section messaging globally for modern layout */
+  }
+  .about-text .section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-img-badge { 
+    right: 16px; 
+    bottom: -16px; 
+  }
+  .about-highlights {
+    align-items: center; /* Line up list layout elements inside container width */
+  }
+  .about-text .btn {
+    margin: 0 auto;
+    display: inline-flex;
+  }
+}
+
+/* Medium Mobile Devices (433px to 733px) */
+@media (max-width: 733px) {
+  .about-grid {
+    gap: 36px;
+  }
+  .about-img {
+    height: 300px;
+  }
+  .about-img-badge {
+    padding: 12px 18px;
+    bottom: -12px;
+    right: 12px;
+    border-radius: var(--radius-md);
+  }
+  .about-img-badge-number {
+    font-size: 26px;
+  }
+  .about-img-badge-label {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .about-text-body {
+    font-size: 15px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+  .about-highlight-item {
+    font-size: 14px;
+  }
+}
+
+/* Ultra Small Mobile Viewports (317px to 433px) */
+@media (max-width: 433px) {
+  .about-grid {
+    gap: 28px !important;
+  }
+  
+  .about-img {
+    height: 220px !important;
+    border-radius: var(--radius-lg) !important;
+  }
+  
+  /* Prevent the established badge from breaking structure on ultra thin viewports */
+  .about-img-badge {
+    padding: 8px 14px !important;
+    bottom: -10px !important;
+    right: 10px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+  }
+  .about-img-badge-number {
+    font-size: 20px !important;
+  }
+  .about-img-badge-label {
+    font-size: 8.5px !important;
+    letter-spacing: 0.5px !important;
+    margin-top: 1px !important;
+  }
+
+  .about-text-body {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 14px !important;
+    text-align: justify;
+    padding: 0 4px;
+  }
+
+  .about-highlight-item {
+    text-align: start;
+  }
+
+   .section-title {
+    margin-bottom: 0 !important;
+   }
+
+  .about-highlights {
+    margin: 20px 0 28px !important;
+    gap: 10px !important;
+    align-items: flex-start !important; /* Switch items back to safe left-alignment for small lists */
+    padding: 0 8px;
+  }
+
+  .about-highlight-item {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+  }
+
+  .about-check {
+    font-size: 15px !important;
+    margin-top: 2px !important;
+  }
+
+  .about-text .btn {
+    width: 100% !important; /* Stretch button to match full viewport boundary targets */
+    max-width: 280px;
+    justify-content: center;
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+  }
+}
