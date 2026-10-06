@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobe, FaPaperPlane } from 'react-icons/fa';
 import { company } from '../data/content';
+import SEO from '../components/common/SEO';
 import './Contact.css';
 import { IoChatbox } from 'react-icons/io5';
 
@@ -24,6 +25,11 @@ export default function Contact() {
 
   return (
     <>
+      <SEO
+        title="Contact Us | Request Quote & Technical Consultation"
+        description="Get in touch with Unique Electrodes Surat for quotes, inquiries, and technical guidance on earthing systems. Call +91 9512231350."
+        keywords="contact unique electrodes, earthing supplier Surat phone number, buy earthing electrodes Gujarat, earthing quote"
+      />
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb">

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { FaBolt, FaFilter, FaTimes, FaArrowRight, FaCheck } from 'react-icons/fa';
 import { allProducts, categoryMetaList } from '../data/productsData';
 import ProductDetail from './ProductDetail';
+import SEO from '../components/common/SEO';
 import './CategoryProducts.css';
 
 // Legacy single slugs map
@@ -106,6 +107,11 @@ function CategoryProductsView({
 
   return (
     <div className="cat-page-wrapper">
+      <SEO
+        title={`${pageMeta.title} | Unique Electrodes`}
+        description={pageMeta.subtitle}
+        keywords={`${pageMeta.title}, earthing electrodes, ${resolvedCategory}, ${resolvedMaterial}, Unique Electrodes Surat`}
+      />
       {/* Standard Brand Page Hero */}
       <section className="page-hero">
         <div className="container">

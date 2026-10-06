@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaBolt, FaSatelliteDish, FaSolarPanel, FaIndustry, FaHospital, FaServer, FaOilCan, FaBuilding, FaArrowRight } from 'react-icons/fa';
 import { industries } from '../data/content';
+import SEO from '../components/common/SEO';
 import './Industries.css';
 import type { ReactNode } from 'react';
 
@@ -17,6 +18,11 @@ export default function Industries() {
 
   return (
     <>
+      <SEO
+        title="Industries Served | Electrical Earthing Solutions"
+        description="Reliable earthing and lightning protection solutions for power plants, telecom towers, solar installations, data centers, hospitals, and heavy industries."
+        keywords="industrial earthing, solar earthing kit, telecom earthing electrode, data center earthing, Unique Electrodes Surat"
+      />
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb">

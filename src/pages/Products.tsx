@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaArrowRight, FaBolt, FaChevronDown, FaCheck } from 'react-icons/fa';
 import { products } from '../data/content';
+import SEO from '../components/common/SEO';
 import './Products.css';
 
 const categories = [
@@ -46,6 +47,11 @@ export default function Products() {
 
   return (
     <>
+      <SEO
+        title="Earthing Products & Lightning Arresters"
+        description="Explore our full range of Copper Bonded Earthing Electrodes, GI Earthing Rods, Earth Enhancement Compounds, and ESE Lightning Arresters."
+        keywords="chemical earthing electrodes, copper bonded rod price, GI earthing rod, lightning arresters, earth pit cover, earthing compound"
+      />
       {/* Page Hero */}
       <section className="page-hero">
         <div className="container">

@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import { FaAward, FaCheckCircle, FaBolt } from 'react-icons/fa';
 import { certifications } from '../data/content';
+import SEO from '../components/common/SEO';
 import './Certifications.css';
 
 export default function Certifications() {
@@ -10,6 +11,11 @@ export default function Certifications() {
 
   return (
     <>
+      <SEO
+        title="Certifications & Test Reports | ISO 9001:2015"
+        description="Verify our credentials: ISO 9001:2015 quality certification and independent test reports for Unique Electrodes chemical earthing solutions."
+        keywords="ISO 9001:2015 certificate, earthing test reports, Bhumi research test report, certified earthing electrodes Surat"
+      />
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb">

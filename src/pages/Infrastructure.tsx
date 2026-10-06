@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { FaIndustry, FaMapMarkerAlt } from 'react-icons/fa';
 import factoryImg from '../assets/factory_about.webp';
 import qualityImg from '../assets/quality_lab.webp';
+import SEO from '../components/common/SEO';
 import './Infrastructure.css';
 
 const capabilities = [
@@ -13,6 +14,11 @@ const capabilities = [
 export default function Infrastructure() {
   return (
     <>
+      <SEO
+        title="Manufacturing Facility & Infrastructure | Surat Factory"
+        description="Take a look inside Unique Electrodes' state-of-the-art earthing manufacturing facility at Udhyog Nagar, Udhana, Surat."
+        keywords="earthing manufacturing plant Surat, earthing factory Gujarat, copper electroplating facility, Unique Enterprise infrastructure"
+      />
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb">

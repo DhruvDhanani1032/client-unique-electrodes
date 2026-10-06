@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom';
 import { FaShieldAlt, FaCheckCircle } from 'react-icons/fa';
 import qualityImg from '../assets/quality_lab.webp';
+import SEO from '../components/common/SEO';
 import './Quality.css';
 
 export default function Quality() {
   return (
     <>
+      <SEO
+        title="Quality Assurance & Independent Testing"
+        description="ISO 9001:2015 certified quality processes and testing verification. Consistent, verified earthing solutions from Surat."
+        keywords="earthing quality testing, ISO 9001 earthing manufacturer, IS:3043 compliance, quality earthing electrodes Surat"
+      />
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb">

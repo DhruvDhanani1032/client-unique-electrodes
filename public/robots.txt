@@ -1,0 +1,6 @@
+# Robots.txt for https://www.uniqueelectrodes.com
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.uniqueelectrodes.com/sitemap.xml

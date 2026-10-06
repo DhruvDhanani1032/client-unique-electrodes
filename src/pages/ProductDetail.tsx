@@ -17,6 +17,7 @@ import {
 import { LuShield, LuAward, LuClock } from 'react-icons/lu';
 import { allProducts, getRelatedFamilyVariants } from '../data/productsData';
 import { products as legacyProducts } from '../data/content';
+import SEO from '../components/common/SEO';
 import './ProductDetail.css';
 
 export default function ProductDetail() {
@@ -123,8 +124,40 @@ export default function ProductDetail() {
     `Hello Unique Electrodes! I am interested in purchasing:\nProduct: ${product.name}\nPlease share best quotation and availability.`
   );
 
+  const productSchema = useMemo(() => ({
+    '@context': 'https://schema.org/',
+    '@type': 'Product',
+    name: product.name,
+    image: `https://www.uniqueelectrodes.com${product.image}`,
+    description: product.shortDescription || product.longDescription,
+    brand: {
+      '@type': 'Brand',
+      name: 'Unique Electrodes',
+    },
+    manufacturer: {
+      '@type': 'Organization',
+      name: 'Unique Enterprise',
+    },
+    category: product.categoryName,
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'INR',
+      price: product.price || 0,
+      availability: 'https://schema.org/InStock',
+      url: `https://www.uniqueelectrodes.com${location.pathname}`,
+    },
+  }), [product, location.pathname]);
+
   return (
     <div className="pd-page">
+      <SEO
+        title={`${product.name} | Unique Electrodes`}
+        description={product.shortDescription || product.longDescription.slice(0, 160)}
+        keywords={`${product.name}, ${product.categoryName}, ${product.materialName || ''}, earthing electrode Surat, unique electrodes`}
+        ogType="product"
+        ogImage={product.image}
+        schema={productSchema}
+      />
       {/* Standard Brand Page Hero */}
       <section className="page-hero">
         <div className="container">

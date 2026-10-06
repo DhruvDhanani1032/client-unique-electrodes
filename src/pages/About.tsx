@@ -5,6 +5,7 @@ import { FaBolt, FaEye, FaHeart, FaCheckCircle } from 'react-icons/fa';
 import factoryImg from '../assets/factory_about.webp';
 import AnimatedCounter from '../components/ui/AnimatedCounter';
 import { company } from '../data/content';
+import SEO from '../components/common/SEO';
 import './About.css';
 
 const values = [
@@ -18,8 +19,11 @@ export default function About() {
 
   return (
     <>
-      {/* Meta */}
-      <title>About Unique Electrodes | ISO-Certified Earthing Electrode Manufacturer Surat</title>
+      <SEO
+        title="About Us | Unique Electrodes - Earthing Solutions Surat"
+        description="Learn about Unique Enterprise, manufacturer of maintenance-free chemical earthing electrodes, copper bonded rods and earthing compounds in Surat, Gujarat."
+        keywords="about unique electrodes, earthing manufacturer Surat, unique enterprise Surat, electrical earthing company Gujarat"
+      />
 
       {/* Page Hero */}
       <section className="page-hero">
