@@ -1,0 +1,202 @@
+/* CertificationsSection.css */
+.home-certs-section {
+  background: var(--color-bg-light);
+  padding: 80px 0;
+  position: relative;
+}
+
+/* Stats Strip */
+.home-certs-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 720px;
+  margin: 32px auto 44px;
+  gap: 24px;
+}
+
+.home-certs-stat {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  text-align: center;
+  border-top: 4px solid var(--color-accent);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.home-certs-stat:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.home-certs-stat-num {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.home-certs-stat-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.home-certs-stat-detail {
+  display: block;
+  font-size: 13px;
+  color: var(--color-text-light);
+}
+
+/* Cards Grid */
+.home-certs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.home-cert-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  border-top: 4px solid var(--cert-color, var(--color-accent));
+  box-shadow: var(--shadow-sm);
+}
+
+.home-cert-card:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-5px);
+}
+
+.home-cert-card-header {
+  padding: 24px 24px 16px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.home-cert-card-emoji {
+  font-size: 36px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.home-cert-card-category {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--cert-color, var(--color-accent));
+  margin-bottom: 4px;
+}
+
+.home-cert-card-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.home-cert-card-body {
+  padding: 20px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.home-cert-card-field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.home-cert-card-field label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-light);
+}
+
+.home-cert-card-field span {
+  font-size: 13px;
+  color: var(--color-text-mid);
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.home-cert-card-number {
+  font-family: monospace;
+  font-size: 12px;
+  background: var(--color-bg-light);
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--color-primary);
+  font-weight: 700;
+  display: inline-block;
+  word-break: break-all;
+  width: fit-content;
+}
+
+.home-cert-card-footer {
+  padding: 14px 24px;
+  border-top: 1px solid var(--color-border);
+  background: #fafbfc;
+}
+
+.home-cert-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-success);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .home-certs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-certs-section {
+    padding: 60px 0;
+  }
+  .home-certs-stats-strip {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 24px auto 32px;
+  }
+  .home-certs-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 24px;
+  }
+  .home-cert-card-header {
+    padding: 18px 20px 14px;
+  }
+  .home-cert-card-body {
+    padding: 16px 20px;
+  }
+  .home-cert-card-footer {
+    padding: 12px 20px;
+  }
+}

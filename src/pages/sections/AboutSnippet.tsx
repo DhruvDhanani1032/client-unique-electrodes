@@ -2,13 +2,12 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
-import factoryImg from '../../assets/factory_about.png';
+import factoryImg from '../../assets/factory_about.webp';
 import SectionHeader from '../../components/ui/SectionHeader';
 import './AboutSnippet.css';
 
 const highlights = [
   'ISO 9001:2015 Quality Management Certified',
-  'CPRI & ERDA tested — lab-verified performance',
   'MSME Registered Manufacturer (UDYAM-GJ-22-0120594)',
   'Complete earthing system solutions',
 ];
@@ -53,8 +52,7 @@ export default function AboutSnippet() {
             </p>
             <p className="about-text-body">
               We specialize in manufacturing world-class <strong>Copper Bonded Earthing Electrodes</strong>,
-              GI Earthing Rods, Earth Enhancement Compounds, and Lightning Protection Systems — all backed
-              by independent lab testing from CPRI, ERDA, and Bhumi Research Center.
+              GI Earthing Rods, Earth Enhancement Compounds, and Lightning Protection Systems.
             </p>
 
             <ul className="about-highlights">

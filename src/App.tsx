@@ -13,6 +13,8 @@ import Quality from './pages/Quality';
 import Infrastructure from './pages/Infrastructure';
 import Certifications from './pages/Certifications';
 import Contact from './pages/Contact';
+import CategoryProducts from './pages/CategoryProducts';
+import FloatingWhatsApp from './components/common/FloatingWhatsApp';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -30,7 +32,24 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
+          
+          {/* Hierarchical Category Routes */}
+          <Route path="/products/strip-in-pipe/:material" element={<CategoryProducts />} />
+          <Route path="/products/strip-in-pipe/:material/:productId" element={<ProductDetail />} />
+          <Route path="/products/rod-in-pipe/:material" element={<CategoryProducts />} />
+          <Route path="/products/rod-in-pipe/:material/:productId" element={<ProductDetail />} />
+          <Route path="/products/solid-rod/:material" element={<CategoryProducts />} />
+          <Route path="/products/solid-rod/:material/:productId" element={<ProductDetail />} />
+          <Route path="/products/lightning-arrestors" element={<CategoryProducts />} />
+          <Route path="/products/lightning-arrestors/:productId" element={<ProductDetail />} />
+          <Route path="/products/specialty" element={<CategoryProducts />} />
+          <Route path="/products/specialty/:productId" element={<ProductDetail />} />
+
+          {/* Universal Category & Product Routes */}
+          <Route path="/products/:category/:material/:productId" element={<ProductDetail />} />
+          <Route path="/products/:category/:material" element={<CategoryProducts />} />
+          <Route path="/products/:id" element={<CategoryProducts />} />
+
           <Route path="/industries" element={<Industries />} />
           <Route path="/quality" element={<Quality />} />
           <Route path="/infrastructure" element={<Infrastructure />} />
@@ -39,6 +58,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </BrowserRouter>
   );
 }

@@ -1,14 +1,21 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaDownload, FaShieldAlt, FaBolt, FaBoxOpen, FaAward } from 'react-icons/fa';
-import heroBg from '../../assets/hero_bg.png';
+import {
+  FaArrowRight,
+  FaDownload,
+  FaFileInvoiceDollar,
+  FaBolt,
+  FaAward,
+  FaCheckCircle,
+} from 'react-icons/fa';
+import heroBg from '../../assets/hero_bg.webp';
 import './HeroSection.css';
 
 const trustBadges = [
-  { icon: <FaAward />, label: 'ISO 9001:2015' },
-  { icon: <FaBolt />, label: 'CPRI Tested' },
-  { icon: <FaBoxOpen />, label: '6+ Products' },
-  { icon: <FaShieldAlt />, label: 'Since 2021' },
+  { icon: <FaFileInvoiceDollar />, label: 'GST Registered' },
+  { icon: <FaBolt />, label: 'IS 3043 Compliant' },
+  { icon: <FaAward />, label: 'MSME Certified' },
+  { icon: <FaCheckCircle />, label: 'ISO 9001:2015' },
 ];
 
 export default function HeroSection() {
@@ -45,7 +52,7 @@ export default function HeroSection() {
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
           >
             <FaBolt size={12} />
-            <span>ISO 9001:2015 Certified | CPRI &amp; ERDA Tested</span>
+            <span>ISO 9001:2015 Certified</span>
           </motion.div>
 
           {/* Headline */}
@@ -65,7 +72,7 @@ export default function HeroSection() {
           >
             India's trusted manufacturer of <strong>Copper Bonded Earthing Electrodes</strong>,
             Earth Enhancement Compounds &amp; Lightning Protection Systems.
-            CPRI &amp; ERDA tested. Surat, Gujarat.
+             Surat, Gujarat.
           </motion.p>
 
           {/* CTAs */}

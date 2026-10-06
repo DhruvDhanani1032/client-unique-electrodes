@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobe, FaClock, FaPaperPlane } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobe, FaPaperPlane } from 'react-icons/fa';
 import { company } from '../data/content';
 import './Contact.css';
 import { IoChatbox } from 'react-icons/io5';
@@ -141,14 +141,6 @@ export default function Contact() {
                   <div>
                     <h4>Website</h4>
                     <p><a href={`https://${company.website}`} target="_blank" rel="noreferrer">{company.website}</a></p>
-                  </div>
-                </div>
-                <div className="contact-info-card">
-                  <div className="contact-info-icon"><FaClock /></div>
-                  <div>
-                    <h4>Business Hours</h4>
-                    <p>Monday – Saturday: 9:00 AM – 6:00 PM</p>
-                    <p>Sunday: Closed</p>
                   </div>
                 </div>
               </div>

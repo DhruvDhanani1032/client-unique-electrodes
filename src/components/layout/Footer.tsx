@@ -7,20 +7,21 @@ const quickLinks = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About Us' },
   { to: '/products', label: 'Products' },
-  { to: '/industries', label: 'Industries' },
+  // { to: '/industries', label: 'Industries' },
   { to: '/quality', label: 'Quality' },
-  { to: '/certifications', label: 'Certifications' },
+  // { to: '/certifications', label: 'Certifications' },
   { to: '/infrastructure', label: 'Infrastructure' },
   { to: '/contact', label: 'Contact' },
 ];
 
 const productLinks = [
+  { to: '/products/galvanised-strip-in-pipe', label: 'Strip In Pipe' },
+  { to: '/products/copper-bonded-rod-in-pipe', label: 'Rod In Pipe' },
   { to: '/products/copper-bonded-solid-rod', label: 'CB Solid Rod' },
-  { to: '/products/copper-bonded-pipe-type', label: 'CB Pipe Type' },
-  { to: '/products/gi-earthing-electrodes', label: 'GI Electrodes' },
-  { to: '/products/earth-enhancement-compound', label: 'Earth Compound' },
-  { to: '/products/lightning-arresters', label: 'Lightning Arresters' },
+  { to: '/products/hot-dip-galvanised-solid-rod', label: 'HDG Solid Rod' },
+  { to: '/products/ese-lightning-arrestor', label: 'ESE Lightning Arrestor' },
   { to: '/products/solar-earthing-kit', label: 'Solar Earthing Kit' },
+  { to: '/products/ground-improving-compound', label: 'Ground Improving Compound' },
 ];
 
 export default function Footer() {
@@ -60,8 +61,7 @@ export default function Footer() {
               <p className="footer-tagline">{company.tagline}</p>
               <div className="footer-badges">
                 <span className="footer-badge">ISO 9001:2015</span>
-                <span className="footer-badge">CPRI Tested</span>
-                <span className="footer-badge">ERDA Approved</span>
+                <span className="footer-badge">IS:3043 Compliant</span>
                 <span className="footer-badge">MSME Certified</span>
               </div>
               {/* <div className="footer-social">

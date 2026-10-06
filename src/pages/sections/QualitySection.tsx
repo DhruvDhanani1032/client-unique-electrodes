@@ -1,14 +1,11 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaArrowRight } from 'react-icons/fa';
-import qualityImg from '../../assets/quality_lab.png';
+import qualityImg from '../../assets/quality_lab.webp';
 import './QualitySection.css';
 
 const certBadges = [
   { label: 'ISO 9001:2015', sub: 'Quality Certified', color: '#C8791A' },
-  { label: 'CPRI Tested', sub: 'Bhopal Lab', color: '#2563EB' },
-  { label: 'ERDA Tested', sub: 'Vadodara Lab', color: '#7C3AED' },
   { label: 'MSME Reg.', sub: 'UDYAM-GJ-22', color: '#16A34A' },
 ];
 
@@ -30,13 +27,12 @@ export default function QualitySection() {
             <h2 className="quality-title">Quality Is Our Foundation</h2>
             <div className="accent-divider" />
             <p className="quality-desc">
-              Every Unique Electrodes product undergoes rigorous, independent testing at India's
-              premier institutions before reaching your project site.
+              Every Unique Electrodes product undergoes rigorous quality checks and standards compliance
+              before reaching your project site.
             </p>
             <p className="quality-desc">
               Our quality management system is <strong>ISO 9001:2015 certified</strong> (Cert No. TSNUK02740),
-              and all major products carry official test reports from <strong>CPRI Bhopal</strong>,
-              <strong> ERDA Vadodara</strong>, and <strong>Bhumi Research Center LLP, Surat</strong>.
+              and all products adhere strictly to <strong>IS:3043</strong> and <strong>IEC international standards</strong>.
             </p>
 
             <div className="quality-cert-badges">
@@ -55,9 +51,9 @@ export default function QualitySection() {
               ))}
             </div>
 
-            <Link to="/certifications" className="btn btn-primary">
+            <a href="#certifications" className="btn btn-primary">
               View All Certifications <FaArrowRight size={13} />
-            </Link>
+            </a>
           </motion.div>
 
           {/* Image Side */}

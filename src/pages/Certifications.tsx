@@ -29,8 +29,6 @@ export default function Certifications() {
           <div className="certs-stats-strip">
             {[
               { num: '1', label: 'ISO Certification', detail: 'ISO 9001:2015' },
-              { num: '2', label: 'CPRI Test Reports', detail: 'Bhopal, March 2026' },
-              { num: '1', label: 'ERDA Test Report', detail: 'Vadodara, Jan 2026' },
               { num: '1', label: 'Lab Research Report', detail: 'Bhumi Research, Feb 2026' },
             ].map((s, i) => (
               <div key={i} className="certs-stat">

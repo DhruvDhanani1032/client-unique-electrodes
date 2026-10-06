@@ -1,12 +1,21 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaArrowRight, FaCheckCircle } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import { products } from '../../data/content';
 import SectionHeader from '../../components/ui/SectionHeader';
 import './ProductsShowcase.css';
 
-const featured = products.slice(0, 4);
+const featuredIds = [
+  'copper-bonded-solid-rod',
+  'hot-dip-galvanised-strip-in-pipe',
+  'ese-lightning-arrestor',
+  'ground-improving-compound',
+];
+
+const featured = featuredIds
+  .map((id) => products.find((p) => p.id === id))
+  .filter(Boolean) as typeof products;
 
 export default function ProductsShowcase() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
@@ -17,7 +26,7 @@ export default function ProductsShowcase() {
         <SectionHeader
           tag="Our Products"
           title="Complete Earthing Solutions"
-          subtitle="CPRI & ERDA tested. ISO 9001:2015 certified. IS:3043 compliant."
+          subtitle="ISO 9001:2015 certified. IS:3043 compliant."
         />
 
         <div className="products-grid">
@@ -32,14 +41,9 @@ export default function ProductsShowcase() {
               <Link to={`/products/${product.id}`}>
                 <div className="product-card-image">
                   <img src={product.image} alt={product.name} />
-                  <span className={`badge badge-${product.badgeType} product-card-badge`}>
-                    <FaCheckCircle size={10} /> {product.badge}
-                  </span>
                 </div>
                 <div className="product-card-body">
-                  <span className="product-card-category">{product.category}</span>
                   <h3 className="product-card-title">{product.name}</h3>
-                  <p className="product-card-spec">{product.keySpec}</p>
                   <p className="product-card-desc">{product.tagline}</p>
                 </div>
                 <div className="product-card-footer">

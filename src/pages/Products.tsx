@@ -2,11 +2,17 @@ import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaArrowRight, FaCheckCircle, FaBolt, FaChevronDown, FaCheck } from 'react-icons/fa';
+import { FaArrowRight, FaBolt, FaChevronDown, FaCheck } from 'react-icons/fa';
 import { products } from '../data/content';
 import './Products.css';
 
-const categories = ['All', 'Copper Bonded', 'GI Electrodes', 'Compounds', 'Lightning Protection', 'Solar'];
+const categories = [
+  'All',
+  'Pipe Type Chemical Earthing',
+  'Solid Rod Type Earthing',
+  'Lightning Protection Systems',
+  'Specialty Products',
+];
 
 export default function Products() {
   const [activeCategory, setActiveCategory] = useState<string>('All');
@@ -49,7 +55,7 @@ export default function Products() {
           <div className="page-hero-tag"><FaBolt size={12} /> Product Range</div>
           <h1 className="page-hero-title">Our Products</h1>
           <p className="page-hero-subtitle">
-            CPRI & ERDA tested. ISO 9001:2015 certified. IS:3043 compliant earthing solutions.
+             ISO 9001:2015 certified. IS:3043 compliant earthing solutions.
           </p>
         </div>
       </section>
@@ -113,39 +119,28 @@ export default function Products() {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
               >
-                <Link to={`/products/${product.id}`} >
+                <Link to={`/products/${product.id}`} className="product-page-card-link-wrap">
                   <div className="product-page-card-image">
                     <img src={product.image} alt={product.name} />
-                    <span className={`badge badge-${product.badgeType} product-card-badge`}>
-                      <FaCheckCircle size={10} /> {product.badge}
-                    </span>
                   </div>
                   <div className="product-page-card-body">
-                    <span className="product-card-category">{product.category}</span>
                     <h3 className="product-page-card-title">{product.name}</h3>
                     <p className="product-page-card-tagline">{product.tagline}</p>
-                    <p className="product-page-card-desc">
-                      {product.description.substring(0, 140)}...
-                    </p>
-                    {product.testReports.length > 0 && (
-                      <div className="product-page-reports">
-                        {product.testReports.map((r, ri) => (
-                          <span key={ri} className="badge badge-success" style={{ fontSize: '11px', background: "green" }}>
-                            ✓ {r.lab.split(' ')[0]} — {r.result}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                  <div className="product-page-card-footer">
-                    <Link to={`/products/${product.id}`} className="btn btn-primary btn-sm">
-                      View Details <FaArrowRight size={12} />
-                    </Link>
-                    <Link to="/contact" className="btn btn-outline-primary btn-sm">
-                      Get Quote
-                    </Link>
                   </div>
                 </Link>
+                <div className="product-page-card-footer">
+                  <Link to={`/products/${product.id}`} className="btn btn-primary btn-sm">
+                    View Details <FaArrowRight size={12} />
+                  </Link>
+                  <a
+                    href={`https://wa.me/919512231350?text=${encodeURIComponent(`Hi Unique Electrodes, I am interested in getting a quote for: ${product.name}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-primary btn-sm"
+                  >
+                    Get Quote
+                  </a>
+                </div>
               </motion.div>
             ))}
           </div>

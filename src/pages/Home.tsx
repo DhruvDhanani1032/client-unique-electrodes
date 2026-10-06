@@ -6,6 +6,7 @@ import IndustriesStrip from './sections/IndustriesStrip';
 import WhyChooseUs from './sections/WhyChooseUs';
 import ManufacturingProcess from './sections/ManufacturingProcess';
 import QualitySection from './sections/QualitySection';
+import CertificationsSection from './sections/CertificationsSection';
 import Testimonials from './sections/Testimonials';
 import FAQ from './sections/FAQ';
 import ContactCTA from './sections/ContactCTA';
@@ -21,6 +22,7 @@ export default function Home() {
       <WhyChooseUs />
       <ManufacturingProcess />
       <QualitySection />
+      <CertificationsSection />
       <Testimonials />
       <FAQ />
       <ContactCTA />

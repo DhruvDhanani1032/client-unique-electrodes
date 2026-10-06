@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaIndustry, FaMapMarkerAlt } from 'react-icons/fa';
-import factoryImg from '../assets/factory_about.png';
-import qualityImg from '../assets/quality_lab.png';
+import factoryImg from '../assets/factory_about.webp';
+import qualityImg from '../assets/quality_lab.webp';
 import './Infrastructure.css';
 
 const capabilities = [

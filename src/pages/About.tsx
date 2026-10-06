@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import { FaBolt, FaEye, FaHeart, FaCheckCircle } from 'react-icons/fa';
-import factoryImg from '../assets/factory_about.png';
+import factoryImg from '../assets/factory_about.webp';
 import AnimatedCounter from '../components/ui/AnimatedCounter';
 import { company } from '../data/content';
 import './About.css';
@@ -30,7 +30,7 @@ export default function About() {
           <div className="page-hero-tag"><FaBolt size={12} /> About Unique Electrodes</div>
           <h1 className="page-hero-title">Our Story & Mission</h1>
           <p className="page-hero-subtitle">
-            A Surat-based MSME manufacturer building trust through testing, certification, and quality.
+            A Surat-based MSME manufacturer with 1,000+ projects delivered and 20+ years product lifespan.
           </p>
         </div>
       </section>
@@ -67,14 +67,17 @@ export default function About() {
                 manufacturer (UDYAM-GJ-22-0120594) and ISO 9001:2015 certified quality system.
               </p>
               <p>
-                Our products — from Copper Bonded Solid Rods to Earth Enhancement Compound — carry
-                official test reports from CPRI Bhopal, ERDA Vadodara, and Bhumi Research Center LLP,
-                Surat. Real tests. Real results.
+                Our products — from Copper Bonded Solid Rods to Earth Enhancement Compound — adhere to
+                stringent national and international standards including IS:3043 and IEEE Std 80,
+                delivering a proven <strong>20+ years product lifespan</strong> across more than
+                <strong> 1,000+ projects delivered</strong> nationwide.
               </p>
               <div className="about-story-details">
                 <div><strong>Legal Name:</strong> {company.legalName}</div>
                 <div><strong>Brand:</strong> {company.name}</div>
                 <div><strong>Established:</strong> {company.established}</div>
+                <div><strong>Projects:</strong> 1,000+ Delivered</div>
+                <div><strong>Product Lifespan:</strong> 20+ Years</div>
                 <div><strong>MSME Reg:</strong> {company.msme}</div>
                 <div><strong>ISO Cert:</strong> {company.isoNo}</div>
               </div>
