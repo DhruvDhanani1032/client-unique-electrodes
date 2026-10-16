@@ -1,7 +1,10 @@
-import productCopperRoad from '/src/assets/product_copper_rod.webp';
-import productCopperRoadNew from '/src/assets/product_copper_rod_new.webp';
+import productCopperPipe from '/src/assets/product_copper_pipe.webp';
+import productCopperRod from '/src/assets/product_copper_rod.webp';
+import productGiPipe from '/src/assets/product_gi_pipe.webp';
 import productGiRod from '/src/assets/product_gi_rod.webp';
-import productLightningArrester from '/src/assets/product_lightning_arrester.webp';
+import productMultispikeArrester from '/src/assets/product_multispike_arrester.webp';
+import productEseArrester from '/src/assets/product_ese_arrester.webp';
+import productLaAccessories from '/src/assets/product_la_accessories.webp';
 import productEarthCompound from '/src/assets/product_earth_compound.webp';
 import productSolarKit from '/src/assets/product_solar_kit.webp';
 
@@ -11,11 +14,11 @@ export const company = {
   tagline: 'Grounded in Quality. Built for Safety.',
   established: 'July 2021',
   type: 'Manufacturer & Trader',
-  msme: 'UDYAM-GJ-22-0120594',
-  isoNo: 'TSNUK02740',
+  msme: 'Registered Enterprise',
+  isoNo: '9001:2015 Certified',
   gst: 'GST Registered (State: Gujarat)',
   website: 'www.uniqueelectrodes.com',
-  contacts: ['+91 9512231350', '+91 9557025000'],
+  contacts: ['+91 9512231350', '+91 9537025302'],
   emails: ['uniqueelectrode2025@gmail.com', 'uniqueelectrodes@gmail.com'],
   address: {
     line1: 'Plot No. B-116, Shed No. 1, Road No. 8,',
@@ -127,7 +130,7 @@ export const products: Product[] = [
     tagline: 'Economical and reliable earthing for residential, commercial and light industrial installations.',
     description:
       'Our Galvanised Strip-in-Pipe Earthing Electrode is manufactured using a heavy-gauge mild steel pipe with an internal continuous galvanized flat strip conductor running from top to bottom. The annular space is tightly filled with high-conductivity crystalline mineral compound to provide low ground impedance, high corrosion resistance, and rapid fault current dissipation. Delivers 20+ years of maintenance-free performance.',
-    image: productGiRod,
+    image: productGiPipe,
     keySpec: '48mm & 76mm OD | 40x6mm / 50x10mm Inner Strip | 20+ Years Life',
     features: [
       'Maintenance-free chemical earthing operation',
@@ -206,7 +209,7 @@ export const products: Product[] = [
     tagline: 'Heavy-duty 80–100+ micron zinc protection for corrosive soils and industrial switchyards.',
     description:
       'Engineered with heavy-gauge low carbon mild steel pipe hot-dip galvanized to an exceptional coating thickness of 80–100+ microns per IS:2629 and IS:4759. The dense zinc metallurgical barrier prevents rust even in acidic, saline, and coastal soils. An internal full-length conductor strip surrounded by conductive compound provides an uninterrupted fault current path for 20+ years.',
-    image: productGiRod,
+    image: productGiPipe,
     keySpec: '80–100+ Micron HDG Coating | 48mm & 76mm OD | 20+ Years Life',
     features: [
       'Hot dip galvanized 80-100+ micron zinc coating for superior corrosion resistance',
@@ -285,7 +288,7 @@ export const products: Product[] = [
     tagline: '99.9% pure electrolytic copper bonding with inner conductor strip for supreme conductivity.',
     description:
       'Our Copper Bonded Strip-in-Pipe Electrode combines the structural rigidity of heavy-wall steel pipe with a molecularly bonded outer copper layer and a copper-bonded internal primary conductor strip. Delivers maximum fault current dissipation, zero risk of peel-off, and supreme corrosion resistance in all soil types. Designed to last 25+ years maintenance-free.',
-    image: productCopperRoad,
+    image: productCopperPipe,
     keySpec: '250+ Micron Copper Layer | 99.9% Pure Copper | 25+ Years Life',
     features: [
       '99.9% pure electrolytic copper molecularly bonded to outer pipe and inner strip',
@@ -365,7 +368,7 @@ export const products: Product[] = [
     tagline: 'Solid copper bonded central rod inside pipe for high fault current dissipation (up to 31.10 kArms).',
     description:
       'The Copper Bonded Rod-in-Pipe Chemical Electrode features a solid copper-bonded MS rod (25mm or 38mm solid diameter) positioned centrally inside a heavy-duty outer pipe, encapsulated by high-conductivity conductive compound. Designed specifically for deep installations and extra high fault current dissipation (up to 31.10 kArms for 1s, 71.54 kApeak) with unmatched longevity.',
-    image: productCopperRoad,
+    image: productCopperPipe,
     keySpec: 'Solid Inner Rod (25mm / 38mm) | Up to 31.10 kArms | 4860 mm² Area',
     features: [
       'Rod-in-pipe design for extreme mechanical & electrical performance',
@@ -445,7 +448,7 @@ export const products: Product[] = [
     tagline: 'Molecularly bonded 254 micron electrolytic copper over high-tensile steel core (UL467 compliant).',
     description:
       'Manufactured via a continuous electroplating process that molecularly bonds 254 microns of 99.9% pure electrolytic copper to a low-carbon high-tensile steel core (IS 2062 E250 A). Complies with UL467 and international grounding standards. Will not peel, crack, or tear during deep driving into rocky and compacted soil.',
-    image: productCopperRoadNew,
+    image: productCopperRod,
     keySpec: '254 Micron Pure Copper | 14.2mm to 38mm Dia | UL467 & IS:3043',
     features: [
       'UL467 certified for international grounding standard compliance',
@@ -577,7 +580,7 @@ export const products: Product[] = [
     tagline: 'Continuous single-length 4-meter solid rod for deep soil penetration without couplers.',
     description:
       'Specially manufactured 4-meter single-length copper-bonded solid rod designed for deep soil penetration. Reaches permanently moist low-resistivity soil strata without requiring intermediate couplers, minimizing contact resistance, eliminating mechanical joint failures, and cutting installation time in half.',
-    image: productCopperRoadNew,
+    image: productCopperRod,
     keySpec: '4.0 Meter Single Length | 250+ Micron Copper | No Couplers Needed',
     features: [
       '4.0 Meter continuous single-piece solid rod',
@@ -639,7 +642,7 @@ export const products: Product[] = [
     tagline: '100% solid electrolytic copper for maximum conductivity and critical facilities.',
     description:
       'Manufactured from 99.9% solid electrolytic tough pitch (ETP) grade copper. Offers the highest possible electrical and thermal conductivity (100% IACS), zero risk of coating wear, and superior chemical resistance in highly corrosive, acidic, or saline environments. The premier choice for defense, aerospace, and oil refineries.',
-    image: productCopperRoad,
+    image: productCopperRod,
     keySpec: '99.9% Pure Electrolytic Copper | 100% IACS Conductivity | 40+ Years Life',
     features: [
       '100% solid electrolytic tough pitch (ETP) copper (IS:191 / )',
@@ -703,7 +706,7 @@ export const products: Product[] = [
     tagline: 'Advanced active streamer emission for large-radius direct strike interception (up to 107m).',
     description:
       'The Early Streamer Emission (ESE) Lightning Arrestor generates upward-propagating leader streamers before ordinary ground spikes, creating an extensive protective ionization zone. Powered by the ambient atmospheric electrostatic field during thunder conditions, it requires no external batteries or solar power. Protects large industrial plants, high-rises, solar farms, and campuses.',
-    image: productLightningArrester,
+    image: productEseArrester,
     keySpec: 'Active ESE Ionization | Up to 107m Protection Radius | 100 kA Withstand',
     features: [
       'Early Streamer Emission (ESE) active ionization technology',
@@ -755,7 +758,7 @@ export const products: Product[] = [
     tagline: 'Multi-pointed copper-bonded and stainless steel spike air terminal system.',
     description:
       'Heavy-duty multi-spike air terminal system designed to intercept direct lightning strikes and safely conduct high-energy impulses to the earthing ground grid. Available in copper-bonded and pure stainless steel configurations with threaded mounting bases, perfectly suited for rooftops, industrial sheds, and telecom towers.',
-    image: productLightningArrester,
+    image: productMultispikeArrester,
     keySpec: 'Multi-Spike Air Terminal | Copper Bonded / Stainless Steel | 120 kph Wind Rating',
     features: [
       'Conventional multi-spike air terminal design (5-spike / 3-spike configurations)',
@@ -809,7 +812,7 @@ export const products: Product[] = [
     tagline: 'Complete mounting masts, strike counters, test clamps, and down-conductors.',
     description:
       'A comprehensive range of accessories to complete your lightning protection system — including 3-meter elevation masts, digital lightning strike counters, test link clamps, saddles, and heavy-duty grounding down-conductor clips.',
-    image: productLightningArrester,
+    image: productLaAccessories,
     keySpec: '3M Elevation Mast | Strike Counters | Test Clamps & Fasteners',
     features: [
       '3-Meter heavy-duty GI / aluminum elevation mast with guy wire kit',
@@ -959,7 +962,7 @@ export const products: Product[] = [
       { param: 'Standards Compliance', value: 'IEC 62561-7, IS 2720, IS:3043' },
     ],
     testReports: [
-      { lab: 'Bhumi Research Center LLP, Surat', date: 'February 2026', reportNo: 'MT-02-2026-EEC-PHY-1742-01', result: 'PASSED', detail: 'Resistivity 0.84 Ω-cm' },
+      { lab: 'Bhumi Research Center LLP, Surat', date: 'February 2026', reportNo: '', result: 'PASSED', detail: 'Resistivity 0.84 Ω-cm' },
     ],
     applications: ['All Chemical Earthing Systems', 'High-Resistivity Rocky & Sandy Soils', 'Substations & Switchyards', 'Data Centers & Critical Sites', 'Solar & Wind Energy Projects'],
   },
@@ -1035,22 +1038,20 @@ export const industries = [
 
 // ── Certifications ────────────────────────────────────────────
 export const certifications = [
-  {
-    id: 'iso',
-    title: 'ISO 9001:2015',
-    icon: '🏆',
-    issuedBy: 'TSN Certification Ltd (EUAS Accredited)',
-    certNo: 'TSNUK02740',
-    scope: 'Manufacturers & Traders of Earth Electrode, Earthing Chemical & Accessories',
-    color: '#C8791A',
-    category: 'Quality Management',
-  },
+  // {
+  //   id: 'iso',
+  //   title: 'ISO 9001:2015',
+  //   icon: '🏆',
+  //   issuedBy: 'TSN Certification Ltd (EUAS Accredited)',
+  //   scope: 'Manufacturers & Traders of Earth Electrode, Earthing Chemical & Accessories',
+  //   color: '#C8791A',
+  //   category: 'Quality Management',
+  // },
   {
     id: 'udyam',
     title: 'UDYAM MSME',
     icon: '🇮🇳',
     issuedBy: 'Government of India, Ministry of MSME',
-    certNo: 'UDYAM-GJ-22-0120594',
     scope: 'Manufacturing Enterprise — NIC Codes 27320 & 46529',
     color: '#16A34A',
     category: 'Government Registration',
@@ -1060,7 +1061,6 @@ export const certifications = [
     title: 'GST Registered',
     icon: '🏛️',
     issuedBy: 'Government of India — GST Compliance',
-    certNo: 'GST Compliance (State: Gujarat)',
     scope: 'Fully GST-compliant operations ensuring transparent invoicing and legal compliance',
     color: '#2563EB',
     category: 'Commercial Compliance',
@@ -1071,7 +1071,6 @@ export const certifications = [
     title: 'Bhumi Research Report',
     icon: '🧪',
     issuedBy: 'Bhumi Research Center LLP, Surat',
-    certNo: 'MT-02-2026-EEC-PHY-1742-01',
     scope: 'Earth Enhancement Compound — Electrical Resistivity 0.84 Ohm-cm',
     date: 'February 2026',
     color: '#059669',
@@ -1087,12 +1086,12 @@ export const whyChooseUs = [
     description: 'Every product is manufactured with strict quality controls and verified specifications for proven durability and safety.',
     color: '#2563EB',
   },
-  {
-    icon: 'FaAward',
-    title: 'ISO 9001:2015 Certified',
-    description: 'Our quality management system is ISO 9001:2015 certified, ensuring consistent quality across every batch manufactured.',
-    color: '#C8791A',
-  },
+  // {
+  //   icon: 'FaAward',
+  //   title: 'ISO 9001:2015 Certified',
+  //   description: 'Our quality management system is ISO 9001:2015 certified, ensuring consistent quality across every batch manufactured.',
+  //   color: '#C8791A',
+  // },
   {
     icon: 'FaBolt',
     title: 'Ultra-Low 0.84 Ω-cm',
@@ -1114,7 +1113,7 @@ export const whyChooseUs = [
   {
     icon: 'FaBuilding',
     title: 'MSME Manufacturer',
-    description: 'Government-registered MSME manufacturer (UDYAM-GJ-22-0120594) ensuring transparency, trust and direct factory supply.',
+    description: 'Government-registered MSME manufacturer ensuring transparency, trust and direct factory supply.',
     color: '#16A34A',
   },
 ];
@@ -1144,7 +1143,7 @@ export const testimonials = [
     name: 'Suresh Mehta',
     role: 'Project Engineer',
     location: 'Ahmedabad, Gujarat',
-    rating: 5,
+    rating: 4.5,
     text: 'The Earth Enhancement Compound significantly reduced our ground resistance readings. The Bhumi Research lab report was a huge plus for project documentation and client confidence.',
   },
   {
@@ -1160,7 +1159,7 @@ export const testimonials = [
     name: 'M. Krishnamurthy',
     role: 'Site Electrical Engineer',
     location: 'Hyderabad, Telangana',
-    rating: 5,
+    rating: 4,
     text: 'Ordered GI pipe electrodes and copper bonded rods for a substation project. Delivery was from Surat and the product quality matched the specifications perfectly. Highly recommended.',
   },
 ];
@@ -1181,7 +1180,7 @@ export const faqs = [
   },
   {
     q: 'Are your products tested and certified?',
-    a: 'Yes. Our products undergo rigorous quality testing and standards verification. Our facility is ISO 9001:2015 certified, and all products comply with IS:3043 specifications. Our Ground Improving Compound is tested by Bhumi Research Center LLP, Surat.',
+    a: 'Yes. Our products undergo rigorous quality testing and standards verification, and all products comply with IS:3043 specifications. Our Ground Improving Compound is tested by Bhumi Research Center LLP, Surat.',
   },
   {
     q: 'What sizes of electrodes are available?',
@@ -1189,7 +1188,7 @@ export const faqs = [
   },
   {
     q: 'Which standards do your products comply with?',
-    a: 'Our products strictly comply with IS:3043 (Indian Standard Code of Practice for Earthing). Our manufacturing and quality management system is certified to ISO 9001:2015.',
+    a: 'Our products strictly comply with IS:3043 (Indian Standard Code of Practice for Earthing).',
   },
   {
     q: 'Do you supply across India?',

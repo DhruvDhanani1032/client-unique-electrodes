@@ -50,6 +50,11 @@
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 8px;
+  transition: color 0.25s ease;
+}
+
+.why-card:hover .why-card-title {
+  color: var(--color-accent) !important;
 }
 
 .why-card-desc {

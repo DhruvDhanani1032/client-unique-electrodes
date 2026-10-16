@@ -26,7 +26,7 @@ export default function ProductsShowcase() {
         <SectionHeader
           tag="Our Products"
           title="Complete Earthing Solutions"
-          subtitle="ISO 9001:2015 certified. IS:3043 compliant."
+          // subtitle="ISO 9001:2015 certified. IS:3043 compliant."
         />
 
         <div className="products-grid">
@@ -47,9 +47,9 @@ export default function ProductsShowcase() {
                   <p className="product-card-desc">{product.tagline}</p>
                 </div>
                 <div className="product-card-footer">
-                  <Link to={`/products/${product.id}`} className="product-card-link">
+                  <span className="product-card-link">
                     View Details <FaArrowRight size={12} />
-                  </Link>
+                  </span>
                 </div>
               </Link>
             </motion.div>

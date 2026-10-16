@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <SEO
         title="Unique Electrodes | Copper Bonded Earthing Electrode Manufacturer Surat"
-        description="India's trusted manufacturer of Copper Bonded Earthing Electrodes, GI Earthing Rods, Earth Enhancement Compound and Lightning Arresters. ISO 9001:2015 certified in Surat, Gujarat."
+        description="India's trusted manufacturer of Copper Bonded Earthing Electrodes, GI Earthing Rods, Earth Enhancement Compound and Lightning Arresters in Surat, Gujarat."
         keywords="copper bonded earthing electrode, earthing electrode manufacturer Surat, GI earthing rod, chemical earthing electrode Gujarat, lightning arrester manufacturer India"
       />
       <HeroSection />

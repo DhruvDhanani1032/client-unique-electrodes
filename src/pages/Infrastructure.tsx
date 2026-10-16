@@ -7,7 +7,7 @@ import './Infrastructure.css';
 
 const capabilities = [
   { title: 'Manufacturing', items: ['CNC precision machining', 'Copper electroplating tanks', 'MS rod cutting & processing', 'Thread & coupler production', 'GI pipe fabrication'] },
-  { title: 'Quality Control', items: ['Dimensional inspection tools', 'Copper coating thickness gauge', 'Visual inspection station', 'Batch-wise quality records', 'ISO 9001:2015 procedures'] },
+  { title: 'Quality Control', items: ['Dimensional inspection tools', 'Copper coating thickness gauge', 'Visual inspection station', 'Batch-wise quality records', 'Documented quality procedures'] },
   { title: 'Packaging & Dispatch', items: ['Branded product packaging', 'Certificate-included delivery', 'PAN India shipping capability', 'Bulk order management', 'Direct factory supply'] },
 ];
 
@@ -47,7 +47,7 @@ export default function Infrastructure() {
               </div>
               <div className="infra-banner-stats">
                 <div><span>MSME</span><label>Government Registered</label></div>
-                <div><span>ISO</span><label>9001:2015 Certified</label></div>
+                {/* <div><span>ISO</span><label>9001:2015 Certified</label></div> */}
                 <div><span>2021</span><label>Established</label></div>
               </div>
             </div>

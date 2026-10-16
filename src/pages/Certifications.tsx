@@ -12,9 +12,9 @@ export default function Certifications() {
   return (
     <>
       <SEO
-        title="Certifications & Test Reports | ISO 9001:2015"
-        description="Verify our credentials: ISO 9001:2015 quality certification and independent test reports for Unique Electrodes chemical earthing solutions."
-        keywords="ISO 9001:2015 certificate, earthing test reports, Bhumi research test report, certified earthing electrodes Surat"
+        title="Certifications & Test Reports"
+        description="Verify our credentials: official registrations and independent test reports for Unique Electrodes chemical earthing solutions."
+        keywords="earthing test reports, Bhumi research test report, certified earthing electrodes Surat"
       />
       <section className="page-hero">
         <div className="container">
@@ -34,7 +34,7 @@ export default function Certifications() {
           {/* Intro Stats */}
           <div className="certs-stats-strip">
             {[
-              { num: '1', label: 'ISO Certification', detail: 'ISO 9001:2015' },
+              { num: '1', label: 'MSME Registration', detail: 'Govt. of India' },
               { num: '1', label: 'Lab Research Report', detail: 'Bhumi Research, Feb 2026' },
             ].map((s, i) => (
               <div key={i} className="certs-stat">
@@ -68,10 +68,6 @@ export default function Certifications() {
                   <div className="cert-card-field">
                     <label>Issued By</label>
                     <span>{cert.issuedBy}</span>
-                  </div>
-                  <div className="cert-card-field">
-                    <label>Certificate / Report No.</label>
-                    <span className="cert-card-number">{cert.certNo}</span>
                   </div>
                   <div className="cert-card-field">
                     <label>Scope / Finding</label>

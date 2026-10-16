@@ -120,7 +120,7 @@ export default function Contact() {
                 <div className="contact-info-card">
                   <div className="contact-info-icon"><FaMapMarkerAlt /></div>
                   <div>
-                    <h4>Factory Address</h4>
+                    <h4>Office Address</h4>
                     <p>{company.address.full}</p>
                   </div>
                 </div>

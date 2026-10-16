@@ -73,6 +73,16 @@
   gap: 10px;
   font-size: 15px;
   color: var(--color-text-mid);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.about-highlight-item:hover {
+  color: var(--color-accent) !important;
+  background: rgba(200, 121, 26, 0.05);
+  transform: translateX(4px);
 }
 
 .about-check {
@@ -80,6 +90,12 @@
   font-size: 18px;
   flex-shrink: 0;
   margin-top: 1px;
+  transition: all 0.25s ease;
+}
+
+.about-highlight-item:hover .about-check {
+  color: var(--color-accent);
+  transform: scale(1.15);
 }
 
 /* Laptop / Small Desktop (992px to 1200px) - Shrink space padding */

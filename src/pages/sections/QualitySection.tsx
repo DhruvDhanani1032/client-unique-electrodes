@@ -5,8 +5,8 @@ import qualityImg from '../../assets/quality_lab.webp';
 import './QualitySection.css';
 
 const certBadges = [
-  { label: 'ISO 9001:2015', sub: 'Quality Certified', color: '#C8791A' },
-  { label: 'MSME Reg.', sub: 'UDYAM-GJ-22', color: '#16A34A' },
+  // { label: 'ISO 9001:2015', sub: 'Quality Certified', color: '#C8791A' },
+  { label: 'MSME Reg.', sub: 'Govt. of India', color: '#16A34A' },
 ];
 
 export default function QualitySection() {
@@ -31,8 +31,8 @@ export default function QualitySection() {
               before reaching your project site.
             </p>
             <p className="quality-desc">
-              Our quality management system is <strong>ISO 9001:2015 certified</strong> (Cert No. TSNUK02740),
-              and all products adhere strictly to <strong>IS:3043</strong> and <strong>IEC international standards</strong>.
+              All products adhere strictly to <strong>IS:3043</strong> and <strong>IEC international standards</strong>,
+              ensuring consistent and reliable protection.
             </p>
 
             <div className="quality-cert-badges">

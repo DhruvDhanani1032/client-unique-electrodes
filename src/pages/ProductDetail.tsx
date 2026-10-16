@@ -5,14 +5,12 @@ import {
   FaCheckCircle,
   FaBolt,
   FaWhatsapp,
-  FaDownload,
-  FaPhoneAlt,
-  FaEnvelope,
   FaTools,
   FaListUl,
   FaLayerGroup,
   FaCheck,
   FaArrowRight,
+  FaFileAlt,
 } from 'react-icons/fa';
 import { LuShield, LuAward, LuClock } from 'react-icons/lu';
 import { allProducts, getRelatedFamilyVariants } from '../data/productsData';
@@ -91,6 +89,20 @@ export default function ProductDetail() {
   }, [targetId]);
 
   const [activeTab, setActiveTab] = useState<'specifications' | 'features' | 'applications' | 'installation'>('specifications');
+
+  const handleScrollToSpecifications = () => {
+    setActiveTab('specifications');
+    const target = document.getElementById('technical-specifications');
+    if (target) {
+      const navOffset = 90;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   // Related size variants in same family
   const familyVariants = useMemo(() => {
@@ -214,24 +226,6 @@ export default function ProductDetail() {
                   <span>Tested Quality • IS 3043 Compliant</span>
                 </div>
               </div>
-
-              {/* Quick Contact Box on Desktop */}
-              <div className="pd-support-box">
-                <div className="pd-support-item">
-                  <FaPhoneAlt className="pd-support-icon" />
-                  <div>
-                    <span className="pd-support-sub">Direct Sales & Orders</span>
-                    <a href="tel:+919512231350" className="pd-support-val">+91 9512231350</a>
-                  </div>
-                </div>
-                <div className="pd-support-item">
-                  <FaEnvelope className="pd-support-icon" />
-                  <div>
-                    <span className="pd-support-sub">Technical Enquiries</span>
-                    <a href="mailto:uniqueelectrodes@gmail.com" className="pd-support-val">uniqueelectrodes@gmail.com</a>
-                  </div>
-                </div>
-              </div>
             </motion.div>
 
             {/* Right: Product Info & Actions */}
@@ -265,7 +259,7 @@ export default function ProductDetail() {
                 </div>
                 <div className="pd-stat-card">
                   <LuClock className="pd-stat-icon" />
-                  <p className="pd-stat-text">5 Yr Warranty</p>
+                  <p className="pd-stat-text">10 Yr Warranty</p>
                 </div>
               </div>
 
@@ -332,14 +326,15 @@ export default function ProductDetail() {
                   <span>Request Instant Quote</span>
                 </a>
 
-                <a
-                  href="/src/data/unique-enterprise.pdf"
-                  download="unique-enterprise-brochure.pdf"
+                <button
+                  type="button"
+                  onClick={handleScrollToSpecifications}
                   className="btn btn-outline-primary btn-lg pd-brochure-btn"
+                  title="View Technical Specifications"
                 >
-                  <FaDownload size={15} />
-                  <span>Download Datasheet</span>
-                </a>
+                  <FaFileAlt size={15} />
+                  <span>View Datasheet</span>
+                </button>
               </div>
             </motion.div>
           </div>
@@ -347,7 +342,7 @@ export default function ProductDetail() {
       </section>
 
       {/* Tabs Section: Specifications, Features, Applications, Installation */}
-      <section className="section pd-tabs-section">
+      <section id="technical-specifications" className="section pd-tabs-section">
         <div className="container">
           {/* Tab Navigation Buttons */}
           <div className="pd-tab-nav">

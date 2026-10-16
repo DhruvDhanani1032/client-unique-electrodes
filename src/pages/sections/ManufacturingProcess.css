@@ -74,6 +74,11 @@
   margin-bottom: 8px;
   font-family: var(--font-heading);
   letter-spacing: 0.5px;
+  transition: color 0.25s ease;
+}
+
+.process-step:hover .process-step-title {
+  color: var(--color-accent) !important;
 }
 
 .process-step-desc {

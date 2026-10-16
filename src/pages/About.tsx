@@ -66,9 +66,8 @@ export default function About() {
                 marketing claims.
               </p>
               <p>
-                Operating from our facility at <strong>Plot No. B-116, Shed No. 1, Road No. 8,
-                Udhyog Nagar, Udhana, Surat, Gujarat</strong>, we are a government-registered MSME
-                manufacturer (UDYAM-GJ-22-0120594) and ISO 9001:2015 certified quality system.
+                Operating from our manufacturing facility in <strong>Surat, Gujarat</strong>, we are a government-registered MSME
+                manufacturer.
               </p>
               <p>
                 Our products — from Copper Bonded Solid Rods to Earth Enhancement Compound — adhere to
@@ -82,8 +81,8 @@ export default function About() {
                 <div><strong>Established:</strong> {company.established}</div>
                 <div><strong>Projects:</strong> 1,000+ Delivered</div>
                 <div><strong>Product Lifespan:</strong> 20+ Years</div>
-                <div><strong>MSME Reg:</strong> {company.msme}</div>
-                <div><strong>ISO Cert:</strong> {company.isoNo}</div>
+                <div><strong>MSME:</strong> {company.msme}</div>
+                {/* <div><strong>ISO:</strong> {company.isoNo}</div> */}
               </div>
             </motion.div>
           </div>
@@ -134,29 +133,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Registrations */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-tag">Official Registrations</span>
-            <h2 className="section-title">Government & Certification Details</h2>
-          </div>
-          <div className="about-reg-grid">
-            {[
-              { label: 'UDYAM Registration', value: company.msme, desc: 'MSME — Micro Manufacturing Enterprise' },
-              { label: 'ISO Certificate', value: company.isoNo, desc: 'ISO 9001:2015 — Quality Management' },
-              { label: 'NIC Code (Mfg)', value: '27320', desc: 'Manufacture of wiring accessories' },
-              { label: 'NIC Code (Trade)', value: '46529', desc: 'Wholesale of electrical goods' },
-            ].map((r, i) => (
-              <div key={i} className="about-reg-card">
-                <div className="about-reg-label">{r.label}</div>
-                <div className="about-reg-value">{r.value}</div>
-                <div className="about-reg-desc">{r.desc}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

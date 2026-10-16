@@ -3,7 +3,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { FaStar, FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaStar, FaStarHalfAlt, FaRegStar, FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { testimonials } from '../../data/content';
 import SectionHeader from '../../components/ui/SectionHeader';
 import './Testimonials.css';
@@ -43,10 +43,16 @@ export default function Testimonials() {
               <SwiperSlide key={t.id}>
                 <div className="testimonial-card">
                   <FaQuoteLeft className="testimonial-quote-icon" />
-                  <div className="testimonial-stars">
-                    {Array.from({ length: t.rating }).map((_, i) => (
-                      <FaStar key={i} />
-                    ))}
+                  <div className="testimonial-stars" aria-label={`${t.rating} out of 5 stars`}>
+                    {[1, 2, 3, 4, 5].map((star) => {
+                      if (t.rating >= star) {
+                        return <FaStar key={star} />;
+                      } else if (t.rating >= star - 0.5) {
+                        return <FaStarHalfAlt key={star} />;
+                      } else {
+                        return <FaRegStar key={star} className="star-empty" />;
+                      }
+                    })}
                   </div>
                   <p className="testimonial-text">"{t.text}"</p>
                   <div className="testimonial-author">
@@ -58,7 +64,7 @@ export default function Testimonials() {
                       <div className="testimonial-role">{t.role}</div>
                       <div className="testimonial-location">📍 {t.location}</div>
                     </div>
-                  </div>
+                  </div> 
                 </div>
               </SwiperSlide>
             ))}

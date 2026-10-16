@@ -62,7 +62,7 @@ export default function Navbar() {
     <>
       {/* Announcement Bar */}
       <div className="navbar-announcement">
-        <span>📍 Surat, Gujarat — ISO 9001:2015 Certified</span>
+        <span>📍 Surat, Gujarat</span>
         <span className="sep">|</span>
         <a href="tel:+919512231350"><FaPhoneAlt size={10} /> +91 9512231350</a>
       </div>
@@ -77,11 +77,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="navbar-logo">
             <div className="navbar-logo-icon">
-              <FaBolt size={18} />
+              <FaBolt size={36} />
             </div>
             <div className="navbar-logo-text">
               <span className="navbar-logo-brand">UNIQUE ELECTRODES</span>
-              <span className="navbar-logo-sub">By Unique Enterprise</span>
+              <span className="navbar-logo-sub">by Unique Enterprise</span>
             </div>
           </Link>
 
@@ -222,7 +222,7 @@ export default function Navbar() {
                           </div>
 
                           <div className="mega-menu-footer">
-                            <span>IS:3043 & ISO 9001 certified earthing solutions for industrial, telecom & solar sites.</span>
+                            <span>IS:3043 compliant earthing solutions for industrial, telecom & solar sites.</span>
                             <Link to="/products" className="mega-all-btn" onClick={handleLinkClick}>
                               View All Products →
                             </Link>

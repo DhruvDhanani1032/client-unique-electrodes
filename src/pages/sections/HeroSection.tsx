@@ -6,7 +6,6 @@ import {
   FaFileInvoiceDollar,
   FaBolt,
   FaAward,
-  FaCheckCircle,
 } from 'react-icons/fa';
 import heroBg from '../../assets/hero_bg.webp';
 import './HeroSection.css';
@@ -15,7 +14,7 @@ const trustBadges = [
   { icon: <FaFileInvoiceDollar />, label: 'GST Registered' },
   { icon: <FaBolt />, label: 'IS 3043 Compliant' },
   { icon: <FaAward />, label: 'MSME Certified' },
-  { icon: <FaCheckCircle />, label: 'ISO 9001:2015' },
+  // { icon: <FaCheckCircle />, label: 'ISO 9001:2015' },
 ];
 
 export default function HeroSection() {
@@ -47,13 +46,13 @@ export default function HeroSection() {
           }}
         >
           {/* Tag */}
-          <motion.div
+          {/* <motion.div
             className="hero-tag"
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
           >
             <FaBolt size={12} />
             <span>ISO 9001:2015 Certified</span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Headline */}
           <motion.h1
@@ -84,7 +83,7 @@ export default function HeroSection() {
               Explore Products <FaArrowRight size={14} />
             </Link>
             <a
-              href="/src/data/unique-enterprise.pdf"
+              href="/unique-enterprise.pdf"
               download
               className="btn btn-outline-white btn-lg"
               style={{background: "#C8791A", color:"white"}}

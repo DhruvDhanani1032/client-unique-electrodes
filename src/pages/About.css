@@ -86,22 +86,7 @@
 .about-stat-item:last-child { border-right: none; }
 .about-stat-counter .counter-value { font-size: 52px; }
 
-/* Registrations */
-.about-reg-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-.about-reg-card {
-  background: var(--color-bg-light);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: 24px 20px;
-  border-top: 3px solid var(--color-accent);
-}
-.about-reg-label { font-size: 11px; font-weight: 600; color: var(--color-accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
-.about-reg-value { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--color-primary); margin-bottom: 6px; }
-.about-reg-desc { font-size: 13px; color: var(--color-text-light); }
+
 
 /* Laptop / Small Desktop (992px to 1200px) */
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -118,9 +103,7 @@
   .about-mvv-card li {
     text-align: justify;
   }
-  .about-reg-grid {
-    gap: 16px;
-  }
+
 }
 
 /* Tablet Layout (Max-width: 992px) */
@@ -139,10 +122,7 @@
   .about-story-text p {
     text-align: justify;
   }
-  .about-reg-grid { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 16px;
-  }
+
   .about-stats-grid {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -173,9 +153,7 @@
   .about-mvv-card h3 {
     font-size: 20px;
   }
-  .about-reg-grid { 
-    grid-template-columns: 1fr; 
-  }
+
   .about-stat-counter .counter-value { 
     font-size: 40px; 
   }
@@ -256,16 +234,5 @@
     font-size: 34px !important;
   }
 
-  .about-reg-card {
-    padding: 16px 14px !important;
-    border-radius: var(--radius-md) !important;
-  }
 
-  .about-reg-value {
-    font-size: 16px !important;
-  }
-
-  .about-reg-desc {
-    font-size: 12px !important;
-  }
 }

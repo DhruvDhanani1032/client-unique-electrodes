@@ -26,7 +26,7 @@
       "conductivity": "Excellent (with TBGIM Fill)",
       "expectedLife": "20+ years",
       "standards": "IS 3043, BS EN 62305, BS 7430, UL467",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Maintenance-free operation",
@@ -75,7 +75,7 @@
       "conductivity": "Excellent (with TBGIM Fill)",
       "expectedLife": "20+ years",
       "standards": "IS 3043, BS EN 62305, BS 7430, UL467",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Maintenance-free operation",
@@ -123,7 +123,7 @@
       "conductivity": "Excellent (with TBGIM Fill)",
       "expectedLife": "20+ years",
       "standards": "IS 3043, BS EN 62305, BS 7430, UL467",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Maintenance-free operation",
@@ -170,7 +170,7 @@
       "conductivity": "Excellent (with TBGIM Fill)",
       "expectedLife": "20+ years",
       "standards": "IS 3043, BS EN 62305, BS 7430, UL467",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Maintenance-free operation",
@@ -606,7 +606,7 @@
       "conductivity": "Excellent (with TBGIM Fill)",
       "expectedLife": "20-25 years",
       "standards": "IS 3043, BS EN 62305, BS 7430",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Rod-in-pipe design for enhanced performance",
@@ -654,7 +654,7 @@
       "conductivity": "Excellent (with TBGIM Fill)",
       "expectedLife": "20-25 years",
       "standards": "IS 3043, BS EN 62305, BS 7430",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Rod-in-pipe design for enhanced performance",
@@ -701,7 +701,7 @@
       "conductivity": "Excellent (with TBGIM Fill)",
       "expectedLife": "20-25 years",
       "standards": "IS 3043, BS EN 62305, BS 7430",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Rod-in-pipe design for enhanced performance",
@@ -746,7 +746,7 @@
       "conductivity": "Excellent (with TBGIM Fill)",
       "expectedLife": "20-25 years",
       "standards": "IS 3043, BS EN 62305, BS 7430",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Rod-in-pipe design for enhanced performance",
@@ -926,7 +926,7 @@
       "conductivity": "Superior (99.9% copper)",
       "expectedLife": "25+ years",
       "standards": "IS 3043, BS EN 62305, BS 7430, UL467",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Rod-in-pipe design for enhanced performance",
@@ -975,7 +975,7 @@
       "conductivity": "Superior (99.9% copper)",
       "expectedLife": "25+ years",
       "standards": "IS 3043, BS EN 62305, BS 7430, UL467",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Rod-in-pipe design for enhanced performance",
@@ -1024,7 +1024,7 @@
       "conductivity": "Superior (99.9% copper)",
       "expectedLife": "25+ years",
       "standards": "IS 3043, BS EN 62305, BS 7430, UL467",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Rod-in-pipe design for enhanced performance",
@@ -1072,7 +1072,7 @@
       "conductivity": "Superior (99.9% copper)",
       "expectedLife": "25+ years",
       "standards": "IS 3043, BS EN 62305, BS 7430, UL467",
-      "warranty": "5 years (when installed per consultant recommendation)"
+      "warranty": "10 years (when installed per consultant recommendation)"
     },
     "features": [
       "Rod-in-pipe design for enhanced performance",
@@ -1206,7 +1206,7 @@
       "conductivity": "Superior (99.9% copper)",
       "expectedLife": "25+ years",
       "standards": "IS 2309, BS7430, UL467",
-      "warranty": "5 years"
+      "warranty": "10 years"
     },
     "features": [
       "High cross-sectional area (490 mm²)",
@@ -1248,7 +1248,7 @@
       "conductivity": "Superior (99.9% copper)",
       "expectedLife": "25+ years",
       "standards": "IS 2309, BS7430, UL467",
-      "warranty": "5 years"
+      "warranty": "10 years"
     },
     "features": [
       "Very high cross-sectional area (803 mm²)",
@@ -1290,7 +1290,7 @@
       "conductivity": "Superior (99.9% copper)",
       "expectedLife": "25+ years",
       "standards": "IS 2309, BS7430, UL467",
-      "warranty": "5 years"
+      "warranty": "10 years"
     },
     "features": [
       "Maximum cross-sectional area (1130 mm²)",
@@ -1332,7 +1332,7 @@
       "triggerTime": "Variable ΔT advantage (protection level dependent)",
       "design": "Compact and lightweight",
       "expectedLife": "20+ years",
-      "warranty": "5 years"
+      "warranty": "10 years"
     },
     "features": [
       "Early Streamer Emission technology",
@@ -1417,7 +1417,7 @@
       "corrosionResistance": "Excellent (stainless steel)",
       "expectedLife": "20+ years",
       "standards": "IS/IEC 62305",
-      "warranty": "5 years"
+      "warranty": "10 years"
     },
     "features": [
       "Industrial grade stainless steel",
@@ -1554,7 +1554,7 @@
       "airTerminal": "Lightning rod spike included",
       "expectedLife": "20+ years",
       "standards": "IS/IEC 62305",
-      "warranty": "5 years"
+      "warranty": "10 years"
     },
     "features": [
       "Heavy-duty construction",

@@ -2,7 +2,7 @@
    UNIQUE ELECTRODES — Global Design System
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@400;500;700;800;900&display=swap');
 
 /* ── CSS Variables ────────────────────────────────────────── */
 :root {
@@ -21,7 +21,7 @@
   --color-border:        #E2E8F0;
   --color-border-dark:   rgba(255,255,255,0.08);
 
-  --font-heading: 'Barlow Condensed', sans-serif;
+  --font-heading: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-body:    'Inter', sans-serif;
 
   --radius-sm:  6px;
@@ -72,14 +72,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .display-title {
-  font-size: clamp(48px, 6vw, 80px);
+  font-size: clamp(34px, 4vw, 54px);
   font-weight: 800;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
 .section-title {
-  font-size: clamp(36px, 4vw, 52px);
+  font-size: clamp(26px, 3vw, 38px);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -87,9 +87,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-tag {
   font-family: var(--font-body);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 3px;
+  font-size: clamp(15px, 1.3vw, 17px);
+  font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--color-accent);
 }
@@ -131,6 +131,8 @@ h1, h2, h3, h4, h5, h6 {
 .section-darker .section-title { color: var(--color-white); }
 .section-dark .section-subtitle,
 .section-darker .section-subtitle { color: rgba(255,255,255,0.6); }
+.section-dark .section-tag,
+.section-darker .section-tag { color: #F59E0B; }
 
 /* ── Grid ─────────────────────────────────────────────────── */
 .grid-2  { display: grid; grid-template-columns: 1fr 1fr;       gap: 32px; }
@@ -167,14 +169,19 @@ a.btn-primary:hover {
   transform: translateY(-2px);
 }
 
-.btn-outline-white {
-  background: transparent;
-  color: var(--color-white);
-  border: 2px solid rgba(255,255,255,0.6);
+.btn-outline-white,
+a.btn-outline-white,
+button.btn-outline-white {
+  background: transparent !important;
+  color: #FFFFFF !important;
+  border: 2px solid rgba(255, 255, 255, 0.75) !important;
 }
-.btn-outline-white:hover {
-  background: rgba(255,255,255,0.12);
-  border-color: var(--color-white);
+.btn-outline-white:hover,
+a.btn-outline-white:hover,
+button.btn-outline-white:hover {
+  background: #FFFFFF !important;
+  color: var(--color-primary) !important;
+  border-color: #FFFFFF !important;
   transform: translateY(-2px);
 }
 
@@ -286,20 +293,21 @@ a.btn-primary:hover {
   color: var(--color-accent);
   padding: 6px 16px;
   border-radius: 99px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 .page-hero-title {
-  font-size: clamp(40px, 5vw, 68px);
-  font-weight: 800;
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 700;
   color: var(--color-white);
   text-transform: uppercase;
-  line-height: 1.05;
-  margin-bottom: 16px;
+  line-height: 1.25;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
 }
 
 .page-hero-subtitle {

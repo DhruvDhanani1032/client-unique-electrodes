@@ -38,6 +38,10 @@
   display: flex;
 }
 
+.industry-tile:hover .industry-tile-label {
+  color: var(--color-accent) !important;
+}
+
 .industry-tile-label {
   font-size: 12px;
   font-weight: 600;
@@ -45,6 +49,7 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   line-height: 1.3;
+  transition: color 0.25s ease;
 }
 
 /* Laptop / Small Desktop (992px to 1200px) - Tighten column gaps */

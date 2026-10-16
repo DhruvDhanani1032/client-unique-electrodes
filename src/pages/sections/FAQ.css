@@ -19,6 +19,7 @@
   background: var(--color-white);
 }
 .faq-item:hover { border-color: var(--color-accent); }
+.faq-item:hover .faq-question { color: var(--color-accent) !important; }
 .faq-item--open {
   border-color: var(--color-accent);
   box-shadow: 0 4px 16px rgba(200,121,26,0.12);
@@ -34,10 +35,10 @@
   font-weight: 600;
   color: var(--color-primary);
   user-select: none;
-  transition: color 0.3s;
+  transition: color 0.25s ease;
   min-height: 60px;
 }
-.faq-item--open .faq-question { color: var(--color-accent); }
+.faq-item--open .faq-question { color: var(--color-accent) !important; }
 
 .faq-icon {
   color: var(--color-accent);

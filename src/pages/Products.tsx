@@ -61,7 +61,7 @@ export default function Products() {
           <div className="page-hero-tag"><FaBolt size={12} /> Product Range</div>
           <h1 className="page-hero-title">Our Products</h1>
           <p className="page-hero-subtitle">
-             ISO 9001:2015 certified. IS:3043 compliant earthing solutions.
+            IS:3043 compliant earthing solutions for industrial and domestic projects.
           </p>
         </div>
       </section>

@@ -7,8 +7,8 @@ import SectionHeader from '../../components/ui/SectionHeader';
 import './AboutSnippet.css';
 
 const highlights = [
-  'ISO 9001:2015 Quality Management Certified',
-  'MSME Registered Manufacturer (UDYAM-GJ-22-0120594)',
+  // 'ISO 9001:2015 Quality Management Certified',
+  'Government-Registered MSME Manufacturer',
   'Complete earthing system solutions',
 ];
 

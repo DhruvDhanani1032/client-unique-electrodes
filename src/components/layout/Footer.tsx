@@ -60,7 +60,7 @@ export default function Footer() {
               </Link>
               <p className="footer-tagline">{company.tagline}</p>
               <div className="footer-badges">
-                <span className="footer-badge">ISO 9001:2015</span>
+                {/* <span className="footer-badge">ISO 9001:2015</span> */}
                 <span className="footer-badge">IS:3043 Compliant</span>
                 <span className="footer-badge">MSME Certified</span>
               </div>
@@ -126,7 +126,7 @@ export default function Footer() {
         <div className="container">
           <div className="footer-bottom-inner">
             <p>© {new Date().getFullYear()} Unique Enterprise. All Rights Reserved.</p>
-            <p>UDYAM Reg: <strong>{company.msme}</strong></p>
+            <p><strong>MSME Registered Enterprise</strong></p>
           </div>
         </div>
       </div>

@@ -46,6 +46,11 @@
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 4px;
+  transition: color 0.25s ease;
+}
+
+.home-certs-stat:hover .home-certs-stat-label {
+  color: var(--color-accent) !important;
 }
 
 .home-certs-stat-detail {
@@ -54,7 +59,73 @@
   color: var(--color-text-light);
 }
 
-/* Cards Grid */
+/* Certificate Badges Grid (Image cards matching iTorrent reference) */
+.home-certs-img-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.home-cert-img-card {
+  background: var(--color-white);
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.home-cert-img-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+}
+
+.home-cert-img-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-cert-badge-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.home-cert-img-card:hover .home-cert-badge-img {
+  transform: scale(1.03);
+}
+
+@media (max-width: 992px) {
+  .home-certs-img-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-certs-img-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .home-cert-img-card {
+    padding: 10px 8px;
+    border-radius: 10px;
+  }
+}
+
+/* Cards Grid (Preserved for commented out cards) */
 .home-certs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
