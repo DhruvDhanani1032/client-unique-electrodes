@@ -6,6 +6,16 @@ import SEO from '../components/common/SEO';
 import './Contact.css';
 import { IoChatbox } from 'react-icons/io5';
 
+const productMap: Record<string, string> = {
+  'copper-bonded-solid-rod': 'Copper Bonded Solid Rod',
+  'copper-bonded-pipe-type': 'Copper Bonded Pipe Type',
+  'gi-earthing-electrodes': 'GI Earthing Electrodes',
+  'earth-enhancement-compound': 'Earth Enhancement Compound',
+  'lightning-arresters': 'Lightning Arresters',
+  'solar-earthing-kit': 'Solar Earthing Kit',
+  'other': 'Other / General Inquiry',
+};
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '', email: '', phone: '', product: '', message: '',
@@ -18,8 +28,30 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const selectedProduct = productMap[formData.product] || formData.product || 'General Inquiry';
+
+    const lines = [
+      '⚡ *New Website Inquiry — Unique Electrodes*',
+      '',
+      `👤 *Full Name:* ${formData.name.trim()}`,
+      `📧 *Email:* ${formData.email.trim() || 'N/A'}`,
+      `📞 *Phone:* ${formData.phone.trim() || 'N/A'}`,
+      `📦 *Product of Interest:* ${selectedProduct}`,
+      '',
+      `💬 *Requirements / Message:*`,
+      formData.message.trim() || 'No specific requirements entered.',
+    ];
+
+    const messageText = encodeURIComponent(lines.join('\n'));
+    const whatsappUrl = `https://wa.me/919512231350?text=${messageText}`;
+
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 5000);
+
+    // Open WhatsApp in new tab/app with pre-filled inquiry
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+
     setFormData({ name: '', email: '', phone: '', product: '', message: '' });
   };
 
@@ -53,7 +85,7 @@ export default function Contact() {
 
               {submitted && (
                 <div className="contact-success">
-                  ✅ Thank you! Your message has been sent. We'll contact you shortly.
+                  ✅ Thank you! Redirecting to WhatsApp with your inquiry details...
                 </div>
               )}
 
