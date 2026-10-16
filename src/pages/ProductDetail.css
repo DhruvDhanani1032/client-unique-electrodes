@@ -430,7 +430,7 @@
 }
 
 .pd-tab-btn:hover {
-  color: var(--color-primary);
+  color: var(--color-accent) !important;
 }
 
 .pd-tab-btn.active {
@@ -462,6 +462,13 @@
   color: var(--color-primary);
   margin-bottom: 4px;
   letter-spacing: 0.5px;
+  transition: color 0.25s ease;
+  cursor: default;
+}
+
+.pd-spec-header:hover h3,
+.pd-spec-header h3:hover {
+  color: var(--color-accent) !important;
 }
 
 .pd-spec-header p {
@@ -496,6 +503,10 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+.pd-spec-table tbody tr {
+  transition: background 0.2s ease;
+}
+
 .pd-spec-table tr.row-even {
   background: var(--color-white);
 }
@@ -504,9 +515,18 @@
   background: var(--color-bg-light);
 }
 
+.pd-spec-table tbody tr:hover {
+  background: rgba(200, 121, 26, 0.06) !important;
+}
+
 .pd-spec-prop-td strong {
   color: var(--color-primary);
   font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.pd-spec-table tbody tr:hover .pd-spec-prop-td strong {
+  color: var(--color-accent) !important;
 }
 
 .pd-spec-val-td {
@@ -563,6 +583,11 @@
   color: var(--color-text-dark);
   font-weight: 500;
   line-height: 1.5;
+  transition: color 0.25s ease;
+}
+
+.pd-feat-item:hover .pd-feat-text {
+  color: var(--color-accent) !important;
 }
 
 /* Tab 3: Applications */
@@ -608,6 +633,11 @@
   color: var(--color-primary);
   margin-bottom: 6px;
   text-transform: uppercase;
+  transition: color 0.25s ease;
+}
+
+.pd-app-card:hover h4 {
+  color: var(--color-accent) !important;
 }
 
 .pd-app-card p {
@@ -811,6 +841,13 @@
   .pd-quote-btn,
   .pd-brochure-btn {
     width: 100%;
+    min-width: 0 !important;
+  }
+
+  .pd-spec-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .pd-spec-table th,

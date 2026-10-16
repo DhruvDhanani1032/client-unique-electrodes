@@ -207,32 +207,24 @@
 
   .about-stats-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 0;
-}
-
-.about-stat-item {
-    padding: 14px 6px !important;
-    border-right: 1px solid rgba(255,255,255,0.1) !important;
-    border-bottom: none !important;
-}
-
-.about-stat-item:last-child {
-    border-right: none !important;
-}
-
-.about-stat-counter .counter-value {
-    font-size: 28px !important;
-}
-
-.about-stat-counter .counter-label {
-    font-size: 10px !important;
-    line-height: 1.3;
-}
-
-  .about-stat-counter .counter-value {
-    font-size: 34px !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px 12px !important;
   }
 
+  .about-stat-item {
+    padding: 16px 8px !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: var(--radius-md);
+  }
 
+  .about-stat-counter .counter-value {
+    font-size: 32px !important;
+  }
+
+  .about-stat-counter .counter-label {
+    font-size: 11.5px !important;
+    line-height: 1.35;
+  }
 }
