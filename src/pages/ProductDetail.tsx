@@ -16,6 +16,16 @@ import { LuShield, LuAward, LuClock } from 'react-icons/lu';
 import { allProducts, getRelatedFamilyVariants } from '../data/productsData';
 import { products as legacyProducts } from '../data/content';
 import SEO from '../components/common/SEO';
+import productGiPipeSingle from '../assets/product_gi_pipe_single.webp';
+import productGiPipePallet from '../assets/product_gi_pipe_pallet.webp';
+import productGiPipeBatch from '../assets/product_gi_pipe_batch.webp';
+import productGiPipeVertical from '../assets/product_gi_pipe_vertical.webp';
+import productCopperPipeBatch from '../assets/product_copper_pipe_batch.webp';
+import productCopperPipe48mm from '../assets/product_copper_pipe_48mm.webp';
+import productCopperPipePure from '../assets/product_copper_pipe_pure.webp';
+import productCopperPipePackaged from '../assets/product_copper_pipe_packaged.webp';
+import productCopperRod from '../assets/product_copper_rod.webp';
+import productEseArrester from '../assets/product_ese_arrester.webp';
 import './ProductDetail.css';
 
 export default function ProductDetail() {
@@ -89,6 +99,54 @@ export default function ProductDetail() {
   }, [targetId]);
 
   const [activeTab, setActiveTab] = useState<'specifications' | 'features' | 'applications' | 'installation'>('specifications');
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  // Gallery of actual product shots
+  const gallery = useMemo(() => {
+    const cat = product.categorySlug || '';
+    const mat = (product.materialSlug || product.materialName || '').toLowerCase();
+    const name = product.name.toLowerCase();
+    const id = product.id.toLowerCase();
+
+    if (cat === 'strip-in-pipe' || cat === 'rod-in-pipe' || cat.includes('pipe') || product.categoryName?.includes('Pipe')) {
+      if (mat.includes('copper') || name.includes('copper') || id.includes('cb')) {
+        return [
+          productCopperPipeBatch,
+          productCopperPipe48mm,
+          productCopperPipePure,
+          productCopperPipePackaged,
+        ];
+      } else {
+        return [
+          productGiPipePallet,
+          productGiPipeSingle,
+          productGiPipeBatch,
+          productGiPipeVertical,
+        ];
+      }
+    }
+
+    if (cat === 'solid-rod' || cat.includes('rod') || product.categoryName?.includes('Solid Rod')) {
+      if (mat.includes('copper') || name.includes('copper') || id.includes('cu') || id.includes('cbr')) {
+        return [productCopperRod, productCopperPipePure];
+      }
+    }
+
+    if (cat === 'lightning-arrestors' || product.categoryName?.includes('Lightning') || name.includes('lightning')) {
+      if (name.includes('ese') || id.includes('ese')) {
+        return [productEseArrester];
+      }
+    }
+
+    return [product.image];
+  }, [product]);
+
+  // Reset selected image when product changes
+  useEffect(() => {
+    setSelectedImage(null);
+  }, [product.id]);
+
+  const activeImage = selectedImage || product.image;
 
   const handleScrollToSpecifications = () => {
     setActiveTab('specifications');
@@ -219,13 +277,31 @@ export default function ProductDetail() {
             >
               <div className="pd-image-box">
                 <div className="pd-image-inner">
-                  <img src={product.image} alt={product.name} />
+                  <img src={activeImage} alt={product.name} />
                 </div>
                 <div className="pd-image-badge">
                   <FaBolt size={12} />
                   <span>Tested Quality • IS 3043 Compliant</span>
                 </div>
               </div>
+
+              {/* Multi-angle Product Gallery */}
+              {gallery.length > 1 && (
+                <div className="pd-gallery-thumbnails">
+                  {gallery.map((imgSrc, idx) => (
+                    <button
+                      key={idx}
+                      type="button"
+                      className={`pd-gallery-thumb ${activeImage === imgSrc ? 'active' : ''}`}
+                      onClick={() => setSelectedImage(imgSrc)}
+                      title={`View product photo ${idx + 1}`}
+                      aria-label={`View photo ${idx + 1}`}
+                    >
+                      <img src={imgSrc} alt={`${product.name} angle ${idx + 1}`} />
+                    </button>
+                  ))}
+                </div>
+              )}
             </motion.div>
 
             {/* Right: Product Info & Actions */}

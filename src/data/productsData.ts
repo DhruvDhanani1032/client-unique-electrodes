@@ -1,5 +1,11 @@
-import productGiPipe from '../assets/product_gi_pipe.webp';
-import productCopperPipe from '../assets/product_copper_pipe.webp';
+import productGiPipeSingle from '../assets/product_gi_pipe_single.webp';
+import productGiPipePallet from '../assets/product_gi_pipe_pallet.webp';
+import productGiPipeBatch from '../assets/product_gi_pipe_batch.webp';
+import productGiPipeVertical from '../assets/product_gi_pipe_vertical.webp';
+import productCopperPipeBatch from '../assets/product_copper_pipe_batch.webp';
+import productCopperPipe48mm from '../assets/product_copper_pipe_48mm.webp';
+import productCopperPipePure from '../assets/product_copper_pipe_pure.webp';
+import productCopperPipePackaged from '../assets/product_copper_pipe_packaged.webp';
 import productGiRod from '../assets/product_gi_rod.webp';
 import productCopperRod from '../assets/product_copper_rod.webp';
 import productMultispikeArrester from '../assets/product_multispike_arrester.webp';
@@ -45,7 +51,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Hot Dip Galvanised',
     length: 3,
     diameter: 76,
-    image: productGiPipe,
+    image: productGiPipePallet,
     price: 3014,
     shortDescription: 'Premium hot dip galvanized earthing electrode with 50mm x 10mm inner strip for superior performance and 20+ years service life.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 3 meter long with inner strip from top to bottom (50mm × 10mm). Made from low carbon steel with 3.6mm wall thickness, ISI 1239 marked, hot dip galvanized with 80-100 micron coating. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -99,7 +105,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Hot Dip Galvanised',
     length: 2,
     diameter: 76,
-    image: productGiPipe,
+    image: productGiPipePallet,
     price: 1446,
     shortDescription: 'Premium hot dip galvanized earthing electrode with 50mm x 10mm inner strip for reliable grounding protection.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 2 meter long with inner strip from top to bottom (50mm × 10mm). Made from low carbon steel with 3.6mm wall thickness, ISI 1239 marked, hot dip galvanized with 80-100 micron coating. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -153,7 +159,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Hot Dip Galvanised',
     length: 3,
     diameter: 48,
-    image: productGiPipe,
+    image: productGiPipeVertical,
     
     shortDescription: 'Hot dip galvanized earthing electrode with 40mm x 6mm inner strip for medium-duty applications.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 3 meter long with inner strip from top to bottom (40mm × 6mm). Made from low carbon steel with 3.2mm wall thickness, ISI 1239 marked, hot dip galvanized with 80-100 micron coating. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -206,7 +212,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Hot Dip Galvanised',
     length: 2,
     diameter: 48,
-    image: productGiPipe,
+    image: productGiPipeVertical,
     
     shortDescription: 'Compact hot dip galvanized earthing electrode with 40mm x 6mm inner strip for general applications.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 2 meter long with inner strip from top to bottom (40mm × 6mm). Made from low carbon steel with 3.2mm wall thickness, ISI 1239 marked, hot dip galvanized with 80-100 micron coating. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -258,7 +264,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Copper Bonded',
     length: 2,
     diameter: 48,
-    image: productCopperPipe,
+    image: productCopperPipe48mm,
     price: 1104,
     shortDescription: 'High-performance copper bonded earthing electrode with 99.9% pure electrolytic copper bonding for superior conductivity.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 2 meter long with inner strip from top to bottom (40mm × 6mm). Made from low carbon steel with 3.2mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 and UL467 standards. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -313,7 +319,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Copper Bonded',
     length: 3,
     diameter: 48,
-    image: productCopperPipe,
+    image: productCopperPipe48mm,
     price: 1652,
     shortDescription: 'Premium copper bonded earthing electrode with 99.9% pure electrolytic copper for maximum conductivity and longevity.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 3 meter long with inner strip from top to bottom (40mm × 6mm). Made from low carbon steel with 3.2mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 and UL467 standards. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -368,7 +374,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Copper Bonded',
     length: 2,
     diameter: 76,
-    image: productCopperPipe,
+    image: productCopperPipeBatch,
     
     shortDescription: 'Heavy-duty copper bonded earthing electrode with 99.9% pure electrolytic copper for high-capacity applications.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 2 meter long with inner strip from top to bottom (50mm × 10mm). Made from low carbon steel with 3.6mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 and UL467 standards. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -423,7 +429,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Copper Bonded',
     length: 3,
     diameter: 76,
-    image: productCopperPipe,
+    image: productCopperPipeBatch,
     
     shortDescription: 'Premium heavy-duty copper bonded earthing electrode with maximum conductivity for critical infrastructure applications.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 3 meter long with inner strip from top to bottom (50mm × 10mm). Made from low carbon steel with 3.6mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 and UL467 standards. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -478,7 +484,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Galvanised',
     length: 3,
     diameter: 48,
-    image: productGiPipe,
+    image: productGiPipeSingle,
     price: 2003,
     shortDescription: 'Cost-effective galvanized earthing electrode with 40mm x 6mm inner strip for general-purpose applications.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 3 meter long with inner strip from top to bottom (40mm × 6mm). Made from low carbon steel with 3.2mm wall thickness, ISI 1239 marked, galvanized coating. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -531,7 +537,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Galvanised',
     length: 2,
     diameter: 76,
-    image: productGiPipe,
+    image: productGiPipeBatch,
     price: 1446,
     shortDescription: 'Reliable galvanized earthing electrode with 50mm x 10mm inner strip for medium-duty applications.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 2 meter long with inner strip from top to bottom (50mm × 10mm). Made from low carbon steel with 3.6mm wall thickness, ISI 1239 marked, galvanized coating. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -584,7 +590,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Galvanised',
     length: 2,
     diameter: 48,
-    image: productGiPipe,
+    image: productGiPipeSingle,
     
     shortDescription: 'Compact galvanized earthing electrode with 40mm x 6mm inner strip for residential and light commercial use.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 2 meter long with inner strip from top to bottom (40mm × 6mm). Made from low carbon steel with 3.2mm wall thickness, ISI 1239 marked, galvanized coating. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -637,7 +643,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Galvanised',
     length: 3,
     diameter: 76,
-    image: productGiPipe,
+    image: productGiPipeBatch,
     
     shortDescription: 'Heavy-duty galvanized earthing electrode with 50mm x 10mm inner strip for demanding applications.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 3 meter long with inner strip from top to bottom (50mm × 10mm). Made from low carbon steel with 3.6mm wall thickness, ISI 1239 marked, galvanized coating. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -690,7 +696,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Hot Dip Galvanised',
     length: 2,
     diameter: 76,
-    image: productGiPipe,
+    image: productGiPipePallet,
     price: 2074,
     shortDescription: 'Enhanced earthing system with 38mm solid rod inside 76mm pipe, hot dip galvanized for maximum protection and 20-25 years service life.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 2 meter long with inner solid rod of 38mm from top to bottom with strip on top (50mm × 10mm). Made from low carbon steel, wall thickness 3.6mm, ISI 1239 marked, hot dip galvanized 80-100 microns. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 4860 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -744,7 +750,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Hot Dip Galvanised',
     length: 3,
     diameter: 76,
-    image: productGiPipe,
+    image: productGiPipePallet,
     
     shortDescription: 'Extended length earthing system with 38mm solid rod inside 76mm pipe for superior current dissipation and extended service life.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 3 meter long with inner solid rod of 38mm from top to bottom with strip on top (50mm × 10mm). Made from low carbon steel, wall thickness 3.6mm, ISI 1239 marked, hot dip galvanized 80-100 microns. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -797,7 +803,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Hot Dip Galvanised',
     length: 2,
     diameter: 48,
-    image: productGiPipe,
+    image: productGiPipePallet,
     
     shortDescription: 'Compact earthing system with 25mm solid rod inside 48mm pipe, hot dip galvanized for reliable performance.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 2 meter long with inner solid rod of 25mm from top to bottom with strip on top (40mm × 6mm). Made from low carbon steel, wall thickness 3.2mm, ISI 1239 marked, hot dip galvanized 80-100 microns. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -848,7 +854,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Hot Dip Galvanised',
     length: 3,
     diameter: 48,
-    image: productGiPipe,
+    image: productGiPipePallet,
     
     shortDescription: 'Extended length compact earthing system with 25mm solid rod inside 48mm pipe for reliable performance.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 3 meter long with inner solid rod of 25mm from top to bottom with strip on top (40mm × 6mm). Made from low carbon steel, wall thickness 3.2mm, ISI 1239 marked, hot dip galvanized 80-100 microns. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -899,7 +905,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Galvanised',
     length: 2,
     diameter: 76,
-    image: productGiPipe,
+    image: productGiPipeBatch,
     
     shortDescription: 'Cost-effective earthing system with 38mm solid rod inside 76mm galvanized pipe for reliable performance.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 2 meter long with inner solid rod of 38mm from top to bottom with strip on top (50mm × 10mm). Made from low carbon steel, wall thickness 3.6mm, ISI 1239 marked, galvanized. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -950,7 +956,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Galvanised',
     length: 3,
     diameter: 76,
-    image: productGiPipe,
+    image: productGiPipeBatch,
     
     shortDescription: 'Extended length cost-effective earthing system with 38mm solid rod inside 76mm galvanized pipe.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 3 meter long with inner solid rod of 38mm from top to bottom with strip on top (50mm × 10mm). Made from low carbon steel, wall thickness 3.6mm, ISI 1239 marked, galvanized. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -1001,7 +1007,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Galvanised',
     length: 2,
     diameter: 48,
-    image: productGiPipe,
+    image: productGiPipeBatch,
     
     shortDescription: 'Compact cost-effective earthing system with 25mm solid rod inside 48mm galvanized pipe.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 2 meter long with inner solid rod of 25mm from top to bottom with strip on top (40mm × 6mm). Made from low carbon steel, wall thickness 3.2mm, ISI 1239 marked, galvanized. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -1052,7 +1058,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Copper Bonded',
     length: 2,
     diameter: 76,
-    image: productCopperPipe,
+    image: productCopperPipePackaged,
     
     shortDescription: 'Premium copper bonded earthing system with 38mm solid rod inside 76mm pipe for superior conductivity.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 2 meter long with inner solid rod of 38mm from top to bottom with strip on top (50mm × 10mm). Made from low carbon steel, wall thickness 3.6mm, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper (BS7430 & UL467 compliant). Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -1106,7 +1112,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Copper Bonded',
     length: 3,
     diameter: 76,
-    image: productCopperPipe,
+    image: productCopperPipePackaged,
     price: 2980,
     shortDescription: 'Extended length premium copper bonded earthing system with 38mm solid rod for maximum protection.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 3 meter long with inner solid rod of 38mm from top to bottom with strip on top (50mm × 10mm). Made from low carbon steel, wall thickness 3.6mm, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper (BS7430 & UL467 compliant). Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -1160,7 +1166,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Copper Bonded',
     length: 2,
     diameter: 48,
-    image: productCopperPipe,
+    image: productCopperPipePackaged,
     price: 1411,
     shortDescription: 'Compact premium copper bonded earthing system with 25mm solid rod for excellent conductivity.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 2 meter long with inner solid rod of 25mm from top to bottom with strip on top (40mm × 6mm). Made from low carbon steel, wall thickness 3.2mm, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper (BS7430 & UL467 compliant). Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -1213,7 +1219,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Copper Bonded',
     length: 3,
     diameter: 48,
-    image: productCopperPipe,
+    image: productCopperPipePackaged,
     price: 2020,
     shortDescription: 'Extended length compact premium copper bonded earthing system for superior protection.',
     longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 3 meter long with inner solid rod of 25mm from top to bottom with strip on top (40mm × 6mm). Made from low carbon steel, wall thickness 3.2mm, ISI 1239 marked, copper bonded. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
@@ -1990,7 +1996,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Pure Copper Solid Rod',
     length: 3,
     diameter: 16,
-    image: productCopperRod,
+    image: productCopperPipePure,
     shortDescription: '100% solid electrolytic copper rod (99.9% purity) providing highest electrical conductivity and lifetime corrosion immunity.',
     longDescription: 'Unique Electrodes Pure Copper Solid Earthing Rod: 16mm diameter × 3 meter length. Manufactured entirely from 99.9% pure electrolytic grade copper rod. Offers 100% IACS electrical conductivity, total immunity to electrolytic galvanic corrosion, and virtually unlimited operational lifespan (40+ years). Recommended for highly corrosive soils, chemical facilities, and critical sensitive electronic installations. Made in India.',
     specifications: {
@@ -2025,7 +2031,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Pure Copper Solid Rod',
     length: 3,
     diameter: 20,
-    image: productCopperRod,
+    image: productCopperPipePure,
     shortDescription: 'Premium 20mm solid 99.9% pure copper rod offering exceptional conductivity and durability for critical installations.',
     longDescription: 'Unique Electrodes Pure Copper Solid Earthing Rod: 20mm diameter × 3 meter length. Fabricated from solid 99.9% pure electrolytic copper. Delivers ultra-low resistance dissipation for heavy lightning strokes and severe electrical faults. Made in India.',
     specifications: {
@@ -2059,7 +2065,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Pure Copper Solid Rod',
     length: 3,
     diameter: 25,
-    image: productCopperRod,
+    image: productCopperPipePure,
     shortDescription: 'Massive 25mm solid pure copper earthing rod for highest current dissipation and lifetime reliability.',
     longDescription: 'Unique Electrodes Pure Copper Solid Earthing Rod: 25mm diameter × 3 meter length. Solid 99.9% pure electrolytic copper with 490 mm² cross-sectional area. The gold standard in electrical grounding for ultra-critical facilities. Made in India.',
     specifications: {

@@ -1,6 +1,9 @@
-import productCopperPipe from '/src/assets/product_copper_pipe.webp';
+import productCopperPipeBatch from '/src/assets/product_copper_pipe_batch.webp';
+import productCopperPipe48mm from '/src/assets/product_copper_pipe_48mm.webp';
+import productCopperPipePure from '/src/assets/product_copper_pipe_pure.webp';
 import productCopperRod from '/src/assets/product_copper_rod.webp';
-import productGiPipe from '/src/assets/product_gi_pipe.webp';
+import productGiPipeSingle from '/src/assets/product_gi_pipe_single.webp';
+import productGiPipePallet from '/src/assets/product_gi_pipe_pallet.webp';
 import productGiRod from '/src/assets/product_gi_rod.webp';
 import productMultispikeArrester from '/src/assets/product_multispike_arrester.webp';
 import productEseArrester from '/src/assets/product_ese_arrester.webp';
@@ -130,7 +133,7 @@ export const products: Product[] = [
     tagline: 'Economical and reliable earthing for residential, commercial and light industrial installations.',
     description:
       'Our Galvanised Strip-in-Pipe Earthing Electrode is manufactured using a heavy-gauge mild steel pipe with an internal continuous galvanized flat strip conductor running from top to bottom. The annular space is tightly filled with high-conductivity crystalline mineral compound to provide low ground impedance, high corrosion resistance, and rapid fault current dissipation. Delivers 20+ years of maintenance-free performance.',
-    image: productGiPipe,
+    image: productGiPipeSingle,
     keySpec: '48mm & 76mm OD | 40x6mm / 50x10mm Inner Strip | 20+ Years Life',
     features: [
       'Maintenance-free chemical earthing operation',
@@ -209,7 +212,7 @@ export const products: Product[] = [
     tagline: 'Heavy-duty 80–100+ micron zinc protection for corrosive soils and industrial switchyards.',
     description:
       'Engineered with heavy-gauge low carbon mild steel pipe hot-dip galvanized to an exceptional coating thickness of 80–100+ microns per IS:2629 and IS:4759. The dense zinc metallurgical barrier prevents rust even in acidic, saline, and coastal soils. An internal full-length conductor strip surrounded by conductive compound provides an uninterrupted fault current path for 20+ years.',
-    image: productGiPipe,
+    image: productGiPipePallet,
     keySpec: '80–100+ Micron HDG Coating | 48mm & 76mm OD | 20+ Years Life',
     features: [
       'Hot dip galvanized 80-100+ micron zinc coating for superior corrosion resistance',
@@ -288,7 +291,7 @@ export const products: Product[] = [
     tagline: '99.9% pure electrolytic copper bonding with inner conductor strip for supreme conductivity.',
     description:
       'Our Copper Bonded Strip-in-Pipe Electrode combines the structural rigidity of heavy-wall steel pipe with a molecularly bonded outer copper layer and a copper-bonded internal primary conductor strip. Delivers maximum fault current dissipation, zero risk of peel-off, and supreme corrosion resistance in all soil types. Designed to last 25+ years maintenance-free.',
-    image: productCopperPipe,
+    image: productCopperPipeBatch,
     keySpec: '250+ Micron Copper Layer | 99.9% Pure Copper | 25+ Years Life',
     features: [
       '99.9% pure electrolytic copper molecularly bonded to outer pipe and inner strip',
@@ -368,7 +371,7 @@ export const products: Product[] = [
     tagline: 'Solid copper bonded central rod inside pipe for high fault current dissipation (up to 31.10 kArms).',
     description:
       'The Copper Bonded Rod-in-Pipe Chemical Electrode features a solid copper-bonded MS rod (25mm or 38mm solid diameter) positioned centrally inside a heavy-duty outer pipe, encapsulated by high-conductivity conductive compound. Designed specifically for deep installations and extra high fault current dissipation (up to 31.10 kArms for 1s, 71.54 kApeak) with unmatched longevity.',
-    image: productCopperPipe,
+    image: productCopperPipe48mm,
     keySpec: 'Solid Inner Rod (25mm / 38mm) | Up to 31.10 kArms | 4860 mm² Area',
     features: [
       'Rod-in-pipe design for extreme mechanical & electrical performance',
@@ -642,7 +645,7 @@ export const products: Product[] = [
     tagline: '100% solid electrolytic copper for maximum conductivity and critical facilities.',
     description:
       'Manufactured from 99.9% solid electrolytic tough pitch (ETP) grade copper. Offers the highest possible electrical and thermal conductivity (100% IACS), zero risk of coating wear, and superior chemical resistance in highly corrosive, acidic, or saline environments. The premier choice for defense, aerospace, and oil refineries.',
-    image: productCopperRod,
+    image: productCopperPipePure,
     keySpec: '99.9% Pure Electrolytic Copper | 100% IACS Conductivity | 40+ Years Life',
     features: [
       '100% solid electrolytic tough pitch (ETP) copper (IS:191 / )',
