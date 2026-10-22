@@ -6,10 +6,10 @@ import factoryImg from '../../assets/factory_about.webp';
 import SectionHeader from '../../components/ui/SectionHeader';
 import './AboutSnippet.css';
 
-const highlights = [
+const highlights: string[] = [
   // 'ISO 9001:2015 Quality Management Certified',
-  'Government-Registered MSME Manufacturer',
-  'Complete earthing system solutions',
+  // 'Government-Registered MSME Manufacturer',
+  // 'Complete earthing system solutions',
 ];
 
 export default function AboutSnippet() {

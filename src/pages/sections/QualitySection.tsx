@@ -1,13 +1,9 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaArrowRight } from 'react-icons/fa';
 import qualityImg from '../../assets/quality_lab.webp';
 import './QualitySection.css';
-
-const certBadges = [
-  // { label: 'ISO 9001:2015', sub: 'Quality Certified', color: '#C8791A' },
-  { label: 'MSME Reg.', sub: 'Govt. of India', color: '#16A34A' },
-];
 
 export default function QualitySection() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -35,25 +31,9 @@ export default function QualitySection() {
               ensuring consistent and reliable protection.
             </p>
 
-            <div className="quality-cert-badges">
-              {certBadges.map((b, i) => (
-                <motion.div
-                  key={i}
-                  className="quality-cert-badge"
-                  style={{ '--cert-color': b.color } as React.CSSProperties}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={inView ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ delay: 0.3 + i * 0.1 }}
-                >
-                  <span className="quality-cert-badge-label">{b.label}</span>
-                  <span className="quality-cert-badge-sub">{b.sub}</span>
-                </motion.div>
-              ))}
-            </div>
-
-            <a href="#certifications" className="btn btn-primary">
+            <Link to="/certifications" className="btn btn-primary quality-btn">
               View All Certifications <FaArrowRight size={13} />
-            </a>
+            </Link>
           </motion.div>
 
           {/* Image Side */}

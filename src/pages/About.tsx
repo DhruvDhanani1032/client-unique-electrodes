@@ -75,15 +75,6 @@ export default function About() {
                 delivering a proven <strong>20+ years product lifespan</strong> across more than
                 <strong> 1,000+ projects delivered</strong> nationwide.
               </p>
-              <div className="about-story-details">
-                <div><strong>Legal Name:</strong> {company.legalName}</div>
-                <div><strong>Brand:</strong> {company.name}</div>
-                <div><strong>Established:</strong> {company.established}</div>
-                <div><strong>Projects:</strong> 1,000+ Delivered</div>
-                <div><strong>Product Lifespan:</strong> 20+ Years</div>
-                <div><strong>MSME:</strong> {company.msme}</div>
-                {/* <div><strong>ISO:</strong> {company.isoNo}</div> */}
-              </div>
             </motion.div>
           </div>
         </div>

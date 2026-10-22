@@ -39,6 +39,7 @@ export const company = {
     { value: 20, suffix: '+', label: 'Years Product Lifespan' },
     { value: 13, suffix: '+', label: 'Product Lines' },
     { value: 100, suffix: '%', label: 'Tested Quality' },
+    { value: 10000, suffix: '+', label: 'Production Capacity (Units/Month)' },
   ],
 };
 
@@ -1112,12 +1113,6 @@ export const whyChooseUs = [
     title: 'IS & IEC Compliant',
     description: 'All products comply with IS:3043, IEEE Std 80, and IEC 62561-7 — meeting Indian and international standards.',
     color: '#7C3AED',
-  },
-  {
-    icon: 'FaBuilding',
-    title: 'MSME Manufacturer',
-    description: 'Government-registered MSME manufacturer ensuring transparency, trust and direct factory supply.',
-    color: '#16A34A',
   },
 ];
 

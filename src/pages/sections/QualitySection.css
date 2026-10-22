@@ -25,6 +25,13 @@
 }
 .quality-desc strong { color: var(--color-primary); font-weight: 600; }
 
+.quality-btn {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .quality-cert-badges {
   display: flex;
   flex-wrap: wrap;

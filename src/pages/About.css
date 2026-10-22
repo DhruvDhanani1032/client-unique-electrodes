@@ -21,18 +21,6 @@
   margin-bottom: 16px;
 }
 .about-story-text strong { color: var(--color-primary); font-weight: 600; }
-.about-story-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 24px;
-  padding: 20px;
-  background: var(--color-bg-light);
-  border-radius: var(--radius-md);
-  font-size: 13px;
-  color: var(--color-text-mid);
-}
-.about-story-details strong { color: var(--color-primary); }
 
 /* MVV */
 .about-mvv-grid {
@@ -79,12 +67,13 @@
 /* Stats */
 .about-stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0;
 }
-.about-stat-item { text-align: center; padding: 20px; border-right: 1px solid rgba(255,255,255,0.1); }
+.about-stat-item { text-align: center; padding: 20px 12px; border-right: 1px solid rgba(255,255,255,0.1); }
 .about-stat-item:last-child { border-right: none; }
-.about-stat-counter .counter-value { font-size: 52px; }
+.about-stat-counter .counter-value { font-size: clamp(34px, 3.5vw, 50px); }
+.about-stat-counter .counter-label { font-size: 12px; letter-spacing: 0.8px; }
 
 
 
@@ -124,12 +113,13 @@
   }
 
   .about-stats-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px 0;
+  }
 
-    .about-stat-item {
-        border-top: none;
-    }
+  .about-stat-item {
+    border-top: none;
+  }
 }
 
 /* Medium Mobile Devices (433px to 733px) */
@@ -217,6 +207,10 @@
     border-bottom: none !important;
     background: rgba(255, 255, 255, 0.04);
     border-radius: var(--radius-md);
+  }
+
+  .about-stat-item:last-child:nth-child(odd) {
+    grid-column: span 2;
   }
 
   .about-stat-counter .counter-value {

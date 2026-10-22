@@ -92,12 +92,12 @@
 
 .stats-bar-counter {
   text-align: center;
-  padding: 8px 32px;
+  padding: 8px clamp(10px, 1.6vw, 24px);
 }
 
 .counter-value {
   font-family: var(--font-heading);
-  font-size: clamp(40px, 5vw, 56px);
+  font-size: clamp(34px, 4vw, 54px);
   font-weight: 800;
   color: var(--color-accent);
   line-height: 1;
@@ -172,6 +172,9 @@
   .stats-bar-item {
     width: 100% !important;
     text-align: center;
+  }
+  .stats-bar-item:last-child:nth-child(odd) {
+    grid-column: span 2;
   }
   .stats-bar-sep {
     display: none !important;

@@ -59,15 +59,60 @@
   color: var(--color-text-light);
 }
 
-/* Certificate Badges Grid (Image cards matching iTorrent reference) */
-.home-certs-img-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+/* Certificate Badges Slider (Matching Testimonials Swiper style) */
+.home-certs-slider-wrapper {
+  position: relative;
+  padding: 0 54px;
   margin-top: 36px;
 }
 
+.home-certs-swiper {
+  padding: 10px 4px 46px !important;
+}
+
+.home-certs-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.home-certs-nav-btn {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 16px;
+  transition: all 0.25s ease;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.home-certs-nav-btn:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-white);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.cert-prev {
+  left: 4px;
+}
+
+.cert-next {
+  right: 4px;
+}
+
 .home-cert-img-card {
+  width: 100%;
   background: var(--color-white);
   border: 1px solid #e2e8f0;
   border-radius: 14px;
@@ -79,6 +124,7 @@
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   overflow: hidden;
   cursor: pointer;
+  min-height: 130px;
 }
 
 .home-cert-img-card:hover {
@@ -96,7 +142,7 @@
 
 .home-cert-badge-img {
   width: 100%;
-  max-width: 280px;
+  max-width: 260px;
   height: auto;
   object-fit: contain;
   display: block;
@@ -104,24 +150,51 @@
 }
 
 .home-cert-img-card:hover .home-cert-badge-img {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
-@media (max-width: 992px) {
-  .home-certs-img-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+/* Swiper Pagination Styling */
+.home-certs-swiper .swiper-pagination {
+  bottom: 10px !important;
+}
+
+.home-certs-swiper .swiper-pagination-bullet {
+  background: #cbd5e1;
+  opacity: 0.8;
+  width: 8px;
+  height: 8px;
+  transition: all 0.25s ease;
+}
+
+.home-certs-swiper .swiper-pagination-bullet-active {
+  background: var(--color-accent);
+  width: 24px;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .home-certs-slider-wrapper {
+    padding: 0;
+  }
+  .home-certs-nav-btn {
+    display: none !important;
+  }
+  .home-cert-img-card {
+    padding: 12px 10px;
+    border-radius: 12px;
+    min-height: 110px;
+  }
+  .home-certs-swiper {
+    padding-bottom: 38px !important;
   }
 }
 
 @media (max-width: 480px) {
-  .home-certs-img-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
   .home-cert-img-card {
     padding: 10px 8px;
     border-radius: 10px;
+    min-height: 95px;
   }
 }
 
