@@ -52,10 +52,10 @@ export default function Footer() {
             {/* Brand */}
             <div className="footer-brand">
               <Link to="/" className="footer-logo">
-                <div className="footer-logo-icon"><FaBolt size={32} /></div>
+                <div className="footer-logo-icon"><FaBolt size={36} /></div>
                 <div className="footer-logo-text">
                   <span className="footer-logo-brand">UNIQUE ELECTRODES</span>
-                  <span className="footer-logo-sub">By Unique Enterprise</span>
+                  <span className="footer-logo-sub">by Unique Enterprise</span>
                 </div>
               </Link>
               <p className="footer-tagline">{company.tagline}</p>

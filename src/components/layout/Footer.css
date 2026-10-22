@@ -29,7 +29,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.85fr 1fr 1fr 1.35fr;
+  grid-template-columns: 2fr 1fr 1fr 1.35fr;
   gap: 40px;
 }
 
@@ -51,8 +51,8 @@
   transform: scale(1.02);
 }
 .footer-logo-icon {
-  width: 58px;
-  height: 58px;
+  width: 65px;
+  height: 65px;
   background: linear-gradient(135deg, var(--color-accent) 0%, #e08316 100%);
   border-radius: 12px;
   display: flex;
@@ -62,25 +62,29 @@
   box-shadow: 0 4px 16px rgba(200,121,26,0.45);
   flex-shrink: 0;
 }
+.footer-logo-icon svg {
+  width: 36px;
+  height: 36px;
+}
 .footer-logo-text {
   display: flex;
   flex-direction: column;
   white-space: nowrap;
-  line-height: 1.1;
+  line-height: 1.05;
 }
 .footer-logo-brand {
   display: block;
   font-family: var(--font-heading);
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 800;
   color: var(--color-white);
-  letter-spacing: 0.8px;
+  letter-spacing: 1.2px;
   line-height: 1.15;
   white-space: nowrap;
 }
 .footer-logo-sub {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
   margin-top: 3px;
