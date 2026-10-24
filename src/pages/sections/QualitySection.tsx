@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaArrowRight } from 'react-icons/fa';
 import qualityImg from '../../assets/quality_lab.webp';
 import './QualitySection.css';
 
@@ -30,10 +28,6 @@ export default function QualitySection() {
               All products adhere strictly to <strong>IS:3043</strong> and <strong>IEC international standards</strong>,
               ensuring consistent and reliable protection.
             </p>
-
-            <Link to="/certifications" className="btn btn-primary quality-btn">
-              View All Certifications <FaArrowRight size={13} />
-            </Link>
           </motion.div>
 
           {/* Image Side */}

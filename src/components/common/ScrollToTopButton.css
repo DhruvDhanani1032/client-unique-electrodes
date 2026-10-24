@@ -1,0 +1,107 @@
+/* ScrollToTopButton.css - Positioned side-by-side with WhatsApp in the same horizontal line */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0A1120;
+  color: var(--color-accent);
+  border: 1.5px solid rgba(247, 187, 73, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  z-index: 9998;
+  transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+  padding: 0;
+  outline: none;
+}
+
+.scroll-to-top-btn:hover {
+  background: var(--color-accent);
+  color: #0A1120;
+  border-color: var(--color-accent);
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 24px rgba(247, 187, 73, 0.45), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top-btn:active {
+  transform: translateY(0) scale(0.95);
+}
+
+.scroll-to-top-icon {
+  font-size: 18px;
+  transition: transform 0.25s ease;
+}
+
+.scroll-to-top-btn:hover .scroll-to-top-icon {
+  transform: translateY(-2px);
+}
+
+/* Tooltip: Positioned on top so it doesn't overlap WhatsApp */
+.scroll-to-top-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background-color: #0B1D3A;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  padding: 5px 11px;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(247, 187, 73, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.scroll-to-top-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: #0B1D3A transparent transparent transparent;
+}
+
+.scroll-to-top-btn:hover .scroll-to-top-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Mobile & Tablet responsive alignment */
+@media (max-width: 768px) {
+  .scroll-to-top-btn {
+    bottom: 23px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .scroll-to-top-icon {
+    font-size: 16px;
+  }
+
+  .scroll-to-top-tooltip {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top-btn {
+    bottom: 23px;
+    right: 18px;
+    width: 46px;
+    height: 46px;
+  }
+}

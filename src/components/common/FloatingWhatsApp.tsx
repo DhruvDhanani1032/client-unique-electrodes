@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import './FloatingWhatsApp.css';
 
@@ -11,10 +11,21 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({
   phoneNumber = '919512231350',
   defaultMessage = "Hi, I'm interested in your earthing products and would like more information.",
 }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(defaultMessage)}`;
 
   return (
-    <div className="floating-whatsapp">
+    <div className={`floating-whatsapp ${isScrolled ? 'has-scroll-top' : ''}`}>
       <a
         href={whatsappUrl}
         target="_blank"

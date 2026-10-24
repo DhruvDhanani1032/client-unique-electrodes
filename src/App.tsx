@@ -15,6 +15,7 @@ import Certifications from './pages/Certifications';
 import Contact from './pages/Contact';
 import CategoryProducts from './pages/CategoryProducts';
 import FloatingWhatsApp from './components/common/FloatingWhatsApp';
+import ScrollToTopButton from './components/common/ScrollToTopButton';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -59,6 +60,7 @@ function App() {
       </main>
       <Footer />
       <FloatingWhatsApp />
+      <ScrollToTopButton />
     </BrowserRouter>
   );
 }

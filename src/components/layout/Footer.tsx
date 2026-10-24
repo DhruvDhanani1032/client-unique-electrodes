@@ -11,7 +11,7 @@ const quickLinks = [
   // { to: '/industries', label: 'Industries' },
   { to: '/quality', label: 'Quality' },
   // { to: '/certifications', label: 'Certifications' },
-  { to: '/infrastructure', label: 'Infrastructure' },
+  // { to: '/infrastructure', label: 'Infrastructure' },
   { to: '/contact', label: 'Contact' },
 ];
 
