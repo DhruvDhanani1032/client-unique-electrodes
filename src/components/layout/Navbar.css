@@ -39,11 +39,11 @@
 }
 
 .navbar--scrolled {
-  background: rgba(7, 18, 42, 0.92);
+  background: rgba(7, 18, 42, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  padding: 12px 0;
+  padding: 18px 0;
   box-shadow: 0 4px 32px rgba(0,0,0,0.3);
 }
 
@@ -60,57 +60,32 @@
 
 /* Logo */
 .navbar-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 20px;
+  text-decoration: none;
   flex-shrink: 0;
-  margin-left: 32px;
-  transition: transform 0.2s ease;
+  margin-left: 48px;
+  transition: transform 0.25s ease, margin 0.25s ease;
 }
 
 .navbar-logo:hover {
   transform: scale(1.02);
 }
 
-.navbar-logo-icon {
-  width: 65px;
-  height: 65px;
-  background: linear-gradient(135deg, var(--color-accent) 0%, #e08316 100%);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  box-shadow: 0 4px 16px rgba(200,121,26,0.45);
-  flex-shrink: 0;
+.navbar-logo-img {
+  height: 68px;
+  width: auto;
+  max-width: 290px;
+  object-fit: contain;
+  display: block;
 }
 
-.navbar-logo-icon svg {
-  width: 36px;
-  height: 36px;
-}
-
-.navbar-logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.05;
-}
-
-.navbar-logo-brand {
-  font-family: var(--font-heading);
-  font-size: 24px;
-  font-weight: 800;
-  color: var(--color-white);
-  letter-spacing: 1.2px;
-}
-
-.navbar-logo-sub {
-  font-size: 15px;
-  color: rgba(255,255,255,0.7);
-  font-weight: 500;
-  margin-top: 3px;
-  letter-spacing: 0.2px;
-  text-transform: none;
+.mobile-drawer-logo-img {
+  height: 50px;
+  width: auto;
+  max-width: 215px;
+  object-fit: contain;
+  display: block;
 }
 
 /* Nav Links */
@@ -196,7 +171,7 @@ ul.navbar-links,
   background: #0B1D3A;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 14px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(200, 121, 26, 0.2);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(247, 187, 73, 0.2);
   padding: 24px 28px 20px;
   z-index: 1050;
 }
@@ -263,7 +238,7 @@ ul.navbar-links,
 
 .mega-subgroup-list li a:hover {
   color: #ffffff;
-  background: rgba(200, 121, 26, 0.18);
+  background: rgba(247, 187, 73, 0.18);
   transform: translateX(4px);
 }
 
@@ -326,7 +301,7 @@ ul.navbar-links,
 }
 .navbar-hamburger:hover,
 .navbar-hamburger:active {
-  background: rgba(200, 121, 26, 0.22);
+  background: rgba(247, 187, 73, 0.22);
   border-color: var(--color-accent);
   color: var(--color-accent);
 }
@@ -413,7 +388,7 @@ ul.navbar-links,
 
 .mobile-menu-close:hover,
 .mobile-menu-close:active {
-  background: rgba(200, 121, 26, 0.25);
+  background: rgba(247, 187, 73, 0.25);
   border-color: var(--color-accent);
   color: var(--color-accent);
 }
@@ -445,7 +420,7 @@ ul.navbar-links,
 .mobile-link:hover,
 .mobile-link.active {
   color: var(--color-accent) !important;
-  background: rgba(200, 121, 26, 0.12);
+  background: rgba(247, 187, 73, 0.12);
 }
 
 /* Mobile Products Accordion */
@@ -502,7 +477,7 @@ ul.navbar-links,
 
 .mobile-accordion-item:hover {
   color: white;
-  background: rgba(200, 121, 26, 0.18);
+  background: rgba(247, 187, 73, 0.18);
   padding-left: 12px;
 }
 
@@ -616,7 +591,7 @@ ul.navbar-links,
   }
   
   .navbar--scrolled {
-    padding: 10px 0;
+    padding: 12px 0;
   }
 }
 
@@ -635,7 +610,7 @@ ul.navbar-links,
   }
   
   .navbar--scrolled {
-    padding: 8px 0;
+    padding: 10px 0;
   }
   
   .navbar-inner {
@@ -647,25 +622,9 @@ ul.navbar-links,
     gap: 12px;
   }
   
-  .navbar-logo-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 9px;
-  }
-  
-  .navbar-logo-icon svg {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .navbar-logo-brand {
-    font-size: 16px;
-    letter-spacing: 0.6px;
-  }
-  
-  .navbar-logo-sub {
-    font-size: 10px;
-    margin-top: 2px;
+  .navbar-logo-img {
+    height: 50px;
+    max-width: 210px;
   }
   
   .navbar-hamburger {
@@ -688,7 +647,7 @@ ul.navbar-links,
   }
   
   .navbar--scrolled {
-    padding: 7px 0;
+    padding: 8px 0;
   }
   
   .navbar-inner {
@@ -696,28 +655,9 @@ ul.navbar-links,
     gap: 8px !important;
   }
   
-  .navbar-logo {
-    gap: 9px;
-  }
-  
-  .navbar-logo-icon {
-    width: 34px;
-    height: 34px;
-    border-radius: 7px;
-  }
-  
-  .navbar-logo-icon svg {
-    width: 17px;
-    height: 17px;
-  }
-  
-  .navbar-logo-brand {
-    font-size: 13.5px;
-    letter-spacing: 0.4px;
-  }
-  
-  .navbar-logo-sub {
-    font-size: 8.5px;
+  .navbar-logo-img {
+    height: 42px;
+    max-width: 170px;
   }
   
   .navbar-hamburger {

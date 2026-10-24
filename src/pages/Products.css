@@ -156,7 +156,7 @@
   border-color: var(--color-accent);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  box-shadow: 0 0 0 3px rgba(200, 121, 26, 0.12);
+  box-shadow: 0 0 0 3px rgba(247, 187, 73, 0.12);
 }
 
 .mobile-filter-label {

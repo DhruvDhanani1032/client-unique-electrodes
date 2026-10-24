@@ -86,7 +86,6 @@ export default function HeroSection() {
               href="/unique-enterprise.pdf"
               download
               className="btn btn-outline-white btn-lg"
-              style={{background: "#C8791A", color:"white"}}
             >
               <FaDownload size={14} /> Download Brochure
             </a>

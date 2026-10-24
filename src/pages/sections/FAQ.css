@@ -22,7 +22,7 @@
 .faq-item:hover .faq-question { color: var(--color-accent) !important; }
 .faq-item--open {
   border-color: var(--color-accent);
-  box-shadow: 0 4px 16px rgba(200,121,26,0.12);
+  box-shadow: 0 4px 16px rgba(247, 187, 73, 0.12);
 }
 
 .faq-question {

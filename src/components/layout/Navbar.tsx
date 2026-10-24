@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBolt, FaBars, FaTimes, FaPhoneAlt, FaChevronDown, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaBars, FaTimes, FaPhoneAlt, FaChevronDown, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import logoImg from '../../assets/logo-unique-dark.png';
 import './Navbar.css';
 
 const navLinks = [
@@ -93,14 +94,8 @@ export default function Navbar() {
       >
         <div className="navbar-inner">
           {/* Logo */}
-          <Link to="/" className="navbar-logo">
-            <div className="navbar-logo-icon">
-              <FaBolt size={36} />
-            </div>
-            <div className="navbar-logo-text">
-              <span className="navbar-logo-brand">UNIQUE ELECTRODES</span>
-              <span className="navbar-logo-sub">by Unique Enterprise</span>
-            </div>
+          <Link to="/" className="navbar-logo" aria-label="Unique Electrodes Home">
+            <img src={logoImg} alt="Unique Electrodes - Down to Earth" className="navbar-logo-img" />
           </Link>
 
           {/* Desktop Nav */}
@@ -307,14 +302,8 @@ export default function Navbar() {
             >
               {/* Drawer Top Header with Logo and Close Button */}
               <div className="mobile-menu-header">
-                <Link to="/" className="mobile-menu-brand" onClick={handleLinkClick}>
-                  <div className="navbar-logo-icon mobile-drawer-logo-icon">
-                    <FaBolt size={18} />
-                  </div>
-                  <div className="navbar-logo-text">
-                    <span className="navbar-logo-brand mobile-drawer-brand">UNIQUE ELECTRODES</span>
-                    <span className="navbar-logo-sub mobile-drawer-sub">by Unique Enterprise</span>
-                  </div>
+                <Link to="/" className="mobile-menu-brand" onClick={handleLinkClick} aria-label="Unique Electrodes Home">
+                  <img src={logoImg} alt="Unique Electrodes - Down to Earth" className="mobile-drawer-logo-img" />
                 </Link>
                 <button
                   type="button"

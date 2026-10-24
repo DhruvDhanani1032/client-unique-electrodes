@@ -16,7 +16,7 @@
   left: calc(100% / 12);
   right: calc(100% / 12);
   height: 2px;
-  background: linear-gradient(90deg, var(--color-accent), rgba(200,121,26,0.2));
+  background: linear-gradient(90deg, var(--color-accent), rgba(247, 187, 73, 0.2));
   z-index: 0;
 }
 
@@ -41,9 +41,9 @@
   font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 800;
-  color: white;
+  color: #0A1120;
   margin-bottom: 16px;
-  box-shadow: 0 4px 16px rgba(200,121,26,0.4);
+  box-shadow: 0 4px 16px rgba(247, 187, 73, 0.4);
   flex-shrink: 0;
 }
 
@@ -62,8 +62,8 @@
   transition: var(--transition);
 }
 .process-step:hover .process-step-icon {
-  background: rgba(200,121,26,0.15);
-  border-color: rgba(200,121,26,0.4);
+  background: rgba(247, 187, 73, 0.15);
+  border-color: rgba(247, 187, 73, 0.4);
   color: var(--color-accent);
 }
 
@@ -178,7 +178,7 @@
     left: 20px;
     bottom: -28px;
     width: 2px;
-    background: rgba(200, 121, 26, 0.25);
+    background: rgba(247, 187, 73, 0.25);
     z-index: -1;
   }
 
@@ -187,7 +187,7 @@
     height: 38px !important;
     font-size: 14.5px !important;
     margin-bottom: 0 !important; /* Eliminate base alignment bottom margin */
-    box-shadow: 0 3px 10px rgba(200,121,26,0.3) !important;
+    box-shadow: 0 3px 10px rgba(247, 187, 73, 0.3) !important;
   }
 
   /* Completely clear display layer for custom mobile layout clarity */

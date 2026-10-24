@@ -134,7 +134,7 @@
 
 .pd-gallery-thumb.active {
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 2px rgba(200, 121, 26, 0.25);
+  box-shadow: 0 0 0 2px rgba(247, 187, 73, 0.25);
   background: #fffbf5;
 }
 
@@ -224,7 +224,7 @@
 .pd-stat-card:hover {
   border-color: var(--color-accent);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(200, 121, 26, 0.1);
+  box-shadow: 0 6px 16px rgba(247, 187, 73, 0.1);
 }
 
 .pd-stat-icon {
@@ -296,9 +296,10 @@
 
 .pd-variant-pill--active {
   background: var(--color-accent) !important;
-  color: #ffffff !important;
+  color: #0A1120 !important;
+  font-weight: 700 !important;
   border-color: var(--color-accent) !important;
-  box-shadow: 0 4px 12px rgba(200, 121, 26, 0.35);
+  box-shadow: 0 4px 12px rgba(247, 187, 73, 0.35);
 }
 
 /* Action Buttons */
@@ -408,7 +409,7 @@
   background: #ffffff;
   border-color: var(--color-accent);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(200, 121, 26, 0.12);
+  box-shadow: 0 6px 16px rgba(247, 187, 73, 0.12);
 }
 
 .pd-quick-lbl {
@@ -552,10 +553,10 @@
 /* Pop-out 3D outward elevation on hover */
 .pd-spec-tile:hover {
   background: #ffffff;
-  border-color: rgba(200, 121, 26, 0.5);
+  border-color: rgba(247, 187, 73, 0.55);
   transform: translateY(-6px) scale(1.025);
-  box-shadow: 0 16px 32px -4px rgba(11, 29, 58, 0.12),
-              0 6px 14px -2px rgba(200, 121, 26, 0.12);
+  box-shadow: 0 16px 32px -4px rgba(10, 17, 32, 0.12),
+              0 6px 14px -2px rgba(247, 187, 73, 0.15);
   z-index: 2;
 }
 
@@ -564,20 +565,20 @@
   height: 44px;
   min-width: 44px;
   border-radius: 12px;
-  background: rgba(200, 121, 26, 0.09);
+  background: rgba(247, 187, 73, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-accent);
+  color: var(--color-accent-dark);
   font-size: 21px;
   transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
   flex-shrink: 0;
 }
 
 .pd-spec-tile:hover .pd-spec-tile-icon {
-  background: rgba(200, 121, 26, 0.18);
+  background: rgba(247, 187, 73, 0.22);
   transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(200, 121, 26, 0.22);
+  box-shadow: 0 4px 12px rgba(247, 187, 73, 0.28);
 }
 
 .pd-spec-tile-content {
@@ -645,7 +646,7 @@
 }
 
 .pd-spec-table tbody tr:hover {
-  background: rgba(200, 121, 26, 0.06) !important;
+  background: rgba(247, 187, 73, 0.06) !important;
 }
 
 .pd-spec-prop-td strong {
@@ -712,30 +713,30 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0b1d3a 0%, #162a4a 100%);
-  color: #f59e0b;
-  border: 2px solid #c8791a;
+  background: linear-gradient(135deg, #0A1120 0%, #16243E 100%);
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 800;
-  box-shadow: 0 4px 12px rgba(11, 29, 58, 0.15);
+  box-shadow: 0 4px 12px rgba(10, 17, 32, 0.15);
   transition: all 0.25s ease;
   flex-shrink: 0;
 }
 
 .pd-timeline-item:hover .pd-node-circle {
   transform: scale(1.08);
-  box-shadow: 0 0 0 4px rgba(200, 121, 26, 0.25);
+  box-shadow: 0 0 0 4px rgba(247, 187, 73, 0.25);
 }
 
 .pd-node-line {
   width: 2px;
   flex: 1;
   min-height: 24px;
-  background: linear-gradient(180deg, #c8791a 0%, #cbd5e1 100%);
+  background: linear-gradient(180deg, var(--color-accent) 0%, #cbd5e1 100%);
   margin-top: 6px;
 }
 
@@ -753,7 +754,7 @@
   background: #ffffff;
   border-color: #cbd5e1;
   border-left-color: var(--color-accent);
-  box-shadow: 0 6px 18px rgba(11, 29, 58, 0.06);
+  box-shadow: 0 6px 18px rgba(10, 17, 32, 0.06);
 }
 
 .pd-timeline-card-header {
@@ -765,8 +766,8 @@
 }
 
 .pd-timeline-step-badge {
-  background: rgba(200, 121, 26, 0.12);
-  color: #c8791a;
+  background: rgba(247, 187, 73, 0.15);
+  color: var(--color-accent-dark);
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;

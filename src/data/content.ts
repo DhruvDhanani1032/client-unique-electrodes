@@ -980,7 +980,7 @@ export const industries = [
     title: 'Power Sector',
     description: 'Substations, power plants and transmission lines require reliable earthing for both safety and equipment protection.',
     products: ['Copper Bonded Solid Rod', 'Copper Bonded Rod In Pipe', 'Ground Improving Compound'],
-    color: '#F59E0B',
+    color: '#F7BB49',
   },
   {
     id: 'telecom',
@@ -1100,7 +1100,7 @@ export const whyChooseUs = [
     icon: 'FaBolt',
     title: 'Ultra-Low 0.84 Ω-cm',
     description: 'Our Earth Enhancement Compound has a lab-verified resistivity of just 0.84 Ohm-cm — ensuring dramatically lower ground resistance.',
-    color: '#F59E0B',
+    color: '#F7BB49',
   },
   {
     icon: 'FaCubes',

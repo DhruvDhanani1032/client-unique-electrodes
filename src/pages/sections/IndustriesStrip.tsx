@@ -8,7 +8,7 @@ import SectionHeader from '../../components/ui/SectionHeader';
 import './IndustriesStrip.css';
 
 const industries = [
-  { icon: <FaBolt />, label: 'Power Sector', color: '#F59E0B' },
+  { icon: <FaBolt />, label: 'Power Sector', color: '#F7BB49' },
   { icon: <FaSatelliteDish />, label: 'Telecom', color: '#3B82F6' },
   { icon: <FaSolarPanel />, label: 'Solar Energy', color: '#EF4444' },
   { icon: <FaIndustry />, label: 'Industrial', color: '#8B5CF6' },

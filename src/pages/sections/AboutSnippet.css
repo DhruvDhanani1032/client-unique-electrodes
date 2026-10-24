@@ -81,7 +81,7 @@
 
 .about-highlight-item:hover {
   color: var(--color-accent) !important;
-  background: rgba(200, 121, 26, 0.05);
+  background: rgba(247, 187, 73, 0.08);
   transform: translateX(4px);
 }
 
