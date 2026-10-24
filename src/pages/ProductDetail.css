@@ -302,6 +302,12 @@
   box-shadow: 0 4px 12px rgba(247, 187, 73, 0.35);
 }
 
+.pd-variant-pill--active:hover {
+  background: var(--color-accent-light) !important;
+  border-color: var(--color-accent-light) !important;
+  color: #0A1120 !important;
+}
+
 /* Action Buttons */
 .pd-actions-row {
   display: flex;
@@ -321,13 +327,13 @@
   border-radius: 8px;
   font-weight: 700;
   font-size: 15px;
-  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.25);
+  box-shadow: 0 4px 14px rgba(247, 187, 73, 0.3);
   transition: all 0.25s ease;
 }
 
 .pd-quote-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(22, 163, 74, 0.35);
+  box-shadow: 0 6px 18px rgba(247, 187, 73, 0.45);
 }
 
 .pd-brochure-btn {

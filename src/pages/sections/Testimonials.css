@@ -31,9 +31,9 @@
 }
 
 .swiper-nav-btn:hover {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
-  color: var(--color-white);
+  background: var(--color-accent-light);
+  border-color: var(--color-accent-light);
+  color: #0A1120;
   box-shadow: var(--shadow-md);
 }
 

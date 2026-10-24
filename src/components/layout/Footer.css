@@ -3,7 +3,7 @@
 
 /* CTA Strip */
 .footer-cta-strip {
-  background: linear-gradient(135deg, var(--color-accent) 0%, #A0621A 100%);
+  background: var(--color-accent);
   padding: 48px 0;
 }
 .footer-cta-inner {
