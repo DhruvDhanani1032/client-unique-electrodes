@@ -246,7 +246,8 @@ export default function Infrastructure() {
               </Link>
               <a
                 href="/unique-enterprise.pdf"
-                download="Unique-Enterprise-Brochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-outline-white infra-cta-brochure"
               >
                 <FaFileDownload size={14} /> Download Brochure

@@ -84,7 +84,8 @@ export default function HeroSection() {
             </Link>
             <a
               href="/unique-enterprise.pdf"
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-outline-white btn-lg"
             >
               <FaDownload size={14} /> Download Brochure
