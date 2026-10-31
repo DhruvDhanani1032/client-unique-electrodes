@@ -3,7 +3,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { FaStar, FaStarHalfAlt, FaRegStar, FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaStar, FaStarHalfAlt, FaRegStar, FaQuoteLeft, FaChevronLeft, FaChevronRight, FaMapMarkerAlt } from 'react-icons/fa';
 import { testimonials } from '../../data/content';
 import SectionHeader from '../../components/ui/SectionHeader';
 import './Testimonials.css';
@@ -62,9 +62,12 @@ export default function Testimonials() {
                     <div>
                       <div className="testimonial-name">{t.name}</div>
                       <div className="testimonial-role">{t.role}</div>
-                      <div className="testimonial-location">📍 {t.location}</div>
+                      <div className="testimonial-location">
+                        <FaMapMarkerAlt size={10} style={{ marginRight: 4, color: 'var(--color-accent)' }} />
+                        {t.location}
+                      </div>
                     </div>
-                  </div> 
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

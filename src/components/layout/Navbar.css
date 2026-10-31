@@ -18,6 +18,14 @@
   right: 0;
   z-index: 1001;
 }
+.navbar-announcement-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.navbar-announcement-location svg {
+  color: var(--color-accent);
+}
 .navbar-announcement a {
   color: var(--color-accent);
   display: inline-flex;

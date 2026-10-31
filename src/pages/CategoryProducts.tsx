@@ -20,8 +20,10 @@ const legacySlugMap: Record<string, { category: string; material?: string }> = {
   'ese-lightning-arrestor': { category: 'lightning-arrestors' },
   'conventional-lightning-arrestor': { category: 'lightning-arrestors' },
   'lightning-protection-accessories': { category: 'lightning-arrestors' },
-  'solar-earthing-kit': { category: 'specialty' },
-  'ground-improving-compound': { category: 'specialty' },
+  'solar-earthing-kit': { category: 'solar-earthing-kit' },
+  'ground-improving-compound': { category: 'ground-improving-compound' },
+  'uv-ground-improving-compound': { category: 'ground-improving-compound' },
+  'uv-plus-improving-compound': { category: 'ground-improving-compound' },
 };
 
 function CategoryProductsView({
@@ -51,6 +53,16 @@ function CategoryProductsView({
   // Filter products belonging to this category & material
   const categoryProducts = useMemo(() => {
     return allProducts.filter((p) => {
+      if (resolvedCategory === 'solar-earthing-kit') {
+        return p.id === 'solar-earthing-kit';
+      }
+      if (resolvedCategory === 'ground-improving-compound') {
+        return (
+          p.id === 'uv-ground-improving-compound' ||
+          p.id === 'uv-plus-improving-compound' ||
+          p.categorySlug === 'ground-improving-compound'
+        );
+      }
       if (resolvedCategory === 'lightning-arrestors') {
         return p.categorySlug === 'lightning-arrestors';
       }
@@ -278,6 +290,12 @@ function CategoryProductsView({
                             {p.specifications.coating && (
                               <span className="cat-spec-tag">{p.specifications.coating}</span>
                             )}
+                            {p.specifications.material && (
+                              <span className="cat-spec-tag">Material: {p.specifications.material}</span>
+                            )}
+                            {p.specifications.bagType && (
+                              <span className="cat-spec-tag">Bag: {p.specifications.bagType}</span>
+                            )}
                           </div>
 
                           <div className="cat-card-actions">
@@ -331,10 +349,9 @@ export default function CategoryProducts() {
 
   // If the path points directly to an individual product ID (e.g. ese-protector or strip-galv-48-2m), render ProductDetail
   const lastSegment = pathParts[pathParts.length - 1];
-  const isDirectProduct = allProducts.some(
-    (p) => p.id === resolvedCategory || p.id === resolvedMaterial || p.id === lastSegment || (params.id && p.id === params.id)
-  );
-  if (isDirectProduct) {
+  const isDirectProduct = allProducts.some((p) => p.id === lastSegment);
+
+  if (isDirectProduct && lastSegment !== 'solar-earthing-kit' && lastSegment !== 'ground-improving-compound') {
     return <ProductDetail />;
   }
 

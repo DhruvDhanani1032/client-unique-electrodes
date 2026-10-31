@@ -9,8 +9,9 @@ import './ProductsShowcase.css';
 const featuredIds = [
   'copper-bonded-solid-rod',
   'hot-dip-galvanised-strip-in-pipe',
-  'ese-lightning-arrestor',
-  'ground-improving-compound',
+  // 'ese-lightning-arrestor',
+  'solar-earthing-kit',
+  'uv-ground-improving-compound',
 ];
 
 const featured = featuredIds

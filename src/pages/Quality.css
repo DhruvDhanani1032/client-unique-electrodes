@@ -400,13 +400,17 @@ a.quality-cta-contact-btn:hover {
    Responsive Breakpoints
    ========================================================================== */
 
-/* Laptop (1200px and below) */
-@media (max-width: 1200px) {
+/* Laptop / Below 1300px: Shift down to 2 columns (2x2 grid) so cards are comfortable & spacious */
+@media (max-width: 1300px) {
   .quality-page-grid {
     gap: 40px;
   }
   .quality-pillars-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .quality-pillar-card {
+    padding: 28px 24px;
   }
 }
 

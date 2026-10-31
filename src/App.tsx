@@ -45,6 +45,10 @@ function App() {
           <Route path="/products/lightning-arrestors/:productId" element={<ProductDetail />} />
           <Route path="/products/specialty" element={<CategoryProducts />} />
           <Route path="/products/specialty/:productId" element={<ProductDetail />} />
+          <Route path="/products/solar-earthing-kit" element={<CategoryProducts />} />
+          <Route path="/products/solar-earthing-kit/:productId" element={<ProductDetail />} />
+          <Route path="/products/ground-improving-compound" element={<CategoryProducts />} />
+          <Route path="/products/ground-improving-compound/:productId" element={<ProductDetail />} />
 
           {/* Universal Category & Product Routes */}
           <Route path="/products/:category/:material/:productId" element={<ProductDetail />} />

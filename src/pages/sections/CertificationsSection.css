@@ -67,7 +67,13 @@
 }
 
 .home-certs-swiper {
-  padding: 10px 4px 46px !important;
+  padding: 10px 4px 16px !important;
+}
+
+.home-certs-swiper .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 
 .home-certs-swiper .swiper-slide {
@@ -98,7 +104,7 @@
 .home-certs-nav-btn:hover {
   background: var(--color-accent-light);
   border-color: var(--color-accent-light);
-  color: #0A1120;
+  color: #0a1120;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transform: translateY(-50%) scale(1.05);
 }

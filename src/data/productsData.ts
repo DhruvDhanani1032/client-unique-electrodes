@@ -4,14 +4,11 @@ import productGiPipeBatch from '../assets/product_gi_pipe_batch.webp';
 import productGiPipeVertical from '../assets/product_gi_pipe_vertical.webp';
 import productCopperPipeBatch from '../assets/product_copper_pipe_batch.webp';
 import productCopperPipe48mm from '../assets/product_copper_pipe_48mm.webp';
-import productCopperPipePure from '../assets/product_copper_pipe_pure.webp';
 import productCopperPipePackaged from '../assets/product_copper_pipe_packaged.webp';
 import productGiRod from '../assets/product_gi_rod.webp';
 import productCopperRod from '../assets/product_copper_rod.webp';
-import productMultispikeArrester from '../assets/product_multispike_arrester.webp';
-import productEseArrester from '../assets/product_ese_arrester.webp';
-import productLaAccessories from '../assets/product_la_accessories.webp';
-import productEarthCompound from '../assets/product_earth_compound.webp';
+import productEarthCompoundBrown from '../assets/product_earth_compound_brown.webp';
+import productEarthCompoundWhite from '../assets/product_earth_compound_white.webp';
 import productSolarKit from '../assets/product_solar_kit.webp';
 
 export interface DetailedProduct {
@@ -69,7 +66,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Excellent (with TBGIM Fill)',
       expectedLife: '20+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -123,7 +120,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Excellent (with TBGIM Fill)',
       expectedLife: '20+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -177,7 +174,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Excellent (with TBGIM Fill)',
       expectedLife: '20+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -230,7 +227,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Excellent (with TBGIM Fill)',
       expectedLife: '20+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -267,7 +264,7 @@ export const allProducts: DetailedProduct[] = [
     image: productCopperPipe48mm,
     price: 1104,
     shortDescription: 'High-performance copper bonded earthing electrode with 99.9% pure electrolytic copper bonding for superior conductivity.',
-    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 2 meter long with inner strip from top to bottom (40mm × 6mm). Made from low carbon steel with 3.2mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 and UL467 standards. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
+    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 2 meter long with inner strip from top to bottom (40mm × 6mm). Made from low carbon steel with 3.2mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 standards. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
     specifications: {
       material: 'Low Carbon Steel',
       coating: '99.9% Pure Electrolytic Copper (Molecularly Bonded)',
@@ -282,7 +279,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Superior (99.9% Pure Copper)',
       expectedLife: '25+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -291,7 +288,7 @@ export const allProducts: DetailedProduct[] = [
       'Strip-in-pipe design for enhanced service life',
       'Excellent electrical conductivity',
       'Superior corrosion resistance',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       'High current dissipation capacity',
       'ISI 1239 marked quality assurance',
       'Stainless steel hardware included',
@@ -322,7 +319,7 @@ export const allProducts: DetailedProduct[] = [
     image: productCopperPipe48mm,
     price: 1652,
     shortDescription: 'Premium copper bonded earthing electrode with 99.9% pure electrolytic copper for maximum conductivity and longevity.',
-    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 3 meter long with inner strip from top to bottom (40mm × 6mm). Made from low carbon steel with 3.2mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 and UL467 standards. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
+    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 3 meter long with inner strip from top to bottom (40mm × 6mm). Made from low carbon steel with 3.2mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 standards. Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
     specifications: {
       material: 'Low Carbon Steel',
       coating: '99.9% Pure Electrolytic Copper (Molecularly Bonded)',
@@ -337,7 +334,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Superior (99.9% Pure Copper)',
       expectedLife: '25+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -346,7 +343,7 @@ export const allProducts: DetailedProduct[] = [
       'Strip-in-pipe design for enhanced service life',
       'Excellent electrical conductivity',
       'Superior corrosion resistance',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       'High current dissipation capacity',
       'ISI 1239 marked quality assurance',
       'Stainless steel hardware included',
@@ -377,7 +374,7 @@ export const allProducts: DetailedProduct[] = [
     image: productCopperPipeBatch,
     
     shortDescription: 'Heavy-duty copper bonded earthing electrode with 99.9% pure electrolytic copper for high-capacity applications.',
-    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 2 meter long with inner strip from top to bottom (50mm × 10mm). Made from low carbon steel with 3.6mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 and UL467 standards. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
+    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 2 meter long with inner strip from top to bottom (50mm × 10mm). Made from low carbon steel with 3.6mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 standards. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
     specifications: {
       material: 'Low Carbon Steel',
       coating: '99.9% Pure Electrolytic Copper (Molecularly Bonded)',
@@ -392,7 +389,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Superior (99.9% Pure Copper)',
       expectedLife: '25+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -401,7 +398,7 @@ export const allProducts: DetailedProduct[] = [
       'Strip-in-pipe design for enhanced service life',
       'Excellent electrical conductivity',
       'Superior corrosion resistance',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       'High current dissipation capacity',
       'ISI 1239 marked quality assurance',
       'Stainless steel hardware included',
@@ -432,7 +429,7 @@ export const allProducts: DetailedProduct[] = [
     image: productCopperPipeBatch,
     
     shortDescription: 'Premium heavy-duty copper bonded earthing electrode with maximum conductivity for critical infrastructure applications.',
-    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 3 meter long with inner strip from top to bottom (50mm × 10mm). Made from low carbon steel with 3.6mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 and UL467 standards. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
+    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 3 meter long with inner strip from top to bottom (50mm × 10mm). Made from low carbon steel with 3.6mm wall thickness, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper in accordance with BS7430 standards. Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
     specifications: {
       material: 'Low Carbon Steel',
       coating: '99.9% Pure Electrolytic Copper (Molecularly Bonded)',
@@ -447,7 +444,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Superior (99.9% Pure Copper)',
       expectedLife: '25+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -456,7 +453,7 @@ export const allProducts: DetailedProduct[] = [
       'Strip-in-pipe design for enhanced service life',
       'Excellent electrical conductivity',
       'Superior corrosion resistance',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       'High current dissipation capacity',
       'ISI 1239 marked quality assurance',
       'Stainless steel hardware included',
@@ -1061,7 +1058,7 @@ export const allProducts: DetailedProduct[] = [
     image: productCopperPipePackaged,
     
     shortDescription: 'Premium copper bonded earthing system with 38mm solid rod inside 76mm pipe for superior conductivity.',
-    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 2 meter long with inner solid rod of 38mm from top to bottom with strip on top (50mm × 10mm). Made from low carbon steel, wall thickness 3.6mm, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper (BS7430 & UL467 compliant). Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
+    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 2 meter long with inner solid rod of 38mm from top to bottom with strip on top (50mm × 10mm). Made from low carbon steel, wall thickness 3.6mm, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper (BS7430 compliant). Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
     specifications: {
       material: 'Low Carbon Steel',
       coating: '99.9% Pure Electrolytic Copper (Molecularly Bonded)',
@@ -1077,7 +1074,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Superior (99.9% copper)',
       expectedLife: '25+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -1085,7 +1082,7 @@ export const allProducts: DetailedProduct[] = [
       '99.9% pure electrolytic copper bonding',
       'Superior conductivity and corrosion resistance',
       '25+ years maintenance-free operation',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       'TBGIM Fill for anti-corrosive properties',
       'ISI 1239 marked quality assurance',
       'Made in India'
@@ -1115,7 +1112,7 @@ export const allProducts: DetailedProduct[] = [
     image: productCopperPipePackaged,
     price: 2980,
     shortDescription: 'Extended length premium copper bonded earthing system with 38mm solid rod for maximum protection.',
-    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 3 meter long with inner solid rod of 38mm from top to bottom with strip on top (50mm × 10mm). Made from low carbon steel, wall thickness 3.6mm, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper (BS7430 & UL467 compliant). Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
+    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 76mm diameter × 3 meter long with inner solid rod of 38mm from top to bottom with strip on top (50mm × 10mm). Made from low carbon steel, wall thickness 3.6mm, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper (BS7430 compliant). Includes 2 stainless steel nut bolts suitable for 50mm × 10mm × 100mm lug, providing 860 mm² cross-sectional area. Supplied with 50 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
     specifications: {
       material: 'Low Carbon Steel',
       coating: '99.9% Pure Electrolytic Copper (Molecularly Bonded)',
@@ -1131,7 +1128,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Superior (99.9% copper)',
       expectedLife: '25+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -1139,7 +1136,7 @@ export const allProducts: DetailedProduct[] = [
       '99.9% pure electrolytic copper bonding',
       'Superior conductivity and corrosion resistance',
       '25+ years maintenance-free operation',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       'TBGIM Fill for anti-corrosive properties',
       'ISI 1239 marked quality assurance',
       'Made in India'
@@ -1169,7 +1166,7 @@ export const allProducts: DetailedProduct[] = [
     image: productCopperPipePackaged,
     price: 1411,
     shortDescription: 'Compact premium copper bonded earthing system with 25mm solid rod for excellent conductivity.',
-    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 2 meter long with inner solid rod of 25mm from top to bottom with strip on top (40mm × 6mm). Made from low carbon steel, wall thickness 3.2mm, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper (BS7430 & UL467 compliant). Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
+    longDescription: 'Unique Electrodes Advance Maintenance Free Earthing System: 48mm diameter × 2 meter long with inner solid rod of 25mm from top to bottom with strip on top (40mm × 6mm). Made from low carbon steel, wall thickness 3.2mm, ISI 1239 marked, molecularly bonded with 99.9% pure electrolytic copper (BS7430 compliant). Includes 2 stainless steel nut bolts suitable for 40mm × 6mm × 100mm lug, providing 482.55 mm² cross-sectional area. Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Made in India.',
     specifications: {
       material: 'Low Carbon Steel',
       coating: '99.9% Pure Electrolytic Copper (Molecularly Bonded)',
@@ -1185,7 +1182,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Superior (99.9% copper)',
       expectedLife: '25+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -1193,7 +1190,7 @@ export const allProducts: DetailedProduct[] = [
       '99.9% pure electrolytic copper bonding',
       'Superior conductivity and corrosion resistance',
       '25+ years maintenance-free operation',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       'TBGIM Fill for anti-corrosive properties',
       'ISI 1239 marked quality assurance',
       'Made in India'
@@ -1238,7 +1235,7 @@ export const allProducts: DetailedProduct[] = [
       isiMarking: 'ISI 1239',
       conductivity: 'Superior (99.9% copper)',
       expectedLife: '25+ years',
-      standards: 'IS 3043, BS EN 62305, BS 7430, UL467',
+      standards: 'IS 3043, BS EN 62305, BS 7430',
       warranty: '10 years (when installed per consultant recommendation)'
 },
     features: [
@@ -1246,7 +1243,7 @@ export const allProducts: DetailedProduct[] = [
       '99.9% pure electrolytic copper bonding',
       'Superior conductivity and corrosion resistance',
       '25+ years maintenance-free operation',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       'TBGIM Fill for anti-corrosive properties',
       'ISI 1239 marked quality assurance',
       'Made in India'
@@ -1262,7 +1259,7 @@ export const allProducts: DetailedProduct[] = [
   {
     id: 'ul-cbr-14-3m',
     sku: 'UECBRCU25414.2MMx3000MM',
-    name: 'UL Listed Copper Bonded Rod (14.2MM X 3 Meter)',
+    name: 'Copper Bonded Solid Rod (14.2MM X 3 Meter)',
     category: 'solid-rod',
     categorySlug: 'solid-rod',
     categoryName: 'Solid Rod Type Earthing',
@@ -1274,8 +1271,8 @@ export const allProducts: DetailedProduct[] = [
     diameter: 14.2,
     image: productCopperRod,
     price: 890,
-    shortDescription: 'UL467 certified copper bonded earthing rod with 254 micron coating for international standard compliance.',
-    longDescription: 'Unique Electrodes UL Listed Copper Bonded Rod: 14.2mm diameter × 3000mm length. Base material: Low Carbon Steel (IS 2062 E250 A). Coating: 99.9% Pure Electrolytic Grade Copper Anode (KOPREX) with 254 microns thickness over cyanide copper base coating. Molecularly bonded as per BS7430 and UL467 guidelines. Ideal for applications requiring international standards compliance. Made in India. Minimum Order Quantity: 100 pieces.',
+    shortDescription: 'Copper bonded earthing rod with 254 micron coating for international standard compliance.',
+    longDescription: 'Unique Electrodes Copper Bonded Rod: 14.2mm diameter × 3000mm length. Base material: Low Carbon Steel (IS 2062 E250 A). Coating: 99.9% Pure Electrolytic Grade Copper Anode (KOPREX) with 254 microns thickness over cyanide copper base coating. Molecularly bonded as per BS7430 guidelines. Ideal for applications requiring international standards compliance. Made in India. Minimum Order Quantity: 100 pieces.',
     specifications: {
       material: 'Low Carbon Steel (IS 2062 E250 A)',
       baseMaterial: 'Low Carbon Steel (IS 2062 E250 A)',
@@ -1286,13 +1283,13 @@ export const allProducts: DetailedProduct[] = [
       length: '3 Meter (3000mm)',
       conductivity: 'Superior (pure copper)',
       expectedLife: '30+ years',
-      standards: 'UL467, BS7430, IS 2309',
+      standards: 'BS7430, IS 2309',
       warranty: '10 years',
       moq: '100 pieces',
       itemCode: 'TBCBRCU25414.2MMx3000MM'
 },
     features: [
-      'UL467 certified for international compliance',
+      'Certified for international compliance',
       '254 micron thick copper coating',
       '99.9% pure electrolytic grade copper',
       'IS 2062 E250 A grade base steel',
@@ -1313,7 +1310,7 @@ export const allProducts: DetailedProduct[] = [
   {
     id: 'ul-cbr-17-3m',
     sku: 'UECBRCU25417.2MMx3000MM',
-    name: 'UL Listed Copper Bonded Ground Rod (17.2MM X 3 Meter)',
+    name: 'Copper Bonded Solid Rod (17.2MM X 3 Meter)',
     category: 'solid-rod',
     categorySlug: 'solid-rod',
     categoryName: 'Solid Rod Type Earthing',
@@ -1325,8 +1322,8 @@ export const allProducts: DetailedProduct[] = [
     diameter: 17.2,
     image: productCopperRod,
     price: 1150,
-    shortDescription: 'Premium UL467 certified copper bonded ground rod with 254 micron coating for superior performance.',
-    longDescription: 'Unique Electrodes UL Listed Copper Bonded Ground Rod: 17.2mm diameter × 3000mm length. Base material: Low Carbon Steel (IS 2062 E250 A). Coating: 99.9% Pure Electrolytic Grade Copper Anode (KOPREX) with 254 microns thickness over cyanide copper base coating. Molecularly bonded as per BS7430 and UL467 guidelines. Ideal for applications requiring international standards compliance and higher current carrying capacity. Made in India. Minimum Order Quantity: 100 pieces.',
+    shortDescription: 'Premium Copper bonded ground rod with 254 micron coating for superior performance.',
+    longDescription: 'Unique Electrodes Copper Bonded Ground Rod: 17.2mm diameter × 3000mm length. Base material: Low Carbon Steel (IS 2062 E250 A). Coating: 99.9% Pure Electrolytic Grade Copper Anode (KOPREX) with 254 microns thickness over cyanide copper base coating. Molecularly bonded as per BS7430 guidelines. Ideal for applications requiring international standards compliance and higher current carrying capacity. Made in India. Minimum Order Quantity: 100 pieces.',
     specifications: {
       material: 'Low Carbon Steel (IS 2062 E250 A)',
       baseMaterial: 'Low Carbon Steel (IS 2062 E250 A)',
@@ -1337,13 +1334,13 @@ export const allProducts: DetailedProduct[] = [
       length: '3 Meter (3000mm)',
       conductivity: 'Superior (pure copper)',
       expectedLife: '30+ years',
-      standards: 'UL467, BS7430, IS 2309',
+      standards: 'BS7430, IS 2309',
       warranty: '10 years',
       moq: '100 pieces',
       itemCode: 'TBCBRCU25417.2MMx3000MM'
 },
     features: [
-      'UL467 certified for international compliance',
+      'Certified for international compliance',
       '254 micron thick copper coating',
       '99.9% pure electrolytic grade copper',
       'IS 2062 E250 A grade base steel',
@@ -1377,7 +1374,7 @@ export const allProducts: DetailedProduct[] = [
     image: productCopperRod,
     
     shortDescription: 'High capacity copper bonded earthing rod with 490 mm² cross-section for superior current dissipation.',
-    longDescription: 'Unique Electrodes Advance Earthing System: 25mm diameter × 3 meter long. Made from low carbon rust resistant high tensile steel in accordance to IS 2309. Molecularly bonded with 99.9% pure electrolytic grade copper as per BS7430 and UL467 guidelines. Cross section area: 490 mm². Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Available in 50, 100, or 250 micron coating options. Custom lengths available. Made in India.',
+    longDescription: 'Unique Electrodes Advance Earthing System: 25mm diameter × 3 meter long. Made from low carbon rust resistant high tensile steel in accordance to IS 2309. Molecularly bonded with 99.9% pure electrolytic grade copper as per BS7430 guidelines. Cross section area: 490 mm². Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Available in 50, 100, or 250 micron coating options. Custom lengths available. Made in India.',
     specifications: {
       material: 'Low Carbon High Tensile Steel (IS 2309)',
       coating: '99.9% Pure Electrolytic Copper (Molecularly Bonded)',
@@ -1388,7 +1385,7 @@ export const allProducts: DetailedProduct[] = [
       gicCompound: '25 Kg Premium (IS 3043 compliant)',
       conductivity: 'Superior (99.9% copper)',
       expectedLife: '25+ years',
-      standards: 'IS 2309, BS7430, UL467',
+      standards: 'IS 2309, BS7430',
       warranty: '10 years'
 },
     features: [
@@ -1396,7 +1393,7 @@ export const allProducts: DetailedProduct[] = [
       '99.9% pure electrolytic copper bonding',
       'Customizable coating thickness',
       'Custom lengths available',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       '25+ years service life',
       'Premium GIC included',
       'Made in India'
@@ -1425,7 +1422,7 @@ export const allProducts: DetailedProduct[] = [
     image: productCopperRod,
     
     shortDescription: 'Premium high capacity copper bonded rod with 803 mm² cross-section for maximum current handling.',
-    longDescription: 'Unique Electrodes Advance Earthing System: 32mm diameter × 3 meter long. Made from low carbon rust resistant high tensile steel in accordance to IS 2309. Molecularly bonded with 99.9% pure electrolytic grade copper as per BS7430 and UL467 guidelines. Cross section area: 803 mm². Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Available in 50, 100, or 250 micron coating options. Custom lengths available. Made in India.',
+    longDescription: 'Unique Electrodes Advance Earthing System: 32mm diameter × 3 meter long. Made from low carbon rust resistant high tensile steel in accordance to IS 2309. Molecularly bonded with 99.9% pure electrolytic grade copper as per BS7430 guidelines. Cross section area: 803 mm². Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Available in 50, 100, or 250 micron coating options. Custom lengths available. Made in India.',
     specifications: {
       material: 'Low Carbon High Tensile Steel (IS 2309)',
       coating: '99.9% Pure Electrolytic Copper (Molecularly Bonded)',
@@ -1436,7 +1433,7 @@ export const allProducts: DetailedProduct[] = [
       gicCompound: '25 Kg Premium (IS 3043 compliant)',
       conductivity: 'Superior (99.9% copper)',
       expectedLife: '25+ years',
-      standards: 'IS 2309, BS7430, UL467',
+      standards: 'IS 2309, BS7430',
       warranty: '10 years'
 },
     features: [
@@ -1444,7 +1441,7 @@ export const allProducts: DetailedProduct[] = [
       '99.9% pure electrolytic copper bonding',
       'Customizable coating thickness',
       'Custom lengths available',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       '25+ years service life',
       'Premium GIC included',
       'Made in India'
@@ -1473,7 +1470,7 @@ export const allProducts: DetailedProduct[] = [
     image: productCopperRod,
     
     shortDescription: 'Maximum capacity copper bonded rod with 1130 mm² cross-section for extreme current applications.',
-    longDescription: 'Unique Electrodes Advance Earthing System: 38mm diameter × 3 meter long. Made from low carbon rust resistant high tensile steel in accordance to IS 2309. Molecularly bonded with 99.9% pure electrolytic grade copper as per BS7430 and UL467 guidelines. Cross section area: 1130 mm². Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Available in 50, 100, or 250 micron coating options. Custom lengths available. Made in India.',
+    longDescription: 'Unique Electrodes Advance Earthing System: 38mm diameter × 3 meter long. Made from low carbon rust resistant high tensile steel in accordance to IS 2309. Molecularly bonded with 99.9% pure electrolytic grade copper as per BS7430 guidelines. Cross section area: 1130 mm². Supplied with 25 Kgs of Premium Ground Improving compound (IS 3043 compliant) for excellent electrical conductivity. Available in 50, 100, or 250 micron coating options. Custom lengths available. Made in India.',
     specifications: {
       material: 'Low Carbon High Tensile Steel (IS 2309)',
       coating: '99.9% Pure Electrolytic Copper (Molecularly Bonded)',
@@ -1484,7 +1481,7 @@ export const allProducts: DetailedProduct[] = [
       gicCompound: '25 Kg Premium (IS 3043 compliant)',
       conductivity: 'Superior (99.9% copper)',
       expectedLife: '25+ years',
-      standards: 'IS 2309, BS7430, UL467',
+      standards: 'IS 2309, BS7430',
       warranty: '10 years'
 },
     features: [
@@ -1492,7 +1489,7 @@ export const allProducts: DetailedProduct[] = [
       '99.9% pure electrolytic copper bonding',
       'Customizable coating thickness',
       'Custom lengths available',
-      'BS7430 & UL467 compliant',
+      'BS7430 compliant',
       '25+ years service life',
       'Premium GIC included',
       'Made in India'
@@ -1505,6 +1502,7 @@ export const allProducts: DetailedProduct[] = [
       'Critical National Infrastructure'
 ],
   },
+  /*
   {
     id: 'ese-protector',
     sku: 'UE-ESE-PROTECTOR',
@@ -1647,6 +1645,7 @@ export const allProducts: DetailedProduct[] = [
       'Industrial Complexes'
 ],
   },
+  */
   {
     id: 'solar-earthing-kit',
     sku: 'UE-SOLAR-KIT',
@@ -1659,7 +1658,7 @@ export const allProducts: DetailedProduct[] = [
     materialSlug: 'copper-bonded',
     materialName: 'Copper Bonded',
     length: 3,
-    diameter: 25,
+    diameter: 14,
     image: productSolarKit,
     price: 4500,
     shortDescription: 'Complete earthing solution designed specifically for solar power installations with all necessary components.',
@@ -1667,13 +1666,13 @@ export const allProducts: DetailedProduct[] = [
     specifications: {
       material: 'Copper Bonded Steel (99.9% Pure Copper)',
       coating: 'Molecularly Bonded Copper',
-      diameter: '25mm (rod)',
+      diameter: '14, 17 mm',
       length: '3 Meter (rod)',
       packageIncludes: 'Copper Bonded Rods, Clamps, Connectors, GIC',
-      gicCompound: '50 Kg Premium Ground Improving Compound',
+      gicCompound: '10 Kg Premium Ground Improving Compound',
       conductivity: 'Superior (99.9% copper)',
       expectedLife: '25+ years',
-      standards: 'IS 3043, IEC 62305, UL467',
+      standards: 'IS 3043, IEC 62305',
       warranty: '10 years'
 },
     features: [
@@ -1697,58 +1696,94 @@ export const allProducts: DetailedProduct[] = [
       'Off-grid Solar Systems'
 ],
   },
-  {
-    id: 'ground-improving-compound',
-    sku: 'UE-GIC-25KG',
-    name: 'TBGIM Ground Improving Compound (25 Kg)',
+    {
+    id: 'uv-ground-improving-compound',
+    sku: 'UE-UV-GIC',
+    name: 'UV Ground Improving Compound',
     category: 'specialty',
-    categorySlug: 'specialty',
-    categoryName: 'Specialty Earthing Products',
-    subCategory: 'Specialty Earthing Products',
-    
-    
-    
-    image: productEarthCompound,
-    price: 1200,
-    shortDescription: 'Premium ground enhancement compound IS 3043 compliant for reducing earth resistance and improving conductivity.',
-    longDescription: 'TBGIM (Unique Electrodes Ground Improving Material): Premium non-corrosive ground enhancement compound specifically formulated to reduce earth resistance and improve soil conductivity. IS 3043 compliant formulation ensures optimal performance in all soil conditions. The compound creates a stable, low-resistance environment around earthing electrodes, significantly improving their effectiveness. Non-toxic, eco-friendly composition with long-lasting performance. Maintains consistent low resistance even in dry or poor conductivity soils. Essential for achieving optimal earthing system performance. Made in India.',
+    categorySlug: 'ground-improving-compound',
+    categoryName: 'Ground Improving Compound',
+    subCategory: 'Ground Improving Compound',
+    material: 'bentonite',
+    materialSlug: 'bentonite',
+    materialName: 'Bentonite',
+    image: productEarthCompoundBrown,
+    price: 950,
+    shortDescription: 'Premium bentonite-based ground improving compound compliant with IS 3043 for lowering soil resistivity and permanent moisture retention.',
+    longDescription: 'Unique Electrodes UV Ground Improving Compound: High-grade bentonite-based earth enhancement material engineered to dramatically reduce earth resistance around electrodes. Complies with IS 3043 standards, non-corrosive, non-leaching, and environmentally friendly. Available in 10, 15, 25 kg bag types. Made in India.',
     specifications: {
-      material: 'Non-corrosive mineral compound',
-      diameter: 'N/A',
-      length: '25 Kg bag',
-      weight: '25 Kg per bag',
-      conductivity: 'Excellent (soil enhancement)',
-      resistivity: 'Significantly reduces earth resistance',
-      composition: 'Mineral salts, conductive compounds, moisture retention agents',
-      soilCompatibility: 'All soil types',
-      toxicity: 'Non-toxic, eco-friendly',
-      expectedLife: '10+ years effectiveness',
+      material: 'Bentonite',
+      bagType: '10, 15, 25 kg',
+      resistivity: 'Ultra-low (0.84 Ω-cm verified)',
+      soilCompatibility: 'All soil types (ideal for rocky, sandy & dry soils)',
+      toxicity: 'Non-toxic, eco-friendly & non-leaching',
+      expectedLife: '15+ years active performance',
       standards: 'IS 3043 compliant',
-      warranty: '10 years'
-},
+      warranty: '10 years',
+    },
     features: [
+      'Pure bentonite mineral composition',
+      'Ultra-low soil resistivity (0.84 Ω-cm)',
+      'Available in 10, 15, 25 kg bag types',
+      'High swelling index eliminates air cavities',
+      'Long-lasting moisture retention without watering',
+      'Non-corrosive to copper and steel electrodes',
       'IS 3043 compliant formulation',
-      'Significantly reduces earth resistance',
-      'Suitable for all soil conditions',
-      'Non-corrosive and eco-friendly',
-      'Long-lasting performance (10+ years)',
-      'Moisture retention properties',
-      'Enhances electrode effectiveness',
-      'Easy to use and install',
-      'Non-toxic composition',
-      'Made in India'
-],
+      'Made in India',
+    ],
     applications: [
-      'All Earthing Electrode Installations',
-      'High Resistance Soil Areas',
-      'Dry or Rocky Soil Conditions',
-      'Critical Infrastructure Earthing',
-      'Industrial Earthing Systems',
-      'Solar Power Plant Grounding',
-      'Telecom Tower Earthing',
-      'Substation Grounding'
-],
+      'Chemical Pipe & Solid Rod Earthing',
+      'High Resistivity & Rocky Soils',
+      'Solar Power Plants & Substations',
+      'Telecom Towers & Transmission Lines',
+      'Commercial & Residential Earthing',
+    ],
   },
+  {
+    id: 'uv-plus-improving-compound',
+    sku: 'UE-UV-PLUS-GIC',
+    name: 'UV Plus Improving Compound',
+    category: 'specialty',
+    categorySlug: 'ground-improving-compound',
+    categoryName: 'Ground Improving Compound',
+    subCategory: 'Ground Improving Compound',
+    material: 'bentonite-carbonite',
+    materialSlug: 'bentonite-carbonite',
+    materialName: 'Bentonite + Carbonite',
+    image: productEarthCompoundWhite,
+    price: 1350,
+    shortDescription: 'High-conductivity bentonite + carbonite enriched ground improving compound designed for extra-high fault current dissipation.',
+    longDescription: 'Unique Electrodes UV Plus Improving Compound: Premium advanced earth enhancement formulation blending high-grade bentonite with conductive carbonite. Provides ultra-low electrical resistivity and rapid surge dissipation for critical substations, data centers, and industrial facilities. Available in 10, 15, 25 kg moisture-barrier bags. Made in India.',
+    specifications: {
+      material: 'Bentonite + Carbonite',
+      bagType: '10, 15, 25 kg',
+      conductivity: 'Superior high-carbonite conductive matrix',
+      resistivity: 'Extra-low electrical resistivity',
+      soilCompatibility: 'All soil conditions including high-resistance terrain',
+      toxicity: 'Non-toxic, eco-friendly & maintenance-free',
+      expectedLife: '20+ years active performance',
+      standards: 'IS 3043 compliant',
+      warranty: '10 years',
+    },
+    features: [
+      'Enriched bentonite + carbonite conductive formulation',
+      'Fast fault current dissipation for surge protection',
+      'Available in 10, 15, 25 kg bag types',
+      'Permanent moisture locking without water recharging',
+      'Prevents galvanic corrosion of buried metals',
+      'Non-toxic and environmentally safe',
+      'IS 3043 compliant quality benchmark',
+      'Made in India',
+    ],
+    applications: [
+      'High Voltage Substations & Switchyards',
+      'Critical Data Centers & Radar Facilities',
+      'Industrial Manufacturing & Refineries',
+      'Solar PV Plants & Wind Power Grounding',
+      'Rocky & Mountainous Terrain',
+    ],
+  },
+  /*
   {
     id: 'lightning-mast-pole',
     sku: 'UE-MAST-POLE-3M',
@@ -1800,6 +1835,7 @@ export const allProducts: DetailedProduct[] = [
       'Power Distribution Facilities'
 ],
   },
+  */
 
   // ── ADDITIONAL SOLID ROD VARIANTS ──────────────────────────
   {
@@ -1985,6 +2021,80 @@ export const allProducts: DetailedProduct[] = [
     applications: ['Major Utility Substations', 'Large Scale Solar Farms', 'Critical National Infrastructure', 'Chemical Complexes'],
   },
   {
+    id: 'cbr-4m-32',
+    sku: 'UE-CBR-4M-32',
+    name: '4 Meter Copper Bonded Ground Rod (32MM X 4 Meter)',
+    category: 'solid-rod',
+    categorySlug: 'solid-rod',
+    categoryName: 'Solid Rod Type Earthing',
+    material: 'copper-bonded-4m',
+    materialSlug: 'copper-bonded-4m',
+    materialName: '4 Meter Copper Bonded Rod',
+    length: 4,
+    diameter: 32,
+    image: productCopperRod,
+    shortDescription: 'Heavy-duty 32mm x 4 meter copper bonded rod with 803 mm² cross-section for deep high-capacity grounding.',
+    longDescription: 'Unique Electrodes 4 Meter Copper Bonded Ground Rod: 32mm diameter × 4000mm length. High tensile steel core molecularly bonded with 250 microns 99.9% pure copper. Combines maximum mechanical driving rigidity with exceptional electrical conductivity for the most demanding deep grounding projects. Made in India.',
+    specifications: {
+      material: 'High Tensile Steel with Pure Copper Layer',
+      coating: '99.9% Pure Electrolytic Copper',
+      coatingThickness: '250 Microns',
+      diameter: '32mm',
+      length: '4 Meter (4000mm)',
+      crossSectionArea: '803 mm²',
+      conductivity: 'Superior',
+      expectedLife: '30+ years',
+      standards: 'IS:3043',
+      warranty: '10 years',
+    },
+    features: [
+      'Massive 803 mm² cross-sectional area for supreme current dissipation',
+      'Deep 4 meter driving capability for ultra-low ground impedance',
+      '250 micron uniform molecular copper bond',
+      'High structural rigidity for rocky and difficult soils',
+      '30+ years service life',
+      'Made in India',
+    ],
+    applications: ['Major Utility Substations', 'Wind Turbines & Power Plants', 'Critical National Infrastructure', 'Chemical Complexes'],
+  },
+  {
+    id: 'cbr-4m-38',
+    sku: 'UE-CBR-4M-38',
+    name: '4 Meter Copper Bonded Ground Rod (38MM X 4 Meter)',
+    category: 'solid-rod',
+    categorySlug: 'solid-rod',
+    categoryName: 'Solid Rod Type Earthing',
+    material: 'copper-bonded-4m',
+    materialSlug: 'copper-bonded-4m',
+    materialName: '4 Meter Copper Bonded Rod',
+    length: 4,
+    diameter: 38,
+    image: productCopperRod,
+    shortDescription: 'Maximum capacity 38mm x 4 meter copper bonded rod with 1130 mm² cross-section for ultra-deep EHV grounding.',
+    longDescription: 'Unique Electrodes 4 Meter Copper Bonded Ground Rod: 38mm diameter × 4000mm length. High tensile steel core molecularly bonded with 250 microns 99.9% pure copper. Maximum current handling and mechanical rigidity for extra-high-voltage substations and mission-critical grounding installations. Made in India.',
+    specifications: {
+      material: 'High Tensile Steel with Pure Copper Layer',
+      coating: '99.9% Pure Electrolytic Copper',
+      coatingThickness: '250 Microns',
+      diameter: '38mm',
+      length: '4 Meter (4000mm)',
+      crossSectionArea: '1130 mm²',
+      conductivity: 'Superior',
+      expectedLife: '30+ years',
+      standards: 'IS:3043',
+      warranty: '10 years',
+    },
+    features: [
+      'Huge 1130 mm² cross-sectional area for maximum fault current handling',
+      'Deep 4 meter driving capability for ultra-low ground impedance',
+      '250 micron uniform molecular copper bond',
+      'Maximum structural rigidity for rocky and dense soils',
+      '30+ years service life',
+      'Made in India',
+    ],
+    applications: ['Extra High Voltage (EHV) Substations', 'Nuclear & Thermal Power Stations', 'Large Scale Solar & Wind Farms', 'Heavy Industrial Complexes'],
+  },
+  {
     id: 'pure-cu-16-3m',
     sku: 'UE-PC-16-3M',
     name: 'Pure Copper Solid Ground Rod (16MM X 3 Meter)',
@@ -1996,7 +2106,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Pure Copper Solid Rod',
     length: 3,
     diameter: 16,
-    image: productCopperPipePure,
+    image: productCopperRod,
     shortDescription: '100% solid electrolytic copper rod (99.9% purity) providing highest electrical conductivity and lifetime corrosion immunity.',
     longDescription: 'Unique Electrodes Pure Copper Solid Earthing Rod: 16mm diameter × 3 meter length. Manufactured entirely from 99.9% pure electrolytic grade copper rod. Offers 100% IACS electrical conductivity, total immunity to electrolytic galvanic corrosion, and virtually unlimited operational lifespan (40+ years). Recommended for highly corrosive soils, chemical facilities, and critical sensitive electronic installations. Made in India.',
     specifications: {
@@ -2031,7 +2141,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Pure Copper Solid Rod',
     length: 3,
     diameter: 20,
-    image: productCopperPipePure,
+    image: productCopperRod,
     shortDescription: 'Premium 20mm solid 99.9% pure copper rod offering exceptional conductivity and durability for critical installations.',
     longDescription: 'Unique Electrodes Pure Copper Solid Earthing Rod: 20mm diameter × 3 meter length. Fabricated from solid 99.9% pure electrolytic copper. Delivers ultra-low resistance dissipation for heavy lightning strokes and severe electrical faults. Made in India.',
     specifications: {
@@ -2065,7 +2175,7 @@ export const allProducts: DetailedProduct[] = [
     materialName: 'Pure Copper Solid Rod',
     length: 3,
     diameter: 25,
-    image: productCopperPipePure,
+    image: productCopperRod,
     shortDescription: 'Massive 25mm solid pure copper earthing rod for highest current dissipation and lifetime reliability.',
     longDescription: 'Unique Electrodes Pure Copper Solid Earthing Rod: 25mm diameter × 3 meter length. Solid 99.9% pure electrolytic copper with 490 mm² cross-sectional area. The gold standard in electrical grounding for ultra-critical facilities. Made in India.',
     specifications: {
@@ -2216,4 +2326,21 @@ export const categoryMetaList: Record<string, CategoryPageMeta> = {
     lengths: [0, 3],
     diameters: [0, 25],
   },
+  'solar-earthing-kit': {
+    title: 'Solar Earthing Kit',
+    subtitle: 'Tailored all-in-one earthing package for rooftop and utility-scale solar PV installations.',
+    category: 'specialty',
+    breadcrumb: 'Solar Earthing Kit',
+    lengths: [3],
+    diameters: [14, 17],
+  },
+  'ground-improving-compound': {
+    title: 'Ground Improving Compound',
+    subtitle: 'Ultra-low resistivity mineral enhancement compound compliant to IS 3043 for lowering soil resistance.',
+    category: 'specialty',
+    breadcrumb: 'Ground Improving Compound',
+    lengths: [],
+    diameters: [],
+  },
+
 };

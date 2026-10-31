@@ -20,7 +20,7 @@ const productLinks = [
   { to: '/products/copper-bonded-rod-in-pipe', label: 'Rod In Pipe' },
   { to: '/products/copper-bonded-solid-rod', label: 'CB Solid Rod' },
   { to: '/products/hot-dip-galvanised-solid-rod', label: 'HDG Solid Rod' },
-  { to: '/products/ese-lightning-arrestor', label: 'ESE Lightning Arrestor' },
+  // { to: '/products/ese-lightning-arrestor', label: 'ESE Lightning Arrestor' },
   { to: '/products/solar-earthing-kit', label: 'Solar Earthing Kit' },
   { to: '/products/ground-improving-compound', label: 'Ground Improving Compound' },
 ];

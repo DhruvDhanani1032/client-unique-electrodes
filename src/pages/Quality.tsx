@@ -49,7 +49,6 @@ const standardsList = [
   { code: "IEEE Std 80", title: "Guide for Safety in AC Substation Grounding" },
   { code: "IEC 62561", title: "Lightning Protection & Earthing Components" },
   { code: "BS 7430", title: "Code of Practice for Protective Earthing" },
-  { code: "UL 467", title: "Grounding & Bonding Equipment Standard" },
   { code: "IS:2629 / IS:4759", title: "Hot Dip Galvanizing of Iron & Steel" },
 ];
 

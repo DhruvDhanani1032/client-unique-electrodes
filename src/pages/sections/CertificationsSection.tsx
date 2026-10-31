@@ -1,7 +1,9 @@
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import type { Swiper as SwiperClass } from "swiper";
+import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import SectionHeader from "../../components/ui/SectionHeader";
@@ -19,7 +21,10 @@ import "./CertificationsSection.css";
 const certBadgesList = [
   { src: certImg1, alt: "Ministry of MSME, Govt. of India" },
   { src: certImg2, alt: "Certified ISO 9001:2015 Company" },
-  { src: certIaf, alt: "IAF - International Accreditation Forum Multilateral Recognition" },
+  {
+    src: certIaf,
+    alt: "IAF - International Accreditation Forum Multilateral Recognition",
+  },
   { src: certRohs, alt: "RoHS Compliant Certified" },
   { src: certImg3, alt: "Central Power Research Institute (CPRI)" },
   { src: certImg4, alt: "NABL ISO / IEC 17025 Accredited" },
@@ -34,12 +39,36 @@ const certBadgesList = [
   },
 ];
 
+// Duplicate list for seamless infinite loop buffer
+const duplicatedBadges = [...certBadgesList, ...certBadgesList];
+
 export default function CertificationsSection() {
+  const swiperRef = useRef<SwiperClass | null>(null);
+
+  const handleMouseEnter = () => {
+    const swiper = swiperRef.current;
+    if (swiper && swiper.autoplay) {
+      swiper.autoplay.stop();
+      if (
+        typeof swiper.getTranslate === "function" &&
+        typeof swiper.setTranslate === "function"
+      ) {
+        const currentTranslate = swiper.getTranslate();
+        swiper.setTranslate(currentTranslate);
+        swiper.animating = false;
+      }
+    }
+  };
+
+  const handleMouseLeave = () => {
+    const swiper = swiperRef.current;
+    if (swiper && swiper.autoplay) {
+      swiper.autoplay.start();
+    }
+  };
+
   return (
-    <section
-      className="section home-certs-section"
-      id="certifications"
-    >
+    <section className="section home-certs-section" id="certifications">
       <div className="container">
         <SectionHeader
           tag="Certifications & Approvals"
@@ -47,8 +76,12 @@ export default function CertificationsSection() {
           subtitle="Transparency and trust. All our official credentials, government registrations, and lab reports."
         />
 
-        {/* Certificate Image Badges Swiper Slider */}
-        <div className="home-certs-slider-wrapper">
+        {/* Certificate Image Badges Continuous Swiper Slider */}
+        <div
+          className="home-certs-slider-wrapper"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <button
             className="home-certs-nav-btn cert-prev"
             aria-label="Previous certificates"
@@ -57,17 +90,23 @@ export default function CertificationsSection() {
           </button>
 
           <Swiper
-            modules={[Autoplay, Pagination, Navigation]}
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
+            modules={[Autoplay, FreeMode, Navigation]}
             spaceBetween={20}
             slidesPerView={2}
             loop={true}
-            speed={700}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
+            speed={2500}
+            freeMode={{
+              enabled: true,
+              momentum: false,
             }}
-            pagination={{ clickable: true }}
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
+            }}
             navigation={{
               prevEl: ".cert-prev",
               nextEl: ".cert-next",
@@ -80,7 +119,7 @@ export default function CertificationsSection() {
             }}
             className="home-certs-swiper"
           >
-            {certBadgesList.map((badge, i) => (
+            {duplicatedBadges.map((badge, i) => (
               <SwiperSlide key={i}>
                 <div className="home-cert-img-card">
                   <div className="home-cert-img-wrap">

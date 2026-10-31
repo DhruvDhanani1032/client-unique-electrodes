@@ -81,7 +81,9 @@ export default function Navbar() {
     <>
       {/* Announcement Bar */}
       <div className="navbar-announcement">
-        <span>📍 Surat, Gujarat</span>
+        <span className="navbar-announcement-location">
+          <FaMapMarkerAlt size={11} /> Surat, Gujarat
+        </span>
         <span className="sep">|</span>
         <a href="tel:+919512231350"><FaPhoneAlt size={10} /> +91 9512231350</a>
       </div>
@@ -197,9 +199,9 @@ export default function Navbar() {
                               </ul>
                             </div>
 
-                            {/* Column 3: Lightning Protection & Specialty Products */}
+                            {/* Column 3: Specialty Products */}
                             <div className="mega-col">
-                              <h4 className="mega-col-title">LIGHTNING PROTECTION SYSTEMS</h4>
+                              {/* <h4 className="mega-col-title">LIGHTNING PROTECTION SYSTEMS</h4>
                               <ul className="mega-subgroup-list">
                                 <li>
                                   <Link to="/products/lightning-arrestors" onClick={handleLinkClick}>
@@ -216,17 +218,17 @@ export default function Navbar() {
                                     Lightning Protection Accessories
                                   </Link>
                                 </li>
-                              </ul>
+                              </ul> */}
 
-                              <h4 className="mega-col-title" style={{ marginTop: '20px' }}>SPECIALTY PRODUCTS</h4>
+                              <h4 className="mega-col-title">SPECIALTY PRODUCTS</h4>
                               <ul className="mega-subgroup-list">
                                 <li>
-                                  <Link to="/products/specialty" onClick={handleLinkClick}>
+                                  <Link to="/products/solar-earthing-kit" onClick={handleLinkClick}>
                                     Solar Earthing Kit
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link to="/products/specialty" onClick={handleLinkClick}>
+                                  <Link to="/products/ground-improving-compound" onClick={handleLinkClick}>
                                     Ground Improving Compound
                                   </Link>
                                 </li>
@@ -362,17 +364,17 @@ export default function Navbar() {
                                 <Link to="/products/solid-rod/pure-copper" className="mobile-accordion-item" onClick={handleLinkClick}>• Pure Copper Solid Rod</Link>
                               </div>
 
-                              <div className="mobile-accordion-group">
+                              {/* <div className="mobile-accordion-group">
                                 <div className="mobile-accordion-cat">Lightning Protection</div>
                                 <Link to="/products/lightning-arrestors" className="mobile-accordion-item" onClick={handleLinkClick}>• ESE Lightning Arrestor</Link>
                                 <Link to="/products/lightning-arrestors" className="mobile-accordion-item" onClick={handleLinkClick}>• Conventional Lightning Arrestor</Link>
                                 <Link to="/products/lightning-arrestors" className="mobile-accordion-item" onClick={handleLinkClick}>• Lightning Accessories</Link>
-                              </div>
+                              </div> */}
 
                               <div className="mobile-accordion-group">
                                 <div className="mobile-accordion-cat">Specialty Products</div>
-                                <Link to="/products/specialty" className="mobile-accordion-item" onClick={handleLinkClick}>• Solar Earthing Kit</Link>
-                                <Link to="/products/specialty" className="mobile-accordion-item" onClick={handleLinkClick}>• Ground Improving Compound</Link>
+                                <Link to="/products/solar-earthing-kit" className="mobile-accordion-item" onClick={handleLinkClick}>• Solar Earthing Kit</Link>
+                                <Link to="/products/ground-improving-compound" className="mobile-accordion-item" onClick={handleLinkClick}>• Ground Improving Compound</Link>
                               </div>
 
                               <Link to="/products" className="mobile-all-products-link" onClick={handleLinkClick}>

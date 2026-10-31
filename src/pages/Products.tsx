@@ -11,7 +11,7 @@ const categories = [
   'All',
   'Pipe Type Chemical Earthing',
   'Solid Rod Type Earthing',
-  'Lightning Protection Systems',
+  // 'Lightning Protection Systems',
   'Specialty Products',
 ];
 

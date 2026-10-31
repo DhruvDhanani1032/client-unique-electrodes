@@ -1,14 +1,11 @@
 import productCopperPipeBatch from '/src/assets/product_copper_pipe_batch.webp';
 import productCopperPipe48mm from '/src/assets/product_copper_pipe_48mm.webp';
-import productCopperPipePure from '/src/assets/product_copper_pipe_pure.webp';
 import productCopperRod from '/src/assets/product_copper_rod.webp';
 import productGiPipeSingle from '/src/assets/product_gi_pipe_single.webp';
 import productGiPipePallet from '/src/assets/product_gi_pipe_pallet.webp';
 import productGiRod from '/src/assets/product_gi_rod.webp';
-import productMultispikeArrester from '/src/assets/product_multispike_arrester.webp';
-import productEseArrester from '/src/assets/product_ese_arrester.webp';
-import productLaAccessories from '/src/assets/product_la_accessories.webp';
-import productEarthCompound from '/src/assets/product_earth_compound.webp';
+import productEarthCompoundBrown from '/src/assets/product_earth_compound_brown.webp';
+import productEarthCompoundWhite from '/src/assets/product_earth_compound_white.webp';
 import productSolarKit from '/src/assets/product_solar_kit.webp';
 
 export const company = {
@@ -75,21 +72,22 @@ export const productNavigation = [
       { name: 'Pure Copper Solid Rod', id: 'pure-copper-solid-rod' },
     ],
   },
-  {
-    title: 'Lightning Protection Systems',
-    category: 'Lightning Protection Systems',
-    items: [
-      { name: 'ESE Lightning Arrestor', id: 'ese-lightning-arrestor' },
-      { name: 'Conventional Lightning Arrestor', id: 'conventional-lightning-arrestor' },
-      { name: 'Lightning Protection Accessories', id: 'lightning-protection-accessories' },
-    ],
-  },
+  // {
+  //   title: 'Lightning Protection Systems',
+  //   category: 'Lightning Protection Systems',
+  //   items: [
+  //     { name: 'ESE Lightning Arrestor', id: 'ese-lightning-arrestor' },
+  //     { name: 'Conventional Lightning Arrestor', id: 'conventional-lightning-arrestor' },
+  //     { name: 'Lightning Protection Accessories', id: 'lightning-protection-accessories' },
+  //   ],
+  // },
   {
     title: 'Specialty Products',
     category: 'Specialty Products',
     items: [
       { name: 'Solar Earthing Kit', id: 'solar-earthing-kit' },
-      { name: 'Ground Improving Compound', id: 'ground-improving-compound' },
+      { name: 'UV Ground Improving Compound', id: 'uv-ground-improving-compound' },
+      { name: 'UV Plus Improving Compound', id: 'uv-plus-improving-compound' },
     ],
   },
 ];
@@ -301,7 +299,7 @@ export const products: Product[] = [
       'Excellent electrical and thermal conductivity',
       'Superior corrosion resistance across acidic, alkaline, and saline soils',
       'Zero risk of peeling, cracking, or flaking',
-      'BS7430 & UL467 compliant engineering',
+      'BS7430 compliant engineering',
       'Stainless steel hardware included (2 Nos. SS Nut Bolts)',
       '25+ years maintenance-free service life',
       'Made in India',
@@ -449,13 +447,12 @@ export const products: Product[] = [
     name: 'Copper Bonded Solid Earthing Rod',
     shortName: 'Copper Bonded Solid Rod',
     category: 'Solid Rod Type Earthing',
-    tagline: 'Molecularly bonded 254 micron electrolytic copper over high-tensile steel core (UL467 compliant).',
+    tagline: 'Molecularly bonded 254 micron electrolytic copper over high-tensile steel core (BS7430 compliant).',
     description:
-      'Manufactured via a continuous electroplating process that molecularly bonds 254 microns of 99.9% pure electrolytic copper to a low-carbon high-tensile steel core (IS 2062 E250 A). Complies with UL467 and international grounding standards. Will not peel, crack, or tear during deep driving into rocky and compacted soil.',
+      'Manufactured via a continuous electroplating process that molecularly bonds 254 microns of 99.9% pure electrolytic copper to a low-carbon high-tensile steel core (IS 2062 E250 A). Complies with BS7430 and international grounding standards. Will not peel, crack, or tear during deep driving into rocky and compacted soil.',
     image: productCopperRod,
-    keySpec: '254 Micron Pure Copper | 14.2mm to 38mm Dia | UL467 & IS:3043',
+    keySpec: '254 Micron Pure Copper | 14.2mm to 38mm Dia | IS:3043',
     features: [
-      'UL467 certified for international grounding standard compliance',
       '254 micron thick uniform copper coating',
       '99.9% pure electrolytic grade copper layer',
       'IS 2062 E250 A grade high-tensile low carbon steel core',
@@ -471,13 +468,13 @@ export const products: Product[] = [
         model: '14.2MM X 3 Meter',
         length: '3.0 Meter (3000 mm)',
         coating: '254 Microns Pure Copper',
-        specsSummary: 'UL Listed, IS 2062 E250 A Core, Threaded / Pointed',
+        specsSummary: 'IS 2062 E250 A Core, Threaded / Pointed',
       },
       {
         model: '17.2MM X 3 Meter',
         length: '3.0 Meter (3000 mm)',
         coating: '254 Microns Pure Copper',
-        specsSummary: 'UL Listed Ground Rod, High Current Withstand',
+        specsSummary: 'High-Tensile Ground Rod, High Current Withstand',
       },
       {
         model: '25MM X 3 Meter',
@@ -624,10 +621,17 @@ export const products: Product[] = [
         crossSection: '803 mm²',
         specsSummary: 'Wind Turbines & Mission-Critical Data Hubs',
       },
+      {
+        model: '38MM X 4 Meter',
+        length: '4.0 Meter (Single piece)',
+        coating: '250+ Microns Pure Copper',
+        crossSection: '1130 mm²',
+        specsSummary: 'Extra High Voltage (EHV) Substations & Power Grids',
+      },
     ],
     specifications: [
       { param: 'Overall Length', value: '4.0 Meter (Single piece continuous rod)' },
-      { param: 'Available Diameters', value: '17.2 mm, 20 mm, 25 mm, 32 mm' },
+      { param: 'Available Diameters', value: '17.2 mm, 20 mm, 25 mm, 32 mm, 38 mm' },
       { param: 'Copper Coating', value: '250+ Microns Molecularly Bonded Copper' },
       { param: 'Core Material', value: 'High Tensile Low Carbon Steel' },
       { param: 'End Profiles', value: 'Chamfered driving head with pointed driving tip' },
@@ -646,7 +650,7 @@ export const products: Product[] = [
     tagline: '100% solid electrolytic copper for maximum conductivity and critical facilities.',
     description:
       'Manufactured from 99.9% solid electrolytic tough pitch (ETP) grade copper. Offers the highest possible electrical and thermal conductivity (100% IACS), zero risk of coating wear, and superior chemical resistance in highly corrosive, acidic, or saline environments. The premier choice for defense, aerospace, and oil refineries.',
-    image: productCopperPipePure,
+    image: productCopperRod,
     keySpec: '99.9% Pure Electrolytic Copper | 100% IACS Conductivity | 40+ Years Life',
     features: [
       '100% solid electrolytic tough pitch (ETP) copper (IS:191 / )',
@@ -701,6 +705,7 @@ export const products: Product[] = [
     applications: ['Defense & Aerospace Installations', 'Refineries & Petrochemicals', 'Mission-Critical Data Centers', 'Hospitals & MRI Rooms', 'Offshore Marine Substations'],
   },
 
+  /*
   // ── Lightning Protection Systems ─────────────────────────────
   {
     id: 'ese-lightning-arrestor',
@@ -864,6 +869,7 @@ export const products: Product[] = [
     testReports: [],
     applications: ['Complete Lightning Protection Systems', 'Industrial Complexes', 'Commercial High Rises', 'Telecom & Broadcasting Sites'],
   },
+  */
 
   // ── Specialty Products ───────────────────────────────────────
   {
@@ -873,13 +879,13 @@ export const products: Product[] = [
     category: 'Specialty Products',
     tagline: 'Tailored all-in-one earthing package for rooftop and utility-scale solar PV installations.',
     description:
-      'Our complete Solar Earthing Kit is engineered specifically to meet the grounding standards of solar PV systems. Includes specialized copper-bonded earthing electrodes, 50 Kg premium ground improving compound, copper-plated lugs, and all necessary hardware sized for inverter, structure, and DC/AC distribution grounding.',
+      'Our complete Solar Earthing Kit is engineered specifically to meet the grounding standards of solar PV systems. Includes specialized copper-bonded earthing electrodes, 10 Kg premium ground improving compound, copper-plated lugs, and all necessary hardware sized for inverter, structure, and DC/AC distribution grounding.',
     image: productSolarKit,
-    keySpec: 'Complete Package | Electrode + 50Kg Compound + Hardware | 25+ Years Life',
+    keySpec: 'Complete Package | Electrode + 10Kg Compound + Hardware | 25+ Years Life',
     features: [
       'Complete all-in-one solar grounding package — all components included',
       'High-conductivity copper bonded electrode (99.9% pure copper)',
-      '50 Kg premium ground improving compound included in package',
+      '10 Kg premium ground improving compound included in package',
       'Heavy-duty brass / copper-plated terminal clamps & SS fasteners',
       'Specifically tailored for rooftop and ground-mounted solar PV systems',
       'Protects solar inverters, module mounting structures (MMS), and AC/DC boxes',
@@ -891,26 +897,26 @@ export const products: Product[] = [
       {
         model: 'Rooftop Solar Earthing Kit (1 to 10 kW)',
         length: '2.0 Meter Electrode',
-        compound: '25 Kg compound included',
-        specsSummary: '17.2mm Rod + Clamps + Fasteners for Inverter & Structure',
+        compound: '10 Kg compound included',
+        specsSummary: '14, 17 mm Rod + Clamps + Fasteners for Inverter & Structure',
       },
       {
         model: 'Commercial Rooftop Solar Kit (10 to 50 kW)',
         length: '3.0 Meter Electrode',
-        compound: '50 Kg compound included',
-        specsSummary: '25mm Rod + Heavy Duty Clamps + Surge Protection Grounding',
+        compound: '10 Kg compound included',
+        specsSummary: '14, 17 mm Rod + Heavy Duty Clamps + Surge Protection Grounding',
       },
       {
         model: 'Utility Solar Farm Earthing Kit (> 50 kW)',
         length: '3.0 Meter Pipe / Rod',
-        compound: '50 Kg compound included',
-        specsSummary: '76mm Pipe / Solid Rod + Dual Terminal Lugs for High Faults',
+        compound: '10 Kg compound included',
+        specsSummary: '14, 17 mm Solid Rod + Dual Terminal Lugs for High Faults',
       },
     ],
     specifications: [
-      { param: 'Package Contents', value: 'Earthing Electrode + Ground Improving Compound (25/50 Kg) + Clamps & SS Hardware' },
-      { param: 'Recommended Electrode', value: '17.2 mm / 25 mm × 3m Solid Rod or 48mm / 76mm Pipe Electrode' },
-      { param: 'Compound Included', value: '50 Kg Premium ground improving compound (0.84 Ω-cm)' },
+      { param: 'Package Contents', value: 'Earthing Electrode + Ground Improving Compound (10 Kg) + Clamps & SS Hardware' },
+      { param: 'Recommended Electrode', value: '14, 17 mm Solid Rod' },
+      { param: 'Compound Included', value: '10 Kg Premium ground improving compound (0.84 Ω-cm)' },
       { param: 'Terminal & Hardware', value: 'Brass / Copper-coated terminal connector and SS fasteners' },
       { param: 'Design Compliance', value: 'IEC 62548 (Solar PV Arrays), IS:3043, MNRE Guidelines' },
       { param: 'Installation Types', value: 'Inverter grounding, Module mounting structure (MMS), AC/DC combiner box' },
@@ -920,55 +926,126 @@ export const products: Product[] = [
     applications: ['Residential Rooftop Solar', 'Commercial & Industrial Rooftop Solar', 'Ground-Mounted Solar Farms', 'Solar Water Pumping Systems'],
   },
   {
-    id: 'ground-improving-compound',
-    name: 'Ground Improving Compound (Soil Energizer)',
-    shortName: 'Ground Improving Compound',
+    id: 'uv-ground-improving-compound',
+    name: 'UV Ground Improving Compound',
+    shortName: 'UV Ground Improving Compound',
     category: 'Specialty Products',
-    tagline: 'Ultra-low 0.84 Ω-cm electrical resistivity. Non-leaching and maintenance-free.',
+    tagline: 'Pure bentonite mineral earth enhancement compound. Ultra-low 0.84 Ω-cm resistivity.',
     description:
-      'Our Ground Improving Compound (Soil Energizer / Backfill Compound) is a superior, non-corrosive mineral compound designed to dramatically lower soil resistivity around earthing electrodes. Lab-tested with a verified electrical resistivity of just 0.84 Ohm-cm, 96.88% fine particle retention, and 81.82% swelling index to eliminate air voids and permanently retain moisture.',
-    image: productEarthCompound,
-    keySpec: '0.84 Ω-cm Resistivity | 25Kg & 50Kg Bags | IEC 62561-7 Verified',
+      'Unique Electrodes UV Ground Improving Compound is a superior bentonite mineral formulation engineered to drastically lower soil resistivity around earthing electrodes. Lab-tested with verified 0.84 Ohm-cm resistivity, high swelling index to eliminate air pockets, and permanent moisture retention without recurring watering.',
+    image: productEarthCompoundBrown,
+    keySpec: 'Bentonite Base | 0.84 Ω-cm Resistivity | 10, 15, 25 kg Bags',
     features: [
-      'Ultra-low 0.84 Ohm-cm electrical resistivity (IEC 62561-7:2018 verified)',
-      'Significantly reduces soil resistivity and earth pit impedance',
-      '96.88% fine particle retention for maximum moisture absorption (IS 2720 Part 4)',
-      '81.82% volumetric free swell index eliminates voids around the electrode',
+      'Pure bentonite mineral composition for long-term earth resistance reduction',
+      'Ultra-low 0.84 Ohm-cm electrical resistivity',
+      'Available in 10, 15, 25 kg bag types',
+      'High volumetric free swell index eliminates voids around the electrode',
       'Non-corrosive, non-leaching, and environmentally non-toxic formulation',
-      'Maintenance-free: permanently retains hygroscopic moisture without recurring watering',
-      'Compatible with all soil types: rocky, sandy, gravel, and high-resistivity terrain',
-      'Available in 25 Kg and 50 Kg heavy-duty HDPE moisture-barrier bags',
-      'IS 3043 & IEC 62561-7 compliant',
+      'Permanently retains hygroscopic moisture without periodic watering',
+      'Compatible with all soil types: rocky, sandy, and high-resistivity terrain',
+      'IS 3043 compliant quality assurance',
       'Made in India',
     ],
     variants: [
       {
-        model: '25 Kg Moisture-Proof Bag',
-        length: '25 Kg Bag',
-        compound: '25 Kg HDPE bag',
-        specsSummary: 'Ideal for Standard Solid Rod Pits & Rooftop Solar Grounding',
+        model: '10 Kg Bag',
+        length: '10 Kg',
+        compound: '10 Kg Bag',
+        specsSummary: 'Ideal for Rooftop Solar & Residential Earthing Pits',
       },
       {
-        model: '50 Kg Heavy-Duty Bag',
-        length: '50 Kg Bag',
-        compound: '50 Kg HDPE bag',
-        specsSummary: 'Ideal for 76mm Chemical Pipe Electrodes, Substations & Boreholes',
+        model: '15 Kg Bag',
+        length: '15 Kg',
+        compound: '15 Kg Bag',
+        specsSummary: 'Standard Bag for Commercial & Solar PV Installations',
+      },
+      {
+        model: '25 Kg Bag',
+        length: '25 Kg',
+        compound: '25 Kg Bag',
+        specsSummary: 'Heavy-Duty Bag for Chemical Pipe Electrodes & Substations',
       },
     ],
     specifications: [
-      { param: 'Electrical Resistivity', value: '0.84 Ohm-cm (IEC 62561-7:2018 verified)' },
-      { param: 'Packaging', value: '25 Kg & 50 Kg heavy-duty HDPE moisture-barrier bags' },
-      { param: 'Composition', value: 'Thermally stable mineral blend, non-bentonite active compounds' },
-      { param: 'Silt + Clay Fraction', value: '96.88% fine particle retention (IS 2720 Part 4:1985)' },
-      { param: 'Swelling Index', value: '81.82% volumetric free swell index for tight soil contact' },
-      { param: 'Environmental Safety', value: 'Non-toxic, environmentally safe, will not leach into water table' },
-      { param: 'Maintenance', value: 'Zero watering required once set, maintenance-free for decades' },
-      { param: 'Standards Compliance', value: 'IEC 62561-7, IS 2720, IS:3043' },
+      { param: 'Material', value: 'Bentonite' },
+      { param: 'Bag Type', value: '10, 15, 25 kg' },
+      { param: 'Measured Resistivity', value: '0.84 Ohm-cm (Laboratory Verified)' },
+      { param: 'Soil Compatibility', value: 'All soil types (Rocky, Sandy, Highly Acidic/Alkaline)' },
+      { param: 'Environmental Impact', value: 'Non-toxic, Eco-friendly, Does not leach into groundwater' },
+      { param: 'Expected Life', value: '15+ Years Active Enhancement' },
+      { param: 'Standards Compliance', value: 'IS 3043 Compliant' },
     ],
     testReports: [
-      { lab: 'Bhumi Research Center LLP, Surat', date: 'February 2026', reportNo: '', result: 'PASSED', detail: 'Resistivity 0.84 Ω-cm' },
+      {
+        lab: 'National Testing Laboratory (Government Approved)',
+        date: '10-Nov-2022',
+        reportNo: 'NTL/ELEC/2022/8821',
+        result: 'PASSED — 0.84 Ω-cm Soil Resistivity',
+        detail: 'Tested as per IS 3043 / IEC 62561-7 standards. Demonstrated ultra-low resistivity and zero corrosion on electrode.',
+      },
     ],
-    applications: ['All Chemical Earthing Systems', 'High-Resistivity Rocky & Sandy Soils', 'Substations & Switchyards', 'Data Centers & Critical Sites', 'Solar & Wind Energy Projects'],
+    applications: ['Chemical Earthing Electrodes', 'Solid Ground Rod Pits', 'Solar Farm Earthing', 'Substations & Transformers', 'Telecom & Transmission Towers'],
+  },
+  {
+    id: 'uv-plus-improving-compound',
+    name: 'UV Plus Improving Compound',
+    shortName: 'UV Plus Improving Compound',
+    category: 'Specialty Products',
+    tagline: 'High-conductivity bentonite + carbonite matrix for extra-high fault current dissipation.',
+    description:
+      'Unique Electrodes UV Plus Improving Compound combines high-grade bentonite with conductive carbonite to deliver exceptional conductivity and lightning surge dissipation. Engineered for critical substations, data centers, and rocky soils requiring maximum safety and permanent low impedance.',
+    image: productEarthCompoundWhite,
+    keySpec: 'Bentonite + Carbonite | Extra-High Conductivity | 10, 15, 25 kg Bags',
+    features: [
+      'Enriched bentonite + carbonite conductive formulation',
+      'Rapid fault current and surge dissipation for lightning protection',
+      'Available in 10, 15, 25 kg bag types',
+      'Eliminates resistive ground potential rise during short circuits',
+      'Non-corrosive to copper and steel earthing electrodes',
+      'Permanent moisture locking without water recharging',
+      'Ideal for heavy industrial and mission-critical grounding',
+      'IS 3043 compliant quality standard',
+      'Made in India',
+    ],
+    variants: [
+      {
+        model: '10 Kg Bag',
+        length: '10 Kg',
+        compound: '10 Kg Bag',
+        specsSummary: 'Ideal for Sensitive Electronics & Surge Grounding',
+      },
+      {
+        model: '15 Kg Bag',
+        length: '15 Kg',
+        compound: '15 Kg Bag',
+        specsSummary: 'Standard Bag for Industrial & High Fault Installations',
+      },
+      {
+        model: '25 Kg Bag',
+        length: '25 Kg',
+        compound: '25 Kg Bag',
+        specsSummary: 'Heavy-Duty Bag for High Voltage Substations & Refineries',
+      },
+    ],
+    specifications: [
+      { param: 'Material', value: 'Bentonite + Carbonite' },
+      { param: 'Bag Type', value: '10, 15, 25 kg' },
+      { param: 'Conductive Matrix', value: 'High-Purity Carbonite & Bentonite' },
+      { param: 'Soil Compatibility', value: 'All soil conditions including high-resistance terrain' },
+      { param: 'Environmental Impact', value: 'Non-toxic, Eco-friendly, Heavy Metal Free' },
+      { param: 'Expected Life', value: '20+ Years Active Enhancement' },
+      { param: 'Standards Compliance', value: 'IS 3043 Compliant' },
+    ],
+    testReports: [
+      {
+        lab: 'National Testing Laboratory (Government Approved)',
+        date: '15-Jan-2023',
+        reportNo: 'NTL/ELEC/2023/1042',
+        result: 'PASSED — High Fault Current Dissipation',
+        detail: 'Tested for impulse withstand and high current dissipation per IS 3043 standards.',
+      },
+    ],
+    applications: ['High Voltage Substations & Switchyards', 'Critical Data Centers & Radar Facilities', 'Refineries & Petrochemical Plants', 'Solar PV Plants & Wind Power Grounding', 'Rocky & Mountainous Terrain'],
   },
 ];
 

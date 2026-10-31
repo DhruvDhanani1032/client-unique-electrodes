@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {
   FaBolt,
   FaWhatsapp,
-  FaTools,
+  // FaTools,
   FaListUl,
   FaArrowRight,
   FaFileAlt,
@@ -26,6 +26,7 @@ import {
   LuShieldCheck,
   LuZap,
   LuFileText,
+  LuPackage,
   LuBox,
 } from "react-icons/lu";
 import { allProducts, getRelatedFamilyVariants } from "../data/productsData";
@@ -40,6 +41,8 @@ import productCopperPipe48mm from "../assets/product_copper_pipe_48mm.webp";
 import productCopperPipePure from "../assets/product_copper_pipe_pure.webp";
 import productCopperPipePackaged from "../assets/product_copper_pipe_packaged.webp";
 import productCopperRod from "../assets/product_copper_rod.webp";
+import productEarthCompoundBrown from "../assets/product_earth_compound_brown.webp";
+import productEarthCompoundWhite from "../assets/product_earth_compound_white.webp";
 import productEseArrester from "../assets/product_ese_arrester.webp";
 import "./ProductDetail.css";
 
@@ -129,6 +132,12 @@ export default function ProductDetail() {
         allProducts[0]
       );
     }
+    if (targetId === "ground-improving-compound" || targetId === "tbgim" || targetId === "tbgim-compound") {
+      return (
+        allProducts.find((p) => p.id === "uv-ground-improving-compound") ||
+        allProducts[0]
+      );
+    }
 
     // Try finding in legacy products
     const leg = legacyProducts.find((p) => p.id === targetId);
@@ -196,7 +205,7 @@ export default function ProductDetail() {
         id.includes("cu") ||
         id.includes("cbr")
       ) {
-        return [productCopperRod, productCopperPipePure];
+        return [productCopperRod];
       }
     }
 
@@ -208,6 +217,13 @@ export default function ProductDetail() {
       if (name.includes("ese") || id.includes("ese")) {
         return [productEseArrester];
       }
+    }
+
+    if (id === "uv-ground-improving-compound") {
+      return [productEarthCompoundBrown];
+    }
+    if (id === "uv-plus-improving-compound") {
+      return [productEarthCompoundWhite];
     }
 
     return [product.image];
@@ -248,7 +264,18 @@ export default function ProductDetail() {
           (p.categorySlug === product.categorySlug ||
             p.materialSlug === product.materialSlug),
       )
-      .slice(0, 3);
+  }, [product]);
+
+  // Check if product is a ground improving compound
+  const isCompound = useMemo(() => {
+    return (
+      product.id === "uv-ground-improving-compound" ||
+      product.id === "uv-plus-improving-compound" ||
+      product.id === "ground-improving-compound" ||
+      product.categorySlug === "ground-improving-compound" ||
+      (product.name.toLowerCase().includes("compound") &&
+        !product.name.toLowerCase().includes("kit"))
+    );
   }, [product]);
 
   // Map specification key/label to modern visual icon
@@ -264,6 +291,7 @@ export default function ProductDetail() {
     if (k.includes("lug") || k.includes("terminal")) return <LuTag />;
     if (k.includes("hardware") || k.includes("nut") || k.includes("bolt")) return <LuNut />;
     if (k.includes("compound") || k.includes("gic") || k.includes("backfill")) return <LuFlaskConical />;
+    if (k.includes("bag") || k.includes("pack") || k.includes("weight") || k.includes("type")) return <LuPackage />;
     if (k.includes("isi") || k.includes("marking")) return <LuShieldCheck />;
     if (k.includes("conductivity") || k.includes("current") || k.includes("electric")) return <LuZap />;
     if (k.includes("life") || k.includes("durability")) return <LuClock />;
@@ -281,15 +309,28 @@ export default function ProductDetail() {
         .trim();
     };
 
-    return Object.entries(product.specifications || {}).map(([key, val]) => ({
-      key,
-      label: formatKey(key),
-      value: val,
-    }));
+    return Object.entries(product.specifications || {}).map(([key, val]) => {
+      let displayVal = val
+        .replace(/,\s*UL\s*467/gi, "")
+        .replace(/UL\s*467,?\s*/gi, "")
+        .replace(/UL\s*Listed,?\s*/gi, "")
+        .trim();
+
+      // Only for Solar Earthing Kit: replace 50 Kg with 10 Kg
+      if (product.id === "solar-earthing-kit" && displayVal.includes("50 Kg")) {
+        displayVal = displayVal.replace(/50\s*Kg/gi, "10 Kg");
+      }
+
+      return {
+        key,
+        label: formatKey(key),
+        value: displayVal,
+      };
+    });
   }, [product]);
 
-  // Exact Original 5 Installation Steps (Not a single word changed)
-  const installationSteps = [
+  // Exact Original 5 Installation Steps (Not a single word changed) - Commented out as requested
+  /* const installationSteps = [
     {
       num: "01",
       title: "Auger Boring / Pit Excavation",
@@ -315,7 +356,7 @@ export default function ProductDetail() {
       title: "Chamber Installation & Resistance Verification",
       desc: "Install a heavy-duty concrete or poly-plastic earth inspection pit chamber with removable cover. Measure earth resistance with a calibrated earth tester per IS 3043.",
     },
-  ];
+  ]; */
 
   const waQuoteMessage = encodeURIComponent(
     `Hello Unique Electrodes! I am interested in purchasing:\nProduct: ${product.name}\nSKU: ${product.sku}\nPlease share best quotation and availability.`,
@@ -373,14 +414,22 @@ export default function ProductDetail() {
               <>
                 <Link
                   to={
-                    product.materialSlug
-                      ? `/products/${product.categorySlug}/${product.materialSlug}`
-                      : `/products/${product.categorySlug}`
+                    product.id === "solar-earthing-kit"
+                      ? "/products/solar-earthing-kit"
+                      : product.id === "ground-improving-compound"
+                        ? "/products/ground-improving-compound"
+                        : product.materialSlug
+                          ? `/products/${product.categorySlug}/${product.materialSlug}`
+                          : `/products/${product.categorySlug}`
                   }
                 >
-                  {product.materialName
-                    ? `${product.materialName} ${product.subCategory || product.categoryName}`
-                    : product.categoryName}
+                  {product.id === "solar-earthing-kit"
+                    ? "Solar Earthing Kit"
+                    : product.id === "ground-improving-compound"
+                      ? "Ground Improving Compound"
+                      : product.materialName
+                        ? `${product.materialName} ${product.subCategory || product.categoryName}`
+                        : product.categoryName}
                 </Link>
                 <span className="sep">/</span>
               </>
@@ -544,31 +593,70 @@ export default function ProductDetail() {
               <span className="pd-quick-strip-tag">Essential Parameters</span>
               <h3 className="pd-quick-strip-title">Quick Specifications</h3>
             </div>
-            <div className="pd-quick-strip-grid">
-              <div className="pd-quick-strip-item">
-                <span className="pd-quick-lbl">Material</span>
-                <strong className="pd-quick-val">
-                  {product.material === "copper-bonded"
-                    ? product.category === "solid-rod"
-                      ? "Copper Bonded (Low Carbon Core)"
-                      : "Copper Bonded MS Pipe"
-                    : product.material === "pure-copper"
-                      ? "Pure Electrolytic Copper"
-                      : "Low Carbon MS Pipe"}
-                </strong>
-              </div>
-              <div className="pd-quick-strip-item">
-                <span className="pd-quick-lbl">Coating</span>
-                <strong className="pd-quick-val">100 microns</strong>
-              </div>
-              <div className="pd-quick-strip-item">
-                <span className="pd-quick-lbl">Diameters</span>
-                <strong className="pd-quick-val">48mm, 62mm, 76mm</strong>
-              </div>
-              <div className="pd-quick-strip-item">
-                <span className="pd-quick-lbl">Lengths</span>
-                <strong className="pd-quick-val">1m, 2m, 3m</strong>
-              </div>
+            <div className={`pd-quick-strip-grid ${isCompound ? "pd-quick-strip-grid--compound" : ""}`}>
+              {isCompound ? (
+                <>
+                  <div className="pd-quick-strip-item">
+                    <span className="pd-quick-lbl">Material</span>
+                    <strong className="pd-quick-val">
+                      {product.id === "uv-plus-improving-compound" ||
+                      product.materialSlug === "bentonite-carbonite"
+                        ? "Bentonite + Carbonite"
+                        : "Bentonite"}
+                    </strong>
+                  </div>
+                  <div className="pd-quick-strip-item">
+                    <span className="pd-quick-lbl">Bag Type</span>
+                    <strong className="pd-quick-val">10, 15, 25 kg</strong>
+                  </div>
+                </>
+              ) : product.id === "solar-earthing-kit" ? (
+                <>
+                  <div className="pd-quick-strip-item">
+                    <span className="pd-quick-lbl">Material</span>
+                    <strong className="pd-quick-val">Copper Bonded Solid Rod</strong>
+                  </div>
+                  <div className="pd-quick-strip-item">
+                    <span className="pd-quick-lbl">Coating</span>
+                    <strong className="pd-quick-val">50, 100, 250 microns</strong>
+                  </div>
+                  <div className="pd-quick-strip-item">
+                    <span className="pd-quick-lbl">Diameters</span>
+                    <strong className="pd-quick-val">14, 17 mm</strong>
+                  </div>
+                  <div className="pd-quick-strip-item">
+                    <span className="pd-quick-lbl">Lengths</span>
+                    <strong className="pd-quick-val">1m, 2m, 3m</strong>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="pd-quick-strip-item">
+                    <span className="pd-quick-lbl">Material</span>
+                    <strong className="pd-quick-val">
+                      {product.material === "copper-bonded"
+                        ? product.category === "solid-rod"
+                          ? "Copper Bonded (Low Carbon Core)"
+                          : "Copper Bonded MS Pipe"
+                        : product.material === "pure-copper"
+                          ? "Pure Electrolytic Copper"
+                          : "Low Carbon MS Pipe"}
+                    </strong>
+                  </div>
+                  <div className="pd-quick-strip-item">
+                    <span className="pd-quick-lbl">Coating</span>
+                    <strong className="pd-quick-val">100 microns</strong>
+                  </div>
+                  <div className="pd-quick-strip-item">
+                    <span className="pd-quick-lbl">Diameters</span>
+                    <strong className="pd-quick-val">48mm, 62mm, 76mm</strong>
+                  </div>
+                  <div className="pd-quick-strip-item">
+                    <span className="pd-quick-lbl">Lengths</span>
+                    <strong className="pd-quick-val">1m, 2m, 3m</strong>
+                  </div>
+                </>
+              )}
             </div>
           </motion.div>
         </div>
@@ -589,13 +677,13 @@ export default function ProductDetail() {
               <FaListUl size={14} />
               <span>Technical Specifications</span>
             </button>
-            <button
+            {/* <button
               className={`pd-tab-btn ${activeTab === "installation" ? "active" : ""}`}
               onClick={() => setActiveTab("installation")}
             >
               <FaTools size={14} />
               <span>Installation Guide</span>
-            </button>
+            </button> */}
           </div>
 
           {/* Tab 1: Technical Specifications (Animated Modern Cards with Icons & Elevation Hover) */}
@@ -644,8 +732,8 @@ export default function ProductDetail() {
             </motion.div>
           )}
 
-          {/* Tab 2: Installation Guide (Animated Timeline Flow — Exact Original Text) */}
-          {activeTab === "installation" && (
+          {/* Tab 2: Installation Guide (Animated Timeline Flow — Exact Original Text) - Commented out as requested */}
+          {/* {activeTab === "installation" && (
             <motion.div
               className="pd-tab-pane"
               initial={{ opacity: 0, y: 12 }}
@@ -691,7 +779,7 @@ export default function ProductDetail() {
                 </div>
               </div>
             </motion.div>
-          )}
+          )} */}
         </div>
       </section>
 

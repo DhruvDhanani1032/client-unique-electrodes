@@ -400,6 +400,10 @@
   gap: 16px;
 }
 
+.pd-quick-strip-grid--compound {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .pd-quick-strip-item {
   background: #f8fafc;
   border: 1px solid #e2e8f0;

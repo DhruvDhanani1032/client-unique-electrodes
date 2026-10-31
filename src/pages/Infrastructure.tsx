@@ -34,7 +34,6 @@ const capabilities = [
     items: [
       'Magnetic copper coating thickness gauge (250µm+)',
       'Digital micro-ohm electrical conductivity tester',
-      'Adhesion & bend test apparatus as per UL 467',
       'Batch-wise certified inspection records',
       'Documented quality control procedures & traceability',
     ],
@@ -66,7 +65,7 @@ const highlights = [
   {
     icon: <FaMicroscope />,
     title: 'In-House Metrology Lab',
-    desc: 'Equipped with digital coating thickness meters, resistivity testers, and bend-test rigs verifying compliance to IS 3043 & UL 467.',
+    desc: 'Equipped with digital coating thickness meters, resistivity testers, and bend-test rigs verifying compliance to IS 3043.',
   },
   {
     icon: <FaWarehouse />,
