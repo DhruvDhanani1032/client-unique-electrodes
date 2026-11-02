@@ -29,5 +29,6 @@ src/assets/_originals_backup/
 # Large local files and scratch data
 *.zip
 *.pdf
+!public/*.pdf
 all_tb_products_full.json
 

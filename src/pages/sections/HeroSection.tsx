@@ -83,7 +83,7 @@ export default function HeroSection() {
               Explore Products <FaArrowRight size={14} />
             </Link>
             <a
-              href="/unique-enterprise.pdf"
+              href="/Unique%20enterprise(02).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-white btn-lg"
